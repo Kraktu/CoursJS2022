@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Théorie 4 : Les paramètres avec valeur par défaut</h2>
+    
+    <p>
+        Comme vu dans la théorie précédente, lors de l'appel d'une fonction, si jamais vous ne passez pas assez d'arguments à l'appel de la fonction, les paramètres non remplis vaudront undefined. 
+    </p>
+    <p>
+        Cela dit, dans certains cas, il est utile de préciser une autre valeur par défaut que undefined, par exemple dans des cas où vous savez que votre fonction sera utilisée 90% du temps de la même manière, ou pour éviter les problèmes lors de l'oubli d'un argument à l'appel de la fonction.
+    </p>
+    <p>
+        Imaginons un texte qui se mettra au féminin si jamais une valeur booléenne est mise à false. C'est à dire que soit notre texte sera écrit au masculin(par défaut), soit au féminin si on le précise. On peut imaginer ceci :
+    </p>
+    <p><b>
+        function TextFunction(_isAMan=True)
+        <br>{
+        <br>&emsp;if(_isAMan==True)
+        <br>&emsp;{
+        <br>&emsp;&emsp;alert("Ils aiment manger des pommes");
+        <br>&emsp;}
+        <br>&emsp;else
+        <br>&emsp;{
+        <br>&emsp;&emsp;alert("Elles aiment manger des pommes");
+        <br>&emsp;}
+        <br>}
+    </b></p>
+
+    <p>
+        Nous n'avons pas encore vu les if, mais pour faire simple, si le paramètre _isAMan a comme valeur True, alors le texte "Ils aiment manger des pommes" sera affichée, alors que si c'est la valeur False qui est donnée, on n'exécutera pas ce qu'il y a dans de le if, mais le code se trouvant dans le else, à savoir écrire "Elles aiment manger des pommes"
+    </p>
+
+    <p>
+        Toujours est-il que l'on pourrait appeler cette fonction de 3 manières différents :
+    </p>
+
+    <ul>
+        <li>TextFunction(True);</li>
+        <li>TextFunction(False);</li>
+        <li>TextFunction();</li>
+    </ul>
+
+    <p>Le premier cas affichera bien sur la version masculine, et le deuxième la version au féminin. Par contre, le troisième cas lui, est celui qui nous intéresse, on ne passe pas d'argument, mais le paramètre a une valeur par défaut de True, c'est à dire que, lorsque la fonction sera appelée sans argument, le paramètre _isAMan prendra la valeur True, et donc affichera le texte en masculin !</p>
+
+    <p>
+        Si à l'avenir vous rencontrez des fonctions avec plusieurs paramètres, sachez que tous les paramètres avec des valeurs par défaut doivent être déclarés en <b>dernier</b>. C'est <b>très important</b>. Ainsi dans l'exemple suivant vous pouvez voir une déclaration de fonction avec 2 paramètres avec des valeurs par défaut sur 5 paramètres.
+    </p>
+
+    <p><b>
+        function MaFonction(param1,param2,param3,param4="Bonjour",param5=60)
+    </b></p>
+
+    <p>Si l'appel de fonction ne précise que 3 arguments, alors le param4 et le param5 vaudront respectivement "Bonjour" et 60, si on précise les 5 arguments à l'appel, alors les paramètres vaudront chacun respectivement la valeur de l'argument qui lui est passé. </p>
+
+
+    <div class="navigation">
+        <p><a href="../TChapitre2/C2T3.html">Théorie Précédente</a></p>
+        <p><a href="../TChapitre2/C2T5.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>  
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>
