@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Javascript</title>
+    <link rel="stylesheet" href="../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Correction 2 : Salutation personnalisée</h2>
+
+    <p><b>
+        function SayHelloToSomeone(_name)
+        <br>{
+        <br>&emsp;alert("Hello " + _name);
+        <br>}
+        <br>
+        <br>SayHelloToSomeone(prompt("What's your name ?"))
+    </b></p>
+
+    <h2>Explications :</h2>
+
+    <p>
+        Un peu comme l'exercice d'avant, nous allons déclarer notre fonction, mais cette fois-ci, nous allons lui donner un paramètre pour le nom de la personne. Ce nom pourra être passé en argument de plusieurs façon, vous en voyez une ci-dessus, qui est la plus adaptée à la situation, c'est à dire que nous récupérons le nom de la personne qui va utiliser notre programme via la <a href="https://www.w3schools.com/jsref/met_win_prompt.asp">fonction prompt</a> , cette fonction prend en entrée une chaîne de caractère qui va être affichée à l'écran, ensuite elle retournera la valeur donnée par l'utilisateur dans le champs de texte proposé lors de l'execution du programme. Mais vous trouverez ci-dessous d'autres manière de donner le paramètre qui sont aussi valable. La seule chose importante à noter, et que comme nous n'allons pas re-utiliser la valeur donnée par l'utilisateur, il est inutile de la stocker dans une variable, mais dans un projet de plus grande ampleur, nous l'aurions sans doute fait. En tout cas, dans ce cas-ci, c'est la valeur de retour de la fonction prompt qui est passé en argument. Pour ce faire il suffit d'appeler la fonction prompt dans les parenthèses de l'appel de la fonction que nous avons créé.
+    </p>
+
+    <h2>Solution alternative :</h2>
+
+    <p><b>
+        <br>function SayHelloToSomeone(_name)
+        <br>{
+        <br>&emsp;alert("Hello " + _name);
+        <br>}
+        <br>
+        <br>let name = "Philip";
+        <br>SayHelloToSomeone(name);
+    </b></p>
+    
+    <p><i>
+       Ici, passons en argument une variable déclarée au préalable. Notez bien que le nom du paramètre _name et de la variable name, bien que se ressemblant, n'a aucune importance, ici, les deux valeurs représentent un nom, donc j'ai choisi de les appeler name, mais l'une aurait pu s'appeler variable et l'autre parameter, ça aurait marché de la même manière, c'est un nom que nous utilisons en tant que développeur pour nous retrouver dans le code, rien de plus. 
+    </i></p>
+    <p><b>
+        <br>function SayHelloToSomeone(_name)
+        <br>{
+        <br>&emsp;alert("Hello " + _name);
+        <br>}
+        <br>
+        <br>SayHelloToSomeone("Jean");
+    </b></p>
+    
+    <p><i>
+        Ici, on donne directement en paramètre une chaîne de caractère, bien qu'équivalent à la solution du dessus, ici, nous ne réservons pas d'espace mémoire pour stocker l'information du nom Jean, ce qui est un peu moins gourmand pour notre programme. Pourquoi stocker le nom si nous ne réutilisons pas ? Par contre, le "soucis" dans les deux dernières solutions est que nous ne demandons pas l'avis de l'utilisateur. Alors ce n'est pas une faute, mais il est vrai que bien souvent nous ne savons pas le nom de l'utilisateur avant d'executer le code...
+    </i></p>
+    <p><b>
+        <br>function SayHelloToSomeone(_name)
+        <br>{
+        <br>&emsp;alert("Hello " + _name);
+        <br>}
+        <br>
+        <br>let username = prompt("What's your username ?");
+        <br>SayHelloToSomeone(username);
+    </b></p>
+    
+    <p><i>
+        Enfin, cette dernière solution est une combinaison de la demande à l'utilisateur via la fonction prompt() et du stockage de l'information via une variable. Nous allons donc récupérer la valeur de retour de la fonction prompt() avant de la passer en paramètre. C'est sans doute la meilleure solution dans le cas ou notre projet serait de plus grande ampleur.
+    </i></p>
+
+    <p>Notez bien que dans chacun des exemples ci-dessus, je redéclare une fonction pour que vous ayez le code entier en exemple, mais si jamais vous vouliez utiliser les 4 appels dans un seul programme, déclarer la fonction une seule fois aurait suffit ! Seul l'appel change !</p>
+
+
+    <div class="navigation">
+        <p><a href="../CChapitre2/C2E1C.html">Correction Précédente</a></p>
+        <p><a href="../CChapitre2/C2E3C.html">Correction Suivante</a></p>
+        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Ma correction :
+    function SayHelloToSomeone(_name)
+    {
+        alert("Hello " + _name);
+    }
+
+    // let name = "Philip";
+    // SayHelloToSomeone(name);
+
+    // SayHelloToSomeone("Jean");
+
+    // let username = prompt("What's your username ?");
+    // SayHelloToSomeone(username);
+
+    SayHelloToSomeone(prompt("What's your name ?"))
+
+</script>
+</html>
