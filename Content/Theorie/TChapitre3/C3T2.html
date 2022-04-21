@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Théorie 2 : L'algèbre de Boole</h2>
+
+    <p>
+        Nous enchaînons les concepts préliminaires pour atteindre notre objectif qui est enfin de voir les structures conditionnelles, mais c'est dans le but de voir les choses dans l'ordre et ne pas devoir faire des pauses, sauter des étapes ou devoir revenir en arrière lorsque nous les verrons. Ici nous allons voir, dans les grandes lignes, l'algèbre de boole. Cette matière pourrait être extrêmement poussée, mais nous n'avons pas besoin de vraiment tout savoir dans 99% des cas en programmation. Nous allons donc voir les concepts fondamentaux, ce qu'il va se passer, c'est que bien souvent, le moment où vous aurez besoin d'un concept plus poussé dans cette matière bien particulière, vous allez, à ce moment là, picorer la matière qu'il vous faudra sur internet.
+    </p>
+    <p>
+        Commençons déjà par la base, c'est quoi l'algèbre de boole ? Et bien pour faire simple, c'est une approche algébrique de la logique, donc concrètement, c'est transformer sous forme de, entre guillemets, formules mathématique, des problèmes logiques. 
+    </p>
+    <p>
+        Prenons un exemple simple, il arrive parfois dans la vie que l'on doive répondre à deux conditions bien particulière pour pouvoir faire quelque chose. Comme si vous voulez travailler en tant qu'informaticien, et bien il faut répondre à la condition première qui est d'avoir plus de 18ans, et la deuxième condition qui est d'être fort en informatique ! On pourrait appeler la première condition A et la deuxième B, la conclusion elle qui est de travailler en tant qu'informaticien, on pourrait l'appeler C. On peut donc poser une sorte de calcul qui est :
+    </p>
+
+    <p><b>
+        Si A et B alors C
+    </b></p>
+
+    <p>
+        En algèbre de boole, on ne peut répondre à une question que par 2 réponses. Oui ou Non, simplement. En effet, soit vous avez plus de 18ans, soit vous n'avez pas plus de 18 ans. Soit vous êtes fort en informatique, soit vous êtes nul. L'algèbre de boole se concentre donc sur ces problèmes, ces questions, qui ne peuvent avoir que deux valeur, à savoir vrai ou faux. La conclusion elle aussi ne peut avoir que deux réponses, soit on l'execute, soit non. Cela non permet ensuite de créer ce qu'on appelle des tables de vérités. En effet, si on connaît la structure de notre calcul, on sait prévoir à l'avance dans quel cas la réponse sera oui, et dans quel cas la réponse sera non.
+    </p>
+
+    <p>
+        Reprenons notre exemple de plus haut. Il existe en fait 4 possibilités de réponses à notre problèmes. Chacun des mots de notre phrase sont importants :
+    </p>
+
+    <p><b>
+        Si je suis bon en informatique et que j'ai plus de 18ans, alors je peux travailler en tant qu'informaticien.
+    </b></p>
+    
+    <ul>
+        <li>"Si" est la question que l'on pose, elle veut dans ce cas dire, "Si je réponds oui à la première proposition et à la deuxième proposition alors je fais la conclusion". Mais on verra aussi plus tard en programmation qu'on pourra parfois dire "Tant que" ou "Pour autant de fois ou cette réponse est vraie", etc.</li>
+        <li>"je suis bon en informatique" est ma première condition</li>
+        <li>"et" est un mot très important ici, et implique que nous devons répondre oui aux deux propositions, si on avait dit "ou", on pourrait répondre oui à seulement l'une des deux conditions pour accéder à la conclusion positivement !</li>
+        <li>"j'ai plus de 18 ans" est la deuxième condition</li>
+        <li>"alors" est le mot qui permet l'implication de la conclusion dans la cas où on a répondu comme il faut aux conditions.</li>
+        <li>"je peux travailler en tant qu'informaticien" est la conclusion.</li>
+    </ul>
+    
+    <p>
+        Maintenant qu'on a bien décomposé notre phrases, voyons nos différentes possibilités !
+    </p>
+
+    <ol>
+        <li>Je ne suis pas bon en informatique et j'ai moins de 18 ans : Et bien alors je ne peux pas travailler comme informaticien</li>
+        <li>Je suis bon en informatique, mais j'ai moins de 18ans : et bien malheureusement, je ne peux pas non plus travailler comme informaticien</li>
+        <li>Je suis nul en informatique, mais j'ai plus de 18 ans : même chose, je ne peux malheureusement pas pratiquer le métier d'informaticien</li>
+        <li>Je suis bon en informatique, et j'ai plus de 18 ans : c'est le seul cas où je peux vraiment être informaticien !</li>
+    </ol>
+
+    <p>
+        Maintenant, si on écrit ça comme en algèbre de boole, on peut écrire ceci :
+    </p>
+
+    <p><b>
+        A && B = C
+    </b></p>
+
+    <p>
+        Qui se lit "Si A et B alors C". Dans notre cas, A est notre première condition, B la deuxième et C la conclusion. Les réponses potentielles aux questions elles s'écrivent 1, quand c'est vrai, et 0 quand c'est faux. Donc dans le cas où je répond oui aux deux conditions que peux écrire :
+    </p>
+    <p><b>
+        1 && 1 = 1
+    </b></p>
+
+    <p>
+        C'est une équation, A peut prendre la valeur 1 ou 0, il en va de même pour B, et C prendra la forme qui lui est imposé en résolvant l'égalité. On a donc la table de vérité suivante :
+    </p>
+
+    <ul>
+        <li>0 && 0 = 0</li>
+        <li>1 && 0 = 0</li>
+        <li>0 && 1 = 0</li>
+        <li>1 && 1 = 1</li>
+    </ul>
+
+    <p>
+        Maintenant, je vous avais dit une chose très importante, c'est que chaque mot avait son importance. En effet, imaginons maintenant que pour être informaticien, il ne faille plus être et bon en informatique et avoir plus de 18ans, mais l'un ou l'autre. On pourrait écrire en français :
+    </p>
+    
+    <p><b>Si je suis bon en informatique ou que j'ai plus de 18ans, alors je peux devenir informaticien.</b></p>
+
+    <p>Le ou en informatique s'écrit || et le et &&, on va donc réfléchir à cette question et tenter tous les cas possibles essayez par vous même mentalement avant de découvrir la table de vérité !</p>
+
+    <ul>
+        <li>0 || 0 = 0</li>
+        <li>1 || 0 = 1</li>
+        <li>0 || 1 = 1</li>
+        <li>1 || 1 = 1</li>
+    </ul>
+
+    <p>En effet, si je répond oui à une des deux conditions, ou aux deux, je peux répondre oui à la conclusion. Il me suffit d'être soit adulte soit bon en informatique soit les deux pour pouvoir être informaticien. Le seul cas où je ne peux pas être informaticien est si je suis un mineur nul en informatique !</p>
+
+    <p>
+        Ici, nous avions des cas simples. Il nous reste deux petites choses à voir. Les inversions et les opérations multiples. Pour les inversions, c'est un peux bizarre, mais c'est comme en français, si je rajoute une négation dans ma question, la réponse sera potentiellement inversée. Par exemple, notre phrase avec une inversion seulement deviendrait :
+    </p>
+    
+    <p><b>
+        Si je ne suis pas bon en informatique ou que j'ai plus de 18ans, alors je peux devenir informaticien.
+    </b></p>
+
+    <p>On écrit l'inversion à l'aide d'un point d'exclamation en informatique, et on a donc par rapport à avant les égalités suivantes :</p>
+
+    <p><b>
+        !A || B = C
+    </b></p>
+
+    <p>La table de vérité elle ne change pas en elle même, mais elle change par rapport à l'ancienne, dans le sens ou maintenant, il faudra soit ne pas être bon en informatique soit avoir plus de 18 ans pour accéder à la profession. En algèbre de boole, lorsqu'on inverse quelque chose, les 0 deviennent des 1 et les 1 des 0. Donc ici, si on prend notre table de vérité de tout à l'heure et qu'on essaye de la transposer à ce problème on a donc </p>
+
+    <ul>
+        <li>!0 || 0 = 0 et donc 1 || 0 = 1</li>
+        <li>!1 || 0 = 1 et donc 0 || 0 = 0</li>
+        <li>!0 || 1 = 1 et donc 1 || 1 = 1</li>
+        <li>!1 || 1 = 1 et donc 0 || 1 = 1</li>
+    </ul>
+
+    <p>
+        On voit que la table ne change pas réellement, on pourrait la remettre dans l'ordre, c'est qu'une réponse, mais à une question inverse, donne une réponse inverse. Mais ici l'inversion portait sur un terme de notre égalité. Qu'en est il si cette inversion porte maintenant sur l'entièreté du calcul ? On pourrait l'écrire ainsi :
+    </p>
+
+    <p><b>
+        !(A || B) = C
+    </b></p>
+
+    <p>Bien que ces phrases soit un peu spéciales, c'est bien ce qu'il se passe, et donc on peut répondre aux questions comme suit :</p>
+
+    <ul>
+        <li>Si je suis bon en informatique et que j'ai plus de 18ans, alors je ne peux pas être informaticien</li>
+        <li>Si je ne suis pas bon en informatique et que j'ai plus de 18 ans, alors je ne peux pas être informaticien</li>
+        <li>Si je suis bon en informatique et que je n'ai pas plus de 18 ans alors je ne peux pas être informaticien</li>
+        <li>Si je ne suis pas bon en informatique et que je n'ai pas plus de 18 ans, alors je peux être informaticien</li>
+    </ul>
+
+    <p>Et en fait, on se rend compte que qu'il faut et être mineur et être mauvais en informatique pour être informaticien. Ce qui implique donc que l'inversion ne se porte pas uniquement sur les termes, mais aussi sur l'opération, donc l'inverse du ou est et. Si on fait la distribution, notre expression de tout à l'heure devient :</p>
+
+    <p><b>
+        !A && !B = C
+    </b></p>
+
+    <p>Enfin, il faut savoir que l'on peut complexifier ces opérations en rajoutant des termes et des opérations, ainsi on pourrait avoir une phrase du style :</p>
+
+    <p><b>Pour être informaticien, il faut être majeur et être doué en informatique ou avoir un piston</b></p>
+
+    <p>
+        Il va surtout être important ici de voir sur quoi ce porte les différentes opérations car, est-ce qu'il faut être et majeur et doué ou être pistonné suffit, ou bien il faut être et majeur et soit doué soit pistonné. C'est là ou commencer à toujours écrire ça sous forme arithmétique devient intéressant :
+    </p>
+
+    <p><b>
+        (A && B) || D = C est différent de A && (B || D) = C
+    </b></p>
+
+    <p>
+        Car dans le premier cas, si on est pistonné, ça suffit, on a pas à regarder les deux premiers termes, alors que dans le deuxième cas, il faudra que soit on soit pistonné, soit on soit compétant, mais dans tous les cas, il faudra être majeur si on veut travailler comme informaticien. De même les inversions se répercuterons différemment en fonction de sur quoi elle porte et des opérations mises en jeu.
+    </p>
+
+    <p>
+        Dans notre cas, il n'est pas réellement si intéressant que ça de savoir résoudre réellement l'équation, et de connaître les tables de vérité, l'important est surtout que nous soyons capable d'écrire une opération booléenne. Ainsi si on imagine que "être majeur" et "être pistonné" sont des variables de types booléen, et que l'âge de la personne est un int, alors il faudra savoir écrire ceci :
+    </p>
+
+    <p><b>
+        // Ce sont mes variables, le fait qu'elles aient des valeurs n'est pas très important, mais j'en met quand même
+        <br>let isAdult = True;
+        <br>let isBoosted = True;
+        <br>let age = 24;
+    </b></p>
+
+    <p>Alors je dois pouvoir écrire cette condition :</p>
+
+    <p><b>age>=18 && isBoosted == True || isAdult == True</b></p>
+
+    <p>Qui veut littéralement dire "Est-ce que l'âge est supérieur à 18 et la personne est pistonnée ou est adulte"</p>
+
+    <p>Pour ce qui est des opérations de comparaisons, nous en avons 6 :</p>
+
+    <ul>
+        <li><b>></b> strictement plus grand que</li>
+        <li><b><</b> strictement plus petit que</li>
+        <li><b>>=</b> supérieur ou égal</li>
+        <li><b><=</b> inférieur ou égal</li>
+        <li><b>==</b> strictement égal</li>
+        <li><b>!=</b> différent</li>
+    </ul>
+
+    <p>A partir de là tout est possible, on peut comparer si des chaînes de caractères sont égales, si des nombres sont inférieurs à d'autres, si des objets sont différents d'autres, etc.</p>
+
+    <p>Même si il est intéressant de savoir répondre à une question du style :</p>
+
+    <p>((a > b && c != d) || e <= b) && c == d || b < d)</p>
+
+    <p>en donnant des valeurs à chaque terme, la vérité est que la machine le calculera tout seul, nous il faut simplement pouvoir l'écrire ! C'est ce que nous allons exercer dans ce chapitre ! Mais on va devoir utiliser ça dans des structures conditionnelles, ce que nous allons voir dans la prochaine théorie.</p>
+    
+    
+    <div class="navigation">
+        <p><a href="../TChapitre3/C3T1.html">Théorie Précédente</a></p>
+        <p><a href="../TChapitre3/C3T2.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../index.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>
