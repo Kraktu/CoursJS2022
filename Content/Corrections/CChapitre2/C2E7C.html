@@ -13,23 +13,90 @@
     <h2>Chapitre 2 - Correction 7 : Super Calculette</h2>
 
     <p><b>
-        WIP
+        let firstNumber 
+        <br>let secondNumber
+        <br>
+        <br>alert("Welcome on the Super Calculator, you're gonna be able to enter 2 numbers, and I will do multiple operations with them !");
+        <br>
+        <br>firstNumber = parseFloat(prompt("Enter first number :"));
+        <br>secondNumber = parseFloat(prompt("Enter second number :"));
+        <br>
+        <br>Display(firstNumber,secondNumber);
+        <br>
+        <br>function Display(_firstValue,_secondValue)
+        <br>{
+        <br>&emsp;alert("The sum of " + _firstValue + " and " + _secondValue + " is : " + Addition(_firstValue,_secondValue));
+        <br>&emsp;alert("The subtraction of " + _firstValue + " and " + _secondValue + " is : " + Subtraction(_firstValue,_secondValue));
+        <br>&emsp;alert("The multiplication of " + _firstValue + " and " + _secondValue + " is : " + Multiplication(_firstValue,_secondValue));
+        <br>&emsp;alert("The division, of " + _firstValue + " and " + _secondValue + " is : " + Division(_firstValue,_secondValue));
+        <br>&emsp;alert("The square of " + _firstValue + " is : " + Square(_firstValue) + " and the square of " + _secondValue + " is : " + Square(_secondValue));
+        <br>}
+        <br>
+        <br>function Addition(_firstNumber,_secondNumber)
+        <br>{
+        <br>&emsp;let _resultOfAddition = _firstNumber + _secondNumber;
+        <br>&emsp;return _resultOfAddition;
+        <br>}
+        <br>function Subtraction(_firstNumber,_secondNumber)
+        <br>{
+        <br>&emsp;let _resultOfSubtraction = _firstNumber - _secondNumber;
+        <br>&emsp;return _resultOfSubtraction;
+        <br>}
+        <br>function Multiplication(_firstNumber,_secondNumber)
+        <br>{
+        <br>&emsp;let _resultOfMultiplication = _firstNumber * _secondNumber;
+        <br>&emsp;return _resultOfMultiplication;
+        <br>}
+        <br>function Division(_firstNumber,_secondNumber)
+        <br>{
+        <br>&emsp;let _resultOfDivision = _firstNumber / _secondNumber;
+        <br>&emsp;return _resultOfDivision;
+        <br>}
+        <br>function Square(_number)
+        <br>{
+        <br>&emsp;let _resultOfSquare = _number * _number;
+        <br>&emsp;return _resultOfSquare;
+        <br>}
     </b></p>
 
     <h2>Explications :</h2>
 
     <p>
-        
+        Un exercice classique, pas très compliqué quand on divise les tâches il reprend toutes les notions de théories vues au par avant. Chaque opération se trouve dans une opération qui renvoie la valeur calculée au programme principal, l'affichage lui se trouve dans une fonction Display(). Cette fonction doit donc être courant des 2 nombres pour pouvoir ensuite appeler les autres fonctions au bon moment. Petite variante par rapport aux exercices d'avant, que vous allez retrouver dans mes codes assez souvent, c'est que j'organise mon code de la sorte :
     </p>
+    <ul>
+        <li>Déclaration des variables</li>
+        <li>Programme principal</li>
+        <li>Définition des fonctions</li>
+    </ul>
+    <p>
+        De la sorte, je donne les informations dans le sens de leur importance pour comprendre le code à quelqu'un qui voudrait savoir ce qu'il se passe. En général, on va directement passer à la lecture du programme principal si les variables n'ont pas déjà une valeur affectée, ici comme ce sont des variables "vides", on passe directement à la lecture du programme, et si le programme est bien écrit, on peut potentiellement se passer d'aller lire ce que les fonctions font. Dans notre cas, le gros du code se trouve dans Display, c'est pour ça que j'ai mis cette fonction en premier, car c'est la seule qu'un autre développeur voudrait potentiellement consulter, mais à la lecture de Display() on comprend instantanément ce que je veux faire et ce que font les autres fonctions. Une ligne comme :
+    </p>
+
+    <p><b>alert("The sum of " + _firstValue + " and " + _secondValue + " is : " + Addition(_firstValue,_secondValue));</b></p>
+
+    <p>Parle d'elle même !</p>
 
     <h2>Solution alternative :</h2>
 
     <p><b>
-        
+        function Division(_firstNumber,_secondNumber)
+        <br>{
+        <br>&emsp;if(_secondNumber==0)
+        <br>&emsp;{
+        <br>&emsp;&emsp;alert("I passed the division because I cannot use 0 as a divisor");
+        <br>&emsp;&emsp;return "Division Impossible";
+        <br>&emsp;}
+        <br>&emsp;else
+        <br>&emsp;{
+        <br>&emsp;&emsp;let _resultOfDivision = _firstNumber / _secondNumber;
+        <br>&emsp;&emsp;return _resultOfDivision;
+        <br>&emsp;}
+        <br>}
     </b></p>
     
     <p><i>
-        
+        Nous verrons dans le prochain chapitre les conditions et donc les if/else. Mais globalement, ce petit code est une variation sur la division pour prendre en compte le fait que, si l'utilisateur tente une division par zéro, le calcul ne s'effectue pas mais un message d'erreur s'affiche. On pourrait lire le code comme ça : "Si _secondNumber est égal à zéro, alors j'affiche un message d'erreur et je renvoie le message division impossible, sinon je fais le calcul et je renvoie le résultat de l'opération".
     </i></p>
 
 
@@ -50,6 +117,58 @@ Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b
 
 <script>
     // Ma correction :
+    let firstNumber 
+    let secondNumber
+
+    alert("Welcome on the Super Calculator, you're gonna be able to enter 2 numbers, and I will do multiple operations with them !");
+
+    firstNumber = parseFloat(prompt("Enter first number :"));
+    secondNumber = parseFloat(prompt("Enter second number :"));
+
+    Display(firstNumber,secondNumber);
+    
+    function Display(_firstValue,_secondValue)
+    {
+        alert("The sum of " + _firstValue + " and " + _secondValue + " is : " + Addition(_firstValue,_secondValue));
+        alert("The subtraction of " + _firstValue + " and " + _secondValue + " is : " + Subtraction(_firstValue,_secondValue));
+        alert("The multiplication of " + _firstValue + " and " + _secondValue + " is : " + Multiplication(_firstValue,_secondValue));
+        alert("The division, of " + _firstValue + " and " + _secondValue + " is : " + Division(_firstValue,_secondValue));
+        alert("The square of " + _firstValue + " is : " + Square(_firstValue) + " and the square of " + _secondValue + " is : " + Square(_secondValue));
+    }
+
+    function Addition(_firstNumber,_secondNumber)
+    {
+        let _resultOfAddition = _firstNumber + _secondNumber;
+        return _resultOfAddition;
+    }
+    function Subtraction(_firstNumber,_secondNumber)
+    {
+        let _resultOfSubtraction = _firstNumber - _secondNumber;
+        return _resultOfSubtraction;
+    }
+    function Multiplication(_firstNumber,_secondNumber)
+    {
+        let _resultOfMultiplication = _firstNumber * _secondNumber;
+        return _resultOfMultiplication;
+    }
+    function Division(_firstNumber,_secondNumber)
+    {
+        if(_secondNumber==0)
+        {
+            alert("I passed the division because I cannot use 0 as a divisor");
+            return "Division Impossible";
+        }
+        else
+        {
+            let _resultOfDivision = _firstNumber / _secondNumber;
+            return _resultOfDivision;
+        }
+    }
+    function Square(_number)
+    {
+        let _resultOfSquare = _number * _number;
+        return _resultOfSquare;
+    }
 
 </script>
 </html>
