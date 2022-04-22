@@ -43,9 +43,127 @@ Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b
 </footer>
 
 </body>
-
 <script>
     // Ma correction :
+    let monsMorningHour = " 9h10";
+    let monsAfternoonHour = "13h30";
+    let monsEveningHour = "22h56";
 
+    let bruxellesMorningHour = "10h33";
+    let bruxellesAfternoonHour = "14h42";
+    let bruxellesEveningHour = "19h02";
+
+    let nivellesMorningHour = "5h34";
+    let nivellesAfternoonHour = "15h13";
+    let nivellesEveningHour = "20h00";
+
+    let charleroiMorningHour = "7h45";
+    let charleroiAfternoonHour = "12h53";
+    let charleroiEveningHour = "23h02";
+
+    alert("Bienvenue dans l'application SNCB qui sert à savoir l'horaire de vos trains, vous allez devoir saisir une destination et une période de la journée pour que je puisse vous donner l'heure de départ de votre train.");
+
+    let destinationNbr = DestinationChoice();
+    let periodNbr = PeriodChoice();
+    let destination = "";
+    let period = "";
+
+    if(destinationNbr == 1)
+    {
+        destination=="Bruxelles";
+        if(periodNbr==1)
+        {
+           period = bruxellesMorningHour; 
+        }
+        if(periodNbr==2)
+        {
+            period = bruxellesAfternoonHour;
+        }
+        if(periodNbr==3)
+        {
+            period = bruxellesEveningHour;
+        }
+    }
+
+    if(destinationNbr == 2)
+    {
+        destination=="Mons";
+        if(periodNbr==1)
+        {
+           period = monsMorningHour; 
+        }
+        if(periodNbr==2)
+        {
+            period = monsAfternoonHour;
+        }
+        if(periodNbr==3)
+        {
+            period = monsEveningHour;
+        }
+    }
+
+    if(destinationNbr == 3)
+    {
+        destination=="Nivelles";
+        if(periodNbr==1)
+        {
+           period = nivellesMorningHour; 
+        }
+        if(periodNbr==2)
+        {
+            period = nivellesAfternoonHour;
+        }
+        if(periodNbr==3)
+        {
+            period = nivellesEveningHour;
+        }
+    }
+
+    if(destinationNbr == 4)
+    {
+        destination=="Charleroi";
+        if(periodNbr==1)
+        {
+           period = charleroiMorningHour; 
+        }
+        if(periodNbr==2)
+        {
+            period = charleroiAfternoonHour;
+        }
+        if(periodNbr==3)
+        {
+            period = charleroiEveningHour;
+        }
+    }
+
+    alert("Votre train à destination de " + destination + " partira à " + period + ". Bon voyage !")
+
+    function DestinationChoice()
+    {
+        _destination = parseInt(prompt("Choisissez votre destination en entrant le chiffre correspondant :\n1 - Bruxelles\n2 - Mons\n3 - Nivelles\n4 - Charleroi"));
+        if(_destination>4||_destination<0)
+        {
+            alert("Donnée entrée incorrecte, veuillez recommencer");
+            DestinationChoice();
+        }
+        else
+        {
+            return _destination;
+        }
+    }
+    function PeriodChoice()
+    {
+        _period = parseInt(prompt("Choisissez votre période de la journée à laquelle vous voudrez partir :\n1 - Matin\n2 - Après-midi\n3 - Soir"));
+        if(_period>3||_period<0)
+        {
+            alert("Donnée entrée incorrecte, veuillez recommencer");
+            PeriodChoice();
+        }
+        else
+        {
+            return _period;
+        }
+    }
+    // à améliorer en classe !
 </script>
 </html>
