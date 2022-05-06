@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Théorie 1 : Une fonction, qu'est-ce que c'est ?</h2>
+
+    <p>
+        Avant de s'attaquer à créer notre propre fonction, il est intéressant de s'attaquer à ce qu'est réellement une fonction. Si on devait faire un parallèle avec les phrase en français, les fonctions seraient des verbes. Ce sont des actions, ou plutôt, on va le voir en avançant dans les exercices plus complexes, des suites d'actions qui mènent à un but. 
+    </p>
+    <p>
+        Dans l'idéal, une fonction ne devrai poursuivre qu'un seul but. Imaginons que notre programme soit un robot qui fasse la cuisine. on peut imaginer que pour préparer un gateau, il doive mélanger 2 ingrédients, par exemple du sucre et du beurre. Et bien pour se faciliter la vie, le développeur va coder une <b>fonction</b> qui va s'occuper de mélanger 2 ingrédients, qu'ils soient du beurre et du sucre ou bien, pourquoi pas pour faire une toute autre recette, des tomates et des oignons. En effet, la suite d'instruction risque d'être globalement la même à ceci près que les ingrédients sont différents. Ces ingrédients seront les paramètres de la fonction, mais nous verrons ça plus tard.
+    </p>
+    <p>
+        Dans le cas précédent, on imagine bien que mélanger les ingrédients est une fonction elle même composée d'une multitude d'autres actions. par exemple le robot devrait pouvoir bouger le bras de gauche à droite pour mélanger. Cette action de bouger le bras est une action que l'on pourrait retrouver dans un tout autre tas d'action que simplement la fonction de mélanger. Par exemple pour faire un salut de la main, ou pour soulever une caisse. On pourrait donc imaginer avoir une fonction BougerLeBras() et la fonction Mélanger() appellerai cette fonction bouger le bras quand elle en a besoin au sein de sa suite d'instruction
+    </p>
+    <p>
+        Même si c'est une notion assez vaporeuse à l'heure actuelle, il est <b>super</b> important de bien comprendre qu'une fonction savoir en même temps faire assez de chose pour qu'elle soit utile et réutilisable, mais aussi le strict minimum pour que sa multitudes d'actions ne soit pas un frein au développement. 
+    </p>
+    <p>
+        Imaginez ceci. Nous codons une petite voiture autonome. Les fondamentaux seraient de la faire avancer et reculer. Imaginez créer une fonction qui permet d'avancer, et ensuite une qui permet de reculer. Si votre fonction permet <b>uniquement</b> de reculer, cela voudrait dire qu'il faudrait que la voiture soit à l'arrêt pour pouvoir enclencher cette fonction. En effet, si votre voiture a les roues qui vont vers l'avant, et que d'un coup elles se mettent à tourner vers l'arrière, c'est la perte d'adhérence assurée, vous patinez et c'est le crash. Du coup, pour l'améliorer, vous décidez d'implémenter dans cette fonction une fonctionnalité, qui permet de freiner avant d'atteindre la vitesse de 0, une fois cette vitesse atteinte, la marche arrière s'enclenche enfin réellement. Et bien voilà, on a une voiture qui, depuis la marche avant, peut basculer vers une vitesse de 0 et puis reculer.
+    </p>
+    <p>
+        Oui mais, et c'est là qu'est toute la subtilité de savoir s'arrêter au bon moment dans une fonction, imaginez maintenant que notre petite voiture doive prendre un virage très serré, pour pouvoir se faire, il faudrait savoir freiner <b>un peu</b> avant le virage afin d'éviter le tonneau ! Problème, notre voiture ne sait que avancer et freiner <b>pour</b> reculer. Impossible de réutiliser notre fonctionnalité de marche arrière pour le frein ! Du coup, que fait le mauvais développeur ? Et bien il va coder une nouvelle fonction, qui servira uniquement à freiner, et ne reverra pas son code qui permet de reculer. 
+    </p>
+    <p>
+        Le bon codeur lui, aurait senti le truc dès le début. D'ailleurs, si on relit ce que j'ai écris plus haut, les mots on trahi mon futur message, lisez plutôt ce que j'avais écrit :
+        <br><i>Du coup, pour l'améliorer, vous décidez d'implémenter dans cette fonction une fonctionnalité, qui permet de freiner avant d'atteindre la vitesse de 0</i>
+        <br>Et bien oui, j'avais parlé de <b>rajouter une fonctionnalité</b> et ça doit tout de suite vous mettre la puce à l'oreille, en effet, si notre fonction a pour but de <b>reculer</b>, cette fonction <b>ne devrait pas savoir</b> comment freiner ! C'est le rôle d'une <b>autre fonction</b>. En voyant le coup arriver, on peut donc créer une fonction avancer, une fonction freiner et une fonction reculer. Cette fonction freiner peut maintenant être appelée pour simplement freine par exemple à un feu rouge et s'arrêter, fans la fonction reculer pour freiner avant de reculer, mais aussi dans une future fonction de virage serré !
+    </p>
+    
+    <div class="navigation">
+        <p><a href="../TChapitre2/C2T2.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Javascript</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Correction 4 : Détection de chômeur</h2>
+
+    <p><b>
+        <br>function CheerWork(_age,_job = "unemployed")
+        <br>{
+        <br>&emsp;alert("Welcome, you're " + _age + " years old, and you are " + _job);
+        <br>}
+        <br>
+        <br>CheerWork(28,"programer");
+        <br>CheerWork(28);
+    </b></p>
+
+    <h2>Explications :</h2>
+
+    <p>
+        Ici, peu de choses nouvelles, encore une fois on déclare une fonction, cette fois-ci elle prend deux arguments, mais par contre, la subtilité est la valeur par défaut du paramètre _job. Pour ce faire, rien de plus simple, il suffit de, au moment de la déclaration de la fonction et du paramètre qui aura une valeur par défaut, le faire suivre du signe égal et de la valeur qui va lui être affectée. Dans notre cas, c'est la chaîne de caractère "unemployed". Cela nous permet, lorsque nous faisons appel à la fonction CheerWork() que nous avons déclaré, de ne pas forcément donner l'argument du travail. Si on ne le donne pas, la valeur "unemployed" va être donnée à _job. Bien sûr, nous pouvons toujours appeler la fonction de manière tout à fait classique en donnant les deux arguments, à ce moment là, la valeur par défaut sera comme écrasée, oubliée, et c'est la valeur transmise en argument qui primera. Ce genre de petite technique permet de faciliter l'utilisation de fonction où des valeurs seront souvent similaires, ou bien éviter les crash à l'oubli d'une valeur lors de l'appel de la fonction. 
+    </p>
+
+    <h2>Solution alternative :</h2>
+    
+    <p><i>
+        Je n'écrirai pas les solutions alternatives car elles sont très semblables à celles des exercices précédent, mais vous pouvez, de vous même tenter de vous inspirer des derniers exercices pour appeler cette fonction de pleins de manières différentes, et même si vous le voulez, me les envoyer pour que je les corriges.
+    </i></p>
+
+
+    <div class="navigation">
+        <p><a href="../CChapitre2/C2E3C.html">Correction Précédente</a></p>
+        <p><a href="../CChapitre2/C2E5C.html">Correction Suivante</a></p>
+        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Ma correction :
+    function CheerWork(_age,_job = "unemployed")
+    {
+        alert("Welcome, you're " + _age + " years old, and you are " + _job);
+    }
+
+    CheerWork(28,"programer");
+    CheerWork(28);
+</script>
+</html>

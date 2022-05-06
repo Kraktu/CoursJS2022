@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Théorie 4 : Le if ... else</h2>
+
+    <p>
+        L'instruction if suivi d'un else permet de faire du code à deux embranchements. Le else est l'inverse du if en terme de condition, en français, cela veut dire sinon. On rentrera dans les accolades du else uniquement si on a répondu non à la question posée par le if. On a une structure qui ressemble à ceci :
+    </p>
+    <p><b>
+        if(condition)
+        <br>{
+        <br>&emsp;//Instruction exécutée si on répond vrai à la condition dans les parenthèses du if
+        <br>}
+        <br>else
+        <br>{
+        <br>&emsp;//Instruction exécutée si on répond faux à la condition dans les parenthèses du if
+        <br>}
+    </b></p>
+
+    <p>
+        Il est important de noter que pour le else, nous n'avons pas de parenthèses ! On passe directement aux accolades, en effet, le else n'a pas de parenthèse car il va prendre en compte tous les cas où on a répondu non à la question du if. Cela implique aussi que le else n'existe pas sans une condition préalable ! Dans certains langage on peut utiliser le else d'autres manières, mais toujours en réponse à une condition non respectée. Ici, en JavaScript, pour l'instant, dites vous simplement que vous ne pourrez <b>jamais</b> avoir de else sans if.
+    </p>
+
+    <p>
+        Pour prendre un exemple concret, si la condition du if est qu'une variable soit strictement supérieur à 18, et bien on rentrera dans le else dans tous les autres cas, c'est à dire dans le cas où la variable est inférieure ou égale à 18. C'est aussi simplement l'équivalent de réécrire la condition avec un point d'exclamation devant dans un autre if. En fait, ces trois codes sont équivalents :
+    </p>
+
+    <p><b>
+        let age = 19;
+        <br>if(age>17)
+        <br>{
+        <br>&emsp;alert("Vous êtes majeur");
+        <br>}
+        <br>else
+        <br>{
+        <br>&emsp;alert("Vous êtes mineur");
+        <br>}
+    </b></p>
+
+    <p><b>
+        let age = 19;
+        <br>if(age>17)
+        <br>{
+        <br>&emsp;alert("Vous êtes majeur");
+        <br>}
+        <br>if(!(age>17))
+        <br>{
+        <br>&emsp;alert("Vous êtes mineur");
+        <br>}  
+    </b></p>
+    
+    <p><b>
+        let age = 19;
+        <br>if(age>17)
+        <br>{
+        <br>&emsp;alert("Vous êtes majeur");
+        <br>}
+        <br>if(age<=17)
+        <br>{
+        <br>&emsp;alert("Vous êtes mineur");
+        <br>}
+    </b></p>
+    
+    <p>Et globalement, ils peuvent tous les trois s'écrire en français de la manière suivante :</p>
+
+    <p><b>
+        Si le contenu de la variable age est strictement supérieur à 17 alors je crée une boite de dialogue avec écrit dedans "vous êtes majeur", sinon je crée une boite de dialogue avec écrit dedans "vous êtes mineur".
+    </b></p>
+
+    <p>Ce qui,finalement, quand on y pense bien est exactement aussi l'équivalent de dire :</p>
+
+    <p><b>
+        Si le contenu de la variable age est strictement supérieur à 17 alors je crée une boite de dialogue avec écrit dedans "vous êtes majeur", si le contenu de la variable age est l'inverse de strictement supérieur à 17, je crée une boite de dialogue avec écrit dedans "vous êtes mineur".
+    </b></p>
+
+    <p>ou encore :</p>
+
+    <p><b>
+        Si le contenu de la variable age est strictement supérieur à 17 alors je crée une boite de dialogue avec écrit dedans "vous êtes majeur", si le contenu de la variable age est inférieur ou égal à 17, je crée une boite de dialogue avec écrit dedans "vous êtes mineur".
+    </b></p>
+    
+    <div class="navigation">
+        <p><a href="../TChapitre3/C3T3.html">Théorie Précédente</a></p>
+        <p><a href="../TChapitre3/C3T5.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>        
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

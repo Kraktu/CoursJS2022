@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Théorie 3 : Le if</h2>
+
+    <p>
+        Nous allons voir dans cette théorie concrètement ce qui nous intéressera dans le code, mais pour bien comprendre ce que l'on va dire, je vous invite quand même à bien lire et bien comprendre les théories précédentes pour avoir plus facile lors de l'application des concepts que nous verrons ici.
+    </p>
+    <p>
+        La première structure conditionnelle que nous allons voir, est celle simplement composée d'un if. If veut littéralement dire si en anglais. Nous allons en fait créer un embranchement dans notre code, une sorte de capsule d'instruction qui ne vont être exécuté que si on répond positivement à l'expression booléenne posée par le if. Comme une fonction ne va être exécutée que si on l'appelle, ici le code ne sera exécuté que si on répond vrai à la question posée dans le if. Voici comment va s'écrire le if :
+    </p>
+    <p><b>
+        if(condition)
+        <br>{
+        <br>//instruction a exécuter
+        <br>}
+    </b></p>
+    <p>
+        Où la condition est une expression booléenne et où l'instruction a exécuter est du code normal ! La condition peut être une expression extrêmement complexe comme quelque chose de très simple. Ainsi on peut avoir au sein du code ces deux exemples :
+    </p>
+    <p><b>
+        let age = 27;
+        <br>let sex = "F";
+        <br>let height = 169;
+        <br>let name = "Sarah";
+        <br>let isVaccinated = True;
+        <br>
+        <br>if(isVaccinated)
+        <br>{
+        <br>&emsp;alert ("Je suis vacciné")
+        <br>}
+        <br>if((age>18 && (name != "Jeannine" || sex=="F") && height <= 169) || !isVaccinated)
+        <br>{
+        <br>&emsp;alert ("Je soit non vacciné, soit j'ai plus de 18 ans et je mesure moins de 169 centimètre et soit je m'appelle différemment de Jeannine soit je suis une femme ")
+        <br>}
+    </b></p>
+
+    <p>Si vous avez du mal de comprendre le langage booléen, je vous invite à relire le chapitre précédent, sinon cela devrait vous paraître clair.</p>
+
+    <p>Ainsi, on a donc dans les parenthèses du if une question par laquelle on ne peut répondre que par vrai ou faux, mais cette question peut être infiniment complexe !</p>
+
+    <p>
+        Petite dernière chose, donc, si on répond vrai à la question posée dans le if, alors on rentre dans les accolades, on execute ce qu'il s'y trouve et puis on sort des accolades à la fin et on poursuit l'execution du programme. Si on répond faux par contre, le programme ne s'arrête pas forcément, on va juste skipper ce qui se trouve dans les accolades, mais si il y a encore des lignes de codes en dessous, le code se trouvant hors des accolades continue à s'exécuter tout à fait normalement ! 
+    </p>
+
+    <p>
+        Enfin, sachez que l'on peut bien évidemment créer un if dans une fonction, ou même un if dans un if, et ceci sera valable pour tout ce que nous allons voir, on peut imbriquer les structures les unes dans les autres. Ainsi si on a :
+    </p>
+    <p><b>
+        if(condition1)
+        <br>{
+        <br>&emsp;alert(1)
+        <br>&emsp;if(condition2)
+        <br>&emsp;{
+        <br>&emsp;&emsp;alert(2)
+        <br>&emsp;&emsp;if(condition3a)
+        <br>&emsp;&emsp;{
+        <br>&emsp;&emsp;&emsp;alert(3a)
+        <br>&emsp;&emsp;}
+        <br>&emsp;&emsp;if(condition3b)
+        <br>&emsp;&emsp;{
+        <br>&emsp;&emsp; &emsp;alert(3b)
+        <br>&emsp;&emsp;}
+        <br>&emsp;}
+        <br>}
+    </b></p>
+
+    <p>
+        Dans ce cas particulier, si nous répondons vrai à la condition1, mais faux à toute les autres, seul le alert(1) se déclenchera. Si on répondons vrai à la condition1 et condition2, alors on aura alert(1) et alert(2). Si nous répondons vrai uniquement à la condition3a, cette fois rien ne s'écrira. Par contre si on répond vrai à la condition1, 2 et 3b, alors on aura écrit alert(1), alert(2) et alert(3b). Déjà le premier point à savoir c'est que c'est possible, mais aussi la chose a observer, c'est que les if imbriqués se comportent comme des et. En effet, pour rentrer dans la condition 3b, il faut aussi avoir répondu vrai à la condition 1 et 2, sinon on ne va même pas avoir le loisir de se poser la question ! A contrario, les if en parallèle (comme la 3a et la 3b) se comportent eux un peu comme des ou, c'est à dire que si on répond vrai à l'un, on rendre dans celui là, par contre si on répond vrai à l'autre on rentrera dans l'autre.
+    </p>
+    
+    <div class="navigation">
+        <p><a href="../TChapitre3/C3T2.html">Théorie Précédente</a></p>
+        <p><a href="../TChapitre3/C3T4.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

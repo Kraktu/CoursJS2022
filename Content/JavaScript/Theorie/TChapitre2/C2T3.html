@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 2 - Théorie 3 : Les arguments et paramètres de fonction</h2>
+
+    <p>Avant de rentrer dans le détail, un peu de vocabulaire, les arguments et les paramètres sont souvent confondu, mais il représentent en fait chacun une face de la même pièce, c'est un peu la même chose, mais pas vraiment en fait, pour dire ça de manière familière.</p>
+
+    <p>En fait le paramètre est le nom donné à l'information demandée par la fonction pour marcher, alors que, au contraire, l'argument est la valeur que l'on attribue au paramètre au moment de l'appel de la fonction. En gros, lorsque l'on déclare la fonction, on déclare dans les parenthèses ses paramètre, alors que quand on appelle la fonction, on précise dans les parenthèses ses arguments.</p>
+
+    <p>Prenons premièrement une fonction que l'on a déjà utilisé : alert("Hello World"), à votre avis qu'est-ce que "Hello World" un argument ou un paramètre ?</p>
+
+    <p>Et bien c'est un argument, car c'est la valeur que prendra le paramètre attendu par la fonction alert. Créons maintenant une fonction nous même avec un seul paramètre, et appelons là en lui donnant un argument.</p>
+
+    <p> <b>
+        function MyFunction(_parameter1,_parameter2)
+        <br>{
+        <br>&emsp;alert("Mon premier paramètre est parameter1, et mon deuxième est parameter 2, leur valeur cette fois sont : \n-" + parameter1 + "\n-" + parameter2)
+        <br>}
+        <br><br>
+        MyFunction("argument1","argument2")
+    </b></p>
+
+    <p>On voit bien dans cet exemple que paramètre est le nom de la valeur attendue par la fonction que l'on a créé, et que l'argument est donc la valeur passée au moment de l'appel de celle-ci.</p>
+
+    <p>Maintenant que l'on sait ceci, il est intéressant de s'attarder sur la question suivante : A quoi ça sert un argument ?</p>
+
+    <p>Et bien la réponse n'est pas si compliquée lorsque l'on se met dans dans un exemple concret. Si on reparle de l'utilité d'une fonction dont on avait parlé plus tôt, on se rend bien compte que les fonctions sont là pour executer des actions similaires (en partie) avec un effort de codage moindre. En effet, si je crée une fonction de freinage pour une voiture, on a vu qu'on pouvait appeler une fois la fonction pour simplement ralentir pour se retrouver à l'arrêt, mais aussi pour freiner pour pouvoir derrière enclencher la marche arrière, dans les deux cas, on a besoin de freiner, et créer une fonction à cet effet, en imaginant que cela nous demande 400 lignes de codes pour freiner, et bien on a pas besoin de re-écrire ces 400 lignes à chaque fois que l'on voudrait freiner. Il suffira alors simplement de re-appeler notre fonction au moment voulu, et ça marchera tout aussi bien !</p>
+
+    <p>Maintenant prenons un autre exemple, un bras robotique. Celui-ci peut se déplacer uniquement de haut au bas. Imaginons pour celui-ci créer une fonction Monter() et une fonction Descendre(). C'est très bien, à chaque fois que l'on voudra monter il suffira d'appeler Monter() et quand on voudra descendre le bras, Descendre()</p>
+
+    <p>On va écrire ces fonctions, et vous allez voir le problème qui se pose très vite :</p>
+
+    <p><b>function Monter()
+        <br>{
+        <br>&emsp;//La première instruction mettra en route le bras
+        <br>&emsp;//La deuxième instruction fera monter le bras de 40 centimètres
+        <br>&emsp;//La troisième instruction mettra le bras en pause
+        <br>}
+    </p>
+    <p>function Descendre()
+        <br>{
+        <br>&emsp;//La première instruction mettra en route le bras
+        <br>&emsp;//La deuxième instruction fera descendre le bras de 40 centimètres
+        <br>&emsp;//La troisième instruction mettra le bras en pause
+        <br>}
+    </b></p>
+
+    <p>Il y a deux problèmes qui sautent aux yeux lorsque l'on lit ce code.</p>
+    <ul>
+        <li>2 instructions sur les 3 sont similaires, et la différente ne l'est pas tant que ça, car au final, une descente de 40 centimètres, n'est-elle pas au final une montée de -40 centimètres ?</li>
+        <li>Si on veut monter le bras de 30 centimètres, que fait-on ? On recrée une infinité de fonction ? Une qui dit MonterDe30Cm(), une autre MonterDe40Cm, ... ?</li>
+    </ul>
+
+    <p>La solution à ce problème va être la déclaration de paramètre à la création de la fonction et la précision d'argument à l'appel de celle-ci, ainsi, on pourrait à la place de ces deux fonctions, imaginer la fonction qui suit :</p>
+
+    <p><b>
+        function BougerLeBrasVerticalement(_hauteurDuDéplacement)
+        <br>{
+        <br>&emsp;//La première instruction mettra en route le bras
+        <br>&emsp;//La deuxième instruction fera bouger le bras de _hauteurDuDéplacement centimètres
+        <br>&emsp;//La troisième instruction mettra le bras en pause    
+        <br>}
+    </b></p>
+
+    <p>
+        On a abstrait la valeur du déplacement, on ne sait plus exactement de combien de centimètres le bras va bouger, mais on sait qu'il va bouger d'une certaines valeur, et c'est tout ce que notre fonction a besoin de savoir, cette valeur sera définie lors de son appel, on peut maintenant faire ceci :
+    </p>
+    <ul>
+        <li>BougerLeBrasVerticalement(40)</li>
+        <li>BougerLeBrasVerticalement(30)</li>
+        <li>BougerLeBrasVerticalement(-20)</li>
+    </ul>
+    <p>
+        Ce qui fera dans le premier cas monter le bras de 40cm, dans le deuxième, le monter de 30 cm, et dans le dernier, le descendre de 20cm !
+    </p>
+
+    <p>
+        La dernière chose à noter, c'est que la valeur de l'argument peut être pris dans une variable, ou même le résultat de retour d'une fonction, par exemple, et ce toujours avec la même fonction définie plus haut :
+    </p>
+
+    <p><b>
+        let monArgument = 23;
+        <br>BougerLeBrasVerticalement(monArgument)
+        <br>//Ceci montera le bras de 23cm, car monArgument contient la valeur 23.
+    </p>
+    <p>
+        function ThisFunctionReturnFive()
+        <br>{
+        <br>&emsp;return 5;    
+        <br>}
+        <br>BougerLeBrasVerticalement(ThisFunctionReturnFive());
+        <br>// C'est l'équivalent ici de bouger le bras de 5cm vers le haut, car la fonction qu'on a créé renvoie 5, et donc si on l'appelle en tant qu'argument de BougerLeBrasVerticalement() et bien c'est 5 qui est envoyé comme valeur à notre fonction !
+    </b></p>
+
+    <p>
+        Enfin, il est important de noter que le nombre de paramètre que l'on peut attendre n'est pas limité, ainsi une fonction peut accueillir plusieurs paramètres, il suffit de les séparer par une virgule comme ceci :
+    </p>
+
+    <p><b>
+        function MyFunction(_param1,_param2,_param3,_paramN)
+        <br>{
+        <br>&emsp;//Mon code   
+        <br>}
+    </b></p>
+
+    <p>
+        Dans ce cas, à l'appel de la fonction, vous devez passer le nombre d'argument demandé par la fonction, et dans le bon ordre, sinon, la valeur Undefined sera donnée pour tous les arguments manquant, ainsi dans cet exemple :
+    </p>
+
+    <p><b>
+        function MaFonctionATroisParametres(_param1,_param2,_param3)
+        <br>{
+        <br>&emsp;//Mon Code
+        <br>}
+    </b></p>
+
+    <p>si on l'appelle avec 3 arguments :</p>
+
+    <p><b>
+        MaFonctionATroisParametres(5,"Salut",True)
+    </b></p>
+
+    <ul>
+        <li>param1 vaudra l'int 5</li>
+        <li>param2 vaudra la string "Salut"</li>
+        <li>param3 vaudra le booléen True</li>
+    </ul>
+
+    <p>
+        Par contre si je l'appelle de la sorte :
+    </p>
+    <p><b>
+        MaFonctionATroisParametres(5)
+    </b></p>
+    <ul>
+        <li>param1 vaudra 5</li>
+        <li>param2 vaudra Undefined</li>
+        <li>param3 vaudra Undefined</li>
+    </ul>
+
+    <p>
+        Le problème étant que votre fonction pourra potentiellement buguer avec la valeur Undefined ! C'est un risque si c'est une information crucial pour le bon fonctionnement de celle-ci.
+    </p>
+
+    <p>
+        N'oublions pas de préciser enfin que les informations contenues dans les paramètres d'une fonction ne sont accessible qu'au sein de celle-ci, ainsi dès que l'on sort du scope de la fonction, c'est à dire ses accolades ouvrante et fermante, on ne peut plus accéder aux paramètres de celle-ci. C'est pour cela que l'on met comme moyen mnémotechnique des underscore devant le nom de ses paramètres, pour bien préciser qu'ils ne sont accessible dans les accolades qui suivent la fermeture de la parenthèse. Ce qui fait parfaitement sens, car ces paramètres vont changer de valeur à chaque appel, et ça ne ferait aucun sens de pouvoir accéder à cette valeur en dehors de la fonction ! Si nous voulons accéder à une valeur uniquement disponible à l'intérieur de la fonction, nous devront <b>retourner</b> cette valeur au scope principal à l'aide du mot return que nous verrons un peu plus tard.
+    </p>
+
+    <div class="navigation">
+        <p><a href="../TChapitre2/C2T2.html">Théorie Précédente</a></p>
+        <p><a href="../TChapitre2/C2T4.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>  
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

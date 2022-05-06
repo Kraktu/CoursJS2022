@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 1 - Théorie 3 : Les variables</h2>
+    
+    <p>Les variables sont une des briques élémentaires du code avec les fonctions, il est primordial de bien comprendre de concept avant de rentrer dans des notions d'algorithmie plus poussée.</p>
+
+    <p>La variable répond principalement au problème de stockage de l'information. On peut voir ça comment un contenant, un tiroir. Une fois que l'on met quelque chose dans le tiroir, sans même savoir ce qu'il y a dedans, on pourra, à chaque fois que l'on fait une référence à ce tiroir, en extraire et utiliser le contenu.</p>
+
+    <p>Si vous imaginez un meuble avec 3 tiroirs, on peut envisager de coller sur chacun d'eux une étiquette avec un nom. Par exemple 
+        <ul>
+            <li>vêtements</li>
+            <li>cuisine</li>
+            <li>placard</li>
+        </ul>
+    </p>
+
+    <p>Alors, dans le premier tiroir, vous allez stocker un t-shirt, dans le deuxième une cuillère, et dans le troisième un balais. Et bien sans savoir exactement ce qu'il y a dedans, lorsque vous aurez besoin d'un t-shirt, vous allez pointer vers le tiroir vêtement. En l'occurrence dans ce cas, ça sera un t-shirt car c'est ce que vous avez décidé de stocker dedans, mais si vous aviez stocké un pantalon il y aurait eu un pantalon. Aussi, rien ne vous empêche de stocker le balai dans le tiroir appelé vêtement, c'est simplement paradoxal et pas pratique.</p>
+
+    <p>Tout ceci est une image bien sur, mais on peut imaginer le meuble comme étant la mémoire de l'ordinateur et le tiroir comme étant la variable. Ainsi, vous pouvez, en Javascript, nommer comme vous voulez votre variable et y stocker ce que vous voulez. Lorsque vous ferez appel à cette variable à l'avenir, elle restituera ce que vous y avez stocké en dernier.</p>
+
+    <p>Pour déclarer une variable, rien de plus simple :</p>
+
+    <p><b>let nomDeLaVariable = "contenuDeLaVariable";</b></p>
+
+    <p>Notez bien ici que c'est une variable qui contient une chaîne de caractère, mais elle pourrait très bien renfermer un chiffre ou une valeur booléenne, exemple :</p>
+    
+    <p><b>let monChiffre = 22;</b></p>
+
+    <p><b>let monFlag = true;</b></p>
+
+    <p>Nous pouvons décomposer ces lignes de codes en plusieurs morceaux :
+
+        <ul>
+            <li><b>let</b> => let est un mot clef qui permet de déclarer une variable, il existe aussi le mot var, mais nous en parlerons plus tard. nous allons utiliser pour le moment uniquement des let. Chaque déclaration de variable commence par le mot clef let ou var.</li>
+            <li><b>nomDeLaVariable</b> => s'écrit par convention en camelCase (première lettre en minuscule, et chaque première lettre d'un nouveau mot en majuscule), c'est simplement le nom de votre variable, vous pouvez l'appeler comme vous voulez, la seule chose à savoir c'est que ce nom ne changera plus, et il est conseillé qu'il soit le plus parlant possible pour ce que vous allez y stocker. Ainsi si vous stockez un âge, appelez là age, si c'est un nom, name, si c'est une ville, town. Mais en imaginant que vous avez un programme qui connaît l'âge d'une personne et l'âge de sa soeur, et bien n'hésitez pas à appeler une des variable "userAge" et l'autre "sisterUserAge"</li>
+            <li><b>=</b> => C'est le signe de l'affectation. C'est le signe qui permet de stocker une information dans une variable. Ainsi tout ce qui se passe à gauche est le nom de la variable, tandis que ce qui se passe à droite est ce qu'on va y stocker. Attention que ce signe ne veut pas dire "égal", mais bien "j'affecte". Ainsi, si on écrit :
+                <br>let age = 12;
+                <br>age = 15;
+                <br>age vaudra alors 15, car on ne fait pas d'égalité, on prend ce qu'il y a à droite de l'égal pour le mettre dans ce qu'il y a à gauche du égal.
+            </li>
+            <li><b>"contenuDeLaVariable"</b> => C'est très simplement le contenu de la variable, ici, on reconnaît une chaîne de caractère à l'aide des guillemets, mais cette information peut être de toute sorte, un chiffre un nombre, un nombre à virgule, un booléen,...</li>
+        </ul>
+    </p>
+    
+    <p>La dernière chose à savoir, c'est l'appel de la variable, pour ce faire il suffit de re-écrire son nom. Exemple :</p>
+
+    <p><b>
+        let nom = "Jean-Michel";
+        <br>alert(nom);
+        <br>let nom = "Luc";
+        <br>alert(nom)
+    </b></p>
+
+    <p>La première ligne permet de créer une variable appelée nom, et lui affecter la valeur "Jean-Michel" qui est une chaîne de caractère. La deuxième ligne elle va afficher le contenu de la variable nom dans une boite de dialogue. Dans ce cas, cela va écrire Jean-Michel à l'écran. Ensuite la troisième ligne va écraser la valeur de nom et la remplacer par "Luc", une autre chaîne de caractère, mais après cette opération nous n'aurons plus accès à l'information précédente à savoir "Jean-Michel", ce qui explique que à l'étape 4, lorsque l'on refait alert(nom), cette fois, on va afficher Luc à l'écran et plus Jean-Michel.</p>
+
+    <p>C'est super important de noter qu'affecter une nouvelle valeur à une variable <b>écrase</b> l'information précédemment affectée.</p>
+
+    <div class="navigation">
+        <p><a href="../TChapitre1/C1T2.html">Théorie Précédente</a></p>
+        <p><a href="../../Chapitre1.html">Retour au Chapitre 1</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

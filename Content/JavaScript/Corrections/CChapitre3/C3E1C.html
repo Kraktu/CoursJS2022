@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Javascript</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Correction 1 : Vérification des heures</h2>
+
+    <p><b>
+        alert("Bonjour, vous allez pouvoir rentrer 2 chiffres dans 2 boites de dialogues, la première servira à rentrer la première partie de l'heure, c'est à dire l'heure en ignorant les minutes, la deuxième question elle demandera uniquement les minutes sans l'heure. Le programme détectera ensuite si votre heure est valide ou pas !")
+        <br>hour = parseInt(prompt("Veuillez entrer la partie heure :"));
+        <br>minute = parseInt(prompt("Veuillez entrer la partie minute :"));
+        <br>errorMessage="";
+        <br>
+        <br>if(hour > 23)
+        <br>{
+        <br>&emsp;errorMessage="La partie heure de l'heure est trop grande, veuillez entrer un nombre entre 0 et 23 !";
+        <br>}
+        <br>if(hour < 0)
+        <br>{
+        <br>&emsp;errorMessage="La partie heure de l'heure est trop petite, veuillez entrer un nombre entre 0 et 23 !";
+        <br>}
+        <br>if(minute > 59)
+        <br>{
+        <br>&emsp;errorMessage = CheckReturnToLine(errorMessage);
+        <br>&emsp;errorMessage +="La partie minute de l'heure est trop grande, veuillez entrer un nombre entre 0 et 59 !";
+        <br>}
+        <br>if(minute < 0)
+        <br>{
+        <br>&emsp;errorMessage = CheckReturnToLine(errorMessage);
+        <br>&emsp;errorMessage +="La partie minute de l'heure est trop petite, veuillez entrer un nombre entre 0 et 59 !"; 
+        <br>}
+        <br>if(errorMessage!="")
+        <br>{
+        <br>&emsp;alert(errorMessage);
+        <br>}
+        <br>alert("Vous aviez rentré l'heure : " + hour + "h" + minute + ".\nBonne journée !")
+        <br>
+        <br>function CheckReturnToLine(_message)
+        <br>{
+        <br>&emsp;if(_message!="")
+        <br>&emsp;{
+        <br>&emsp;&emsp;_message+="\n";
+        <br>&emsp;&emsp;return _message;
+        <br>&emsp;}
+        <br>}
+    </b></p>
+
+    <h2>Explications :</h2>
+
+    <p>
+        La première partie est très simple, on explique et on récupère les 2 informations dont on a besoin que l'on va stocker dans les variables. Ca c'est que on appris dans les chapitres précédents, si vous ne savez toujours pas le faire, il faut aller s'entraîner ! 
+    </p>
+    <p>
+        Pour ce qui est de la suite, j'ai choisi une solution un peu plus complexe que ce que vous auriez pu faire pour rajouter la notion d'esthétisme. Vous auriez aussi pu rajouter des fonctions supplémentaire dans l'histoire pour l'exercice même si elles n'auraient pas été très utile objectivement !
+    </p>
+    <p>
+        En parlant de fonction, regardons tout de suite la seule que j'ai faites qui s'appelle CheckReturnToLine, son rôle est très simple, regarder si la chaîne de caractère du message d'erreur est vide pour la formatter un petit peu. En effet, nous aurons potentiellement deux erreurs possible à regarder, soit les heures ne sont pas bonnes, soit les minutes ne sont pas bonnes. Si les heures ne sont pas bonne, elles sont soit trop grande soit trop petite, mais jamais les deux en même temps, même chose pour les minutes. Sauf qu'il est possible que les heures et les minutes ne soient pas bonne, dans ce cas là, si je colle les 2 textes dans le même messages, il manquera un retour à la ligne pour signifier que ce sont bien 2 messages d'erreurs différent, et pour la beauté. Une solution pourrait être de se dire "je commence mes messages d'erreurs des minutes par un retour à la ligne". Le soucis de ça, c'est que si on a un cas où les heures sont bonnes, mais pas les minutes, et bien notre message commencera par un retour à la ligne. Il nous faut donc détecter si oui ou non notre texte contient déjà un message d'erreur avant de venir coller le deuxième. Alors on aurait aussi pu se dire "pas besoin de fonction pour ça", et c'est vrai ! Mais si nous ne faisons pas de fonction, on aurait du réécrire 2 fois le contenu de la fonction, une fois dans chacun des if. C'est une des lois avec les fonctions, une sorte de "rule of thumb" facile à retenir. Si à un moment j'ai 2 fois exactement le même code qui se répète, j'en fais une fonction. 
+    </p>
+    <p>
+        Maintenant que nous avons notre fonction expliquée, on peut s'attaquer au coeur de l'exercice qui est en fait très simple. On va à chaque fois aller voir si une condition d'exclusion n'est pas remplie (h > 23,h < 0,m > 59,m < 0 ). En fonction du cas on vient concaténer dans notre variable du message d'erreur l'erreur correspondante. A la toute fin du code on vient regarder si le message est vide, si il est vide, on ne va pas l'afficher ça serait inutile ! Par contre, si il n'est pas vide, on l'affiche, et enfin, on bien souhaiter la bonne journée à l'utilisateur hors de tout if, car en effet on doit le faire quoi qu'il arrive !
+    </p>
+
+    <h2>Solution alternative :</h2>
+    
+    <p><b>
+        alert("Bonjour, vous allez pouvoir rentrer 2 chiffres dans 2 boites de dialogues, la première servira à rentrer la première partie de l'heure, c'est à dire l'heure en ignorant les minutes, la deuxième question elle demandera uniquement les minutes sans l'heure. Le programme détectera ensuite si votre heure est valide ou pas !")
+        <br>hour = parseInt(prompt("Veuillez entrer la partie heure :"));
+        <br>minute = parseInt(prompt("Veuillez entrer la partie minute :"));
+        <br>
+        <br>if(hour > 23)
+        <br>{
+        <br>&emsp;alert("La partie heure de l'heure est trop grande, veuillez entrer un nombre entre 0 et 23 !");
+        <br>}
+        <br>if(hour < 0)
+        <br>{
+        <br>&emsp;alert("La partie heure de l'heure est trop petite, veuillez entrer un nombre entre 0 et 23 !");
+        <br>}
+        <br>if(minute > 59)
+        <br>{
+        <br>&emsp;alert("La partie minute de l'heure est trop grande, veuillez entrer un nombre entre 0 et 59 !");
+        <br>}
+        <br>if(minute < 0)
+        <br>{
+        <br>&emsp;alert("La partie minute de l'heure est trop petite, veuillez entrer un nombre entre 0 et 59 !"); 
+        <br>}
+        <br>alert("Vous aviez rentré l'heure : " + hour + "h" + minute + ".\nBonne journée !")
+    </b></p>
+
+    <p><i>
+        Voici la solution alternative que je vous propose car sans doute celle que la plupart d'entre vous ont tenté. Elle est "un peu moins bien" que celle présentée au dessus en terme d'UX (expérience utilisateur), car elle va le spammer potentiellement de message d'erreur c'est moins intéressant. Là on a typiquement la différence entre un code qui vaudrait 11/10 et 10/10 à une interro ! La version principale de la correction est la preuve d'une bonne compréhension de la matière, des besoins de l'utilisateur, de l'abstraction et de voir comment faire un maximum de choses intéressantes en un minimum d'instructions et de lignes. Là ou la deuxième solution est aussi très bonne, mais plus la façon de faire d'un débutant, ce qui est votre cas, donc pas d'inquiétude si vous êtes parti la dessus !
+    </i></p>
+
+    <div class="navigation">
+        <p><a href="../CChapitre3/C3E2C.html">Correction Suivante</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Ma correction :
+    alert("Bonjour, vous allez pouvoir rentrer 2 chiffres dans 2 boites de dialogues, la première servira à rentrer la première partie de l'heure, c'est à dire l'heure en ignorant les minutes, la deuxième question elle demandera uniquement les minutes sans l'heure. Le programme détectera ensuite si votre heure est valide ou pas !")
+    hour = parseInt(prompt("Veuillez entrer la partie heure :"));
+    minute = parseInt(prompt("Veuillez entrer la partie minute :"));
+    errorMessage="";
+
+    if(hour>23)
+    {
+       errorMessage="La partie heure de l'heure est trop grande, veuillez entrer un nombre entre 0 et 23 !";
+    }
+    if(hour<0)
+    {
+        errorMessage="La partie heure de l'heure est trop petite, veuillez entrer un nombre entre 0 et 23 !";
+    }
+    if(minute>59)
+    {
+        errorMessage = CheckReturnToLine(errorMessage);
+        errorMessage +="La partie minute de l'heure est trop grande, veuillez entrer un nombre entre 0 et 59 !";
+    }
+    if(minute<0)
+    {
+        errorMessage = CheckReturnToLine(errorMessage);
+        errorMessage +="La partie minute de l'heure est trop petite, veuillez entrer un nombre entre 0 et 59 !"; 
+    }
+    if(errorMessage!="")
+    {
+        alert(errorMessage);
+    }
+    alert("Vous aviez rentré l'heure : " + hour + "h" + minute + ".\nBonne journée !")
+
+    function CheckReturnToLine(_message)
+    {
+        if(_message!="")
+        {
+            _message+="\n";
+            return _message;
+        }
+    }
+
+</script>
+</html>

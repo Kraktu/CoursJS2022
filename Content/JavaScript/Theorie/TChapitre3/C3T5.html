@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Théorie 5 : Le if ... else if ... else</h2>
+
+    <p>
+        Nous allons voir le dernier cas qui nous intéresse, la structure if, else if, else. En français on peut le traduire par "si, sinon si, sinon". Et cette structure peut nous permettre de créer de multiples embranchements dans notre code. En réalité, cette structure, comme la if, else, est en fait un raccourcis d'écriture, mais on pourrait très bien réaliser la même chose simplement avec des if en complexifiant nos conditions.
+    </p>
+
+    <p>
+        Imaginons maintenant ce cas pour bien comprendre comment cette structure marche :
+        <br> Imaginons que nous voulions communiquer à quelqu'un la catégorie de poids dans laquelle il est en fonction de son IMC. On a ces bornes suivantes :
+    </p>
+
+    <ul>
+        <li>IMC < 16.5 : Dénutrition</li>
+        <li>16.5 >= IMC > 18.5 : maigreur</li>
+        <li>18.5 >= IMC > 25 : poids normal</li>
+        <li>25 >= IMC > 30 : surpoids</li>
+        <li>30 >= IMC > 35 : obésité modérée</li>
+        <li>35 >= IMC > 40 : obésité sévère</li>
+        <li>40 >= IMC : obésité morbide</li>
+    </ul>
+
+    <p>Avec une structure composée uniquement composée de if, on pourrait avoir 7 conditions avec des et, comme ceci :</p>
+
+    <ul>
+        <li>condition 1 : IMC < 16.5</li>
+        <li>condition 2 : IMC > 16.5 && IMC < 18.5</li>
+        <li>condition 3 :IMC >= 18.5 && IMC < 25</li>
+        <li>condition 4 :IMC >= 25 && IMC < 30</li>
+        <li>condition 5 :IMC >= 30 && IMC < 35</li>
+        <li>condition 6 :IMC >= 35 && IMC < 40</li>
+        <li>condition 7 :IMC >= 40</li>
+    </ul>
+
+    <p>Avec notre alert correspondant à la catégorie de poids dans chacun des if correspondant. Mais avec les else if, on peut gagner du temps d'écriture !</p>
+
+    <p><b>
+        let IMC = 28;
+        <br>if(IMC < 16.5)
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade de dénutrition");
+        <br>}
+        <br>else if(IMC < 18.5)
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade de maigreur");
+        <br>}
+        <br>else if(IMC < 25)
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade de normal");
+        <br>}
+        <br>else if(IMC < 30)
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade de surpoids")
+        <br>}
+        <br>else if(IMC < 35)
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade d'obésité modérée");
+        <br>}
+        <br>else if(IMC < 40)
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade d'obésité sévère");
+        <br>}
+        <br>else
+        <br>{
+        <br>&emsp;alert ("Vous êtes en stade d'obésité morbide");
+        <br>}
+    </b></p>
+
+    <p>En réalité, nous ne rentrerons dans un else if que si, et uniquement si, nous ne sommes pas rentré dans la condition strictement précédente et que nous répondons vrai à la question posée dans les parenthèses de ce else if. Ainsi, si on peut rentrer dans la condition IMC < 35, c'est à dire l'obésité modéré, il faudra d'abord avoir répondu faux aux questions posées par tous les autre if et else if, donc il faudra répondre faux à IMC < 16.5, IMC < 18.5, IMC < 25 et IMC < 30, ce qui veut donc dire que IMC devra être soit égal 30, soit plus grand que 30 et quoi qu'il arrive inférieur à 35. Et si on a un chiffre supérieur à 35, alors on teste la condition suivante, ainsi de suite jusqu'à arriver au moment on a plus que le choix d'être supérieur à 40. Dans ce cas, pour simplifier la tâche, on met un else, qui veut donc dire ici "Si nous ne somme pas rentré dans <b>tous</b> les cas précédents, alors nous écrivons obésité morbide"</p>
+
+    <p>Attention que le else de fin n'est pas obligatoire, on pourrait simplement avoir un if et des else if qui ne sont pas conclu par un else. Mais bien souvent on se sert du else pour dire "dans tous les autres cas, tu fais cette action par défaut", mais si cette action par défaut, c'est de ne rien faire, alors pas besoin de else !</p>
+
+    <p>Par contre, comme les else, les else if n'ont de sens et n'existent que précédé d'un if.</p>
+    
+    <div class="navigation">
+        <p><a href="../TChapitre3/C3T4.html">Théorie Précédente</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>        
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

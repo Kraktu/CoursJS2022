@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Javascript</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 1 - Correction 3 : Ma première variable</h2>
+
+    <p><b>
+        let name = "Philip";
+        <br>alert("Hello " + name);
+    </b></p>
+
+    <h2>Explications :</h2>
+
+    <p>
+        Nous déclarons la variable name à l'aide du petit mot let. Ensuite nous écrivons le nom de notre variable, on aurait pu mettre n'importe quoi, mais comme cette variable va stocker un nom, le plus simple est de lui donner le nom le plus proche possible de ce qu'elle contient en anglais, voilà pourquoi on l'appelle name. Pour accrocher ou coller (on appelle ça concaténer) nos chaînes de caractères, on met un + entre les deux parties.
+    </p>
+
+    <h2>Solution alternative :</h2>
+
+    <p><b>
+        let name = " Philip";
+        <br>alert("Hello" + name);
+    </b></p>
+    
+    <p><i>
+        La différence est subtile, la voyez vous ? Et bien lors de la première solution, nous avions séparé d'un espace le mot Hello et ne contenu de name, et nous l'avions fait au sein de la constante "Hello ". Ce qui nous permet de remplir notre variable avec simplement "Philip". Sans cet espace, les deux mots auraient été collés. Dans cette solution, nous n'avons pas mis d'espace après "Hello", cela veut donc dire que si nous ne voulons pas coller le mot Hello et le mot Philip, nous devons mettre un espace <b>avant</b> ce qui sera contenu dans la variable, mais bien sur au sein de string, et donc dans les guillemets. C'est pourquoi nous avons écrit " Philip".  
+    </i></p>
+
+
+    <div class="navigation">
+        <p><a href="../CChapitre1/C1E2C.html">Correction Précédente</a></p>
+        <p><a href="../../Chapitre1.html">Retour au Chapitre 1</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+<script>
+    // Ma correction :
+    let name = "Philip";
+    alert("Hello " + name);
+
+</script>
+</html>

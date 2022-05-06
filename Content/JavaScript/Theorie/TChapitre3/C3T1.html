@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <h1>Cours de Javascript 2022</h1>
+
+    <h2>Chapitre 3 - Théorie 1 : Les types de donnée</h2>
+
+    <p>
+        Avant de s'attaquer réellement à la théorie en rapport avec ce chapitre, nous devons d'abord revenir sur un aspect essentiel des variables. Ce qui va nous intéresser réellement, c'est ce qu'on va pouvoir y stocker. En effet, contrairement à certains langages dit typé, la programmation en Javascript ne demande pas de donner le type de donnée qui va être stocké dans la variable nouvellement déclarée. Nous ne débâterons pas de la pertinence, les avantages et désavantages de chacune des méthode, mais le fait est là. Pourtant, ce n'est pas parce que nous devons pas le faire, qu'il n'existe pas pour autant plusieurs types de donnée. En effet, nous en avons déjà vu deux si vous avez été attentif, la chaîne de caractère et les entiers :
+    </p>
+    <ul>
+        <li>let string = "I'm a string type variable";</li>
+        <li>let int = 42;</li>
+    </ul>
+    <p>
+        Les strings sont facilement reconnaissable car les guillemets entourent la valeur. les int elles aussi sont facilement reconnaissable, ce sont des nombres entiers (donc sans virgule). Attention, les int ne sont <b>jamais</b> entourés de guillemets, si il y a des guillemets, c'est une string ! Si vous voyez "24" c'est différent de simplement 24. Nous allons voir les différents type de données qui vont nous intéresser et les expliquer un peu. A tout moment, dans un code, vous pouvez utiliser l'opérateur <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/typeof">typeof</a> pour récupérer le type de valeur stocké dans une variable !
+    </p>
+
+    <h3>Le Type Booléen</h3>
+
+    <p>
+        Le type booléen est le type qui va nous intéresser durant tout ce chapitre. Il a plusieurs utilités que nous verrons au cours des exercices, mais le plus important est qu'il n'a que deux valeurs possibles : true ou false. un booléen est toujours l'un ou l'autre, et l'un est la négation de l'autre. C'est comme une pièce, elle n'a que deux faces, si elle est sur pile, elle n'est pas sur face, l'opposé de pile est face. En français on dit vrai et faux pour true et false, mais les termes anglais sont surtout utilisé. On peut utiliser ce type de donnée à notre niveau pour représenter une information qui ne peut être que vrai ou fausse. Par exemple :
+    </p>
+
+    <p><b>let isAnAdult = true;</b></p>
+
+    <p>
+        Cette variable pourrait donc stocker l'information si la personne est une adulte ou pas. C'est à dire a plus de 18ans. Si c'est un adulte, alors on aurait notre valeur à true, si c'est un enfant, on aurait notre valeur à false.
+    </p>
+    <p>
+        Les booléens sont rarement utilisé pour une utilisation d'affichage. En effet on se voit mal écrire "Bonjour Monsieur, le fait que vous êtes adulte est true". Mais par contre, ce type de donnée à un grand rôle à jouer dans la réalisation d'algorithme comme on le verra dans ce chapitre, grâce à l'instruction if on pourra poser des questions à notre utilisateurs (par exemple son âge) et du coup en déduire si c'est un adulte ou pas en affectant la valeur dans un booléen à vrai si il a plus de 18 ans ou à faux si il a moins que 18 ans. Ensuite on pourrait imaginer, toujours à l'aide de structures conditionnelles, l'accès ou non à une page en particulier si l'utilisateur est adulte ou pas, avec des codes qui vont dire ce genre de choses : 
+    </p>
+    <p><i>Si mon utilisateur est adulte alors tu lui affiches la page X, sinon tu lui affiches la page Y</i></p>
+
+    <h3>Le type Nombre</h3>
+
+    <p>
+        Ce type est pour les nombres aussi bien entier qu'à virgule. Vous pouvez avoir plus d'infos sur le type nombre, de quel à quel nombre il va, etc. <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures#le_type_nombre">ici</a>, mais c'est moyennement intéressant dans notre cas. Nous ne manipulerons, ou du moins pas tout de suite, des très grands nombres ou des nombres très précis. Sachez simplement que le type nombre est sans doutes celui qu'on va le plus utiliser, mais il est lui même divisible en deux type de donnée officieuses :
+    </p>
+
+    <ul>
+        <li>Les integer, ou entier. Qui sont des nombres dans virgules</li>
+        <li>Les float ou nombre à virgule flottante, qui sont eux les nombres à virgule.</li>
+    </ul>
+
+    <p>
+        Pour faire simple, 1 est un int, 2 est un int, tout ce qu'il y a entre les deux sont des float !
+    </p>
+    
+    <p>
+        Le type number est le type qui nous permettra le plus souvent de faire des opérations mathématique ou stocker des chiffres que nous devrons manipuler dans des conditions ou dans des opérations. On stockera les chiffres dans des strings le moins souvent possible, uniquement si on ne veut pas traiter ces nombres, et simplement les afficher, mais même dans ces cas là, nous préférerons bien souvent les stocker dans leur forme de nombre plutôt que de chaîne de caractères.
+    </p>
+
+    <h3>Le type chaîne de caractères</h3>
+
+    <p>Les strings ou chaîne de caractères sont le type de donnée par excellence pour stocker des phrases, du texte. Tout ce qui va être stocké sous forme de chaîne de caractères ne sera pas interprété comme du code à par les quelques spécificités avec <a href="https://learntutorials.net/fr/javascript/topic/5444/sequences-d-echappement">le caractère d'échappement "\"</a> mais nous verrons ça concrètement dans les exercices. Sachez aussi qu'un chapitre entier d'exercice est dédié aux strings et à la manipulation de celles-ci, nous rentrerons plus profondément dans les détails à ce moment là. En tout cas, il y a deux choses qui sont à retenir, c'est qu'une chaîne de caractères est toujours entourée de guillemets ou tréma, et que un caractère est une donnée de type char. Donc une string est un ensemble de char.</p>
+
+    <p>
+        Sachez aussi que l'on peut concaténer (c'est à dire coller, ou additionner) les strings à l'aide du signe + cela permet par exemple de fusionner une chaîne de caractère d'une constante avec une information de type string contenu dans une variable comme ci-dessous :
+    </p>
+
+    <p><b>
+        let text = "Lorem Ipsum"
+        alert("je vais écrire un :" + text)
+    </b></p>
+
+    <p>
+        Va nous permettre d'afficher le texte entier, c'est à dire :
+        <br>Je vais écrire un Lorem Ipsum
+    </p>
+
+    <h3>Les autres types de données</h3>
+
+    <p> 
+        Il y a encore 4 types de données de base que nous n'avons pas vu ainsi que le type objet. Ces différents types de données sont bien moins important pour le moment et les expliquer risquerait simplement d'entrer par une de vos oreilles et sortir par l'autre tout aussi vite, je préfère que nous les voyons plus tard dans l'année au travers d'exercices. Le type objet sera vu en long en large et en travers en deuxième partie d'année, ne vous inquiétez pas ! Les autres types sont :
+    </p>
+    <ul>
+        <li>Le type nul</li>
+        <li>Le type indéfini</li>
+        <li>Le type des grands entiers (bigint)</li>
+        <li>Le type symbole</li>
+    </ul>
+
+    <p>
+        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Data_structures">Vous pourrez trouver une info sur chacun de ces site ici</a> si ça vous intéresse.
+    </p>
+    
+    <div class="navigation">
+        <p><a href="../TChapitre3/C3T2.html">Théorie Suivante</a></p>
+        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
+        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+
+        
+    </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>
