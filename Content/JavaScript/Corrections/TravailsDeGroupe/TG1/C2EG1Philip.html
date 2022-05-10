@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travail de Groupe 1 Javascript</title>
+    <link rel="stylesheet" href="../../../../../style/chapitres.css">
+</head>
+<body>
+
+
+
+    <div class="navigation">
+        <p><a href="../../../TravailDeGroupe.html">Retour à la sélection des travaux de groupe</a></p>
+        <p><a href="../../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+    </div>
+
+    <footer>
+        Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+    </footer>
+</body>
+<script>
+
+    let questions = ["Quelle est la couleur du cheval blanc d'Henry 4 ?",
+    "Quel est le satellite naturel de la terre ?",
+    "Quelle est la capitale de la Mongolie ?",
+    "Quels sont les meilleurs animaux ?",
+    "Quels seront les meilleurs élèves de Blindcode 2022 ?",
+    "Quelle est la meilleure ASBL Belge qui travaille avec et pour les personnes déficientes visuelles ?",
+    "Qui est le(a) meilleur(e) prof de Blindcode ?",
+    "Quel est le meilleur rappeur de 2021 ?",
+    "Quel est le meilleur auteur de livre au monde ?",
+    "Si Karim + Alpha / Amir donnent Harielle, combien vaut Murielle + Sophio * Abdou exposant Arnaud"];
+    
+    let propositions = [["bleu","brun","noir"],
+    ["Le Soleil","Saturne","L'ISS"],
+    ["Hong-Kong","Darhan","Karakorum"],
+    ["Les Chiens","Les Oiseaux","Les Singes"],
+    ["Ceux qui choisissent l'option Dev","Ceux qui choisissent l'option Accessibilité","Ceux qui abandonnent"],
+    ["La ligue Braille","Les Amis des Aveugles","La lumière"],
+    ["Johnny","Serge","Philip"],
+    ["Django","Kaaris","Alpha One"],
+    ["J.K. Rowling","R.R. Tolkien","Emile Zola"],
+    ["Johnny","Sandrine","Serge"]]
+    
+    let answers = ["blanc",
+    "La Lune",
+    "Oulan-Bator",
+    "Les Poissons",
+    "Ceux qui vont jusqu'au bout de la formation",
+    "Eqla",
+    "Greetje",
+    "Freeze Corleone",
+    "Goethe",
+    "Philip"];
+    
+    let numberOfQuestions = parseInt(prompt("A combien de questions voulez vous répondre (maximum 10)"));
+    let score = 0
+    for(let i = 0;i<numberOfQuestions;i++)
+    {
+        let userChoice = parseInt(prompt(questions[i] + "\nTapez sur \n1- Duo\n2-Carré\n3-Cash"));
+        if(userChoice==1)
+        {
+            score += DuoQuestion(questions[i],propositions[i][0],answers[i],2);
+        }
+        else if(userChoice ==2)
+        {
+            score += SquareQuestion(questions[i],propositions[i][0],answers[i],propositions[i][1],propositions[i][2],2);
+        }
+        else
+        {
+           score += CashQuestion(questions[i],answers[i]);
+        }
+    
+    }
+    
+    alert("Bravo, vous avez un score de : " + score + " le score maximal possible était " + 5*numberOfQuestions);
+    
+    
+    
+    
+    
+    function DuoQuestion(_question,_firstProposition,_secondProposition,_answer)
+    {
+        _userAnswer = parseInt(prompt(_question +"\n1 - " + _firstProposition + "\n2 - " + _secondProposition));
+        
+        if(_userAnswer!=1&&_userAnswer!=2)
+        {
+            alert("Attention, vous ne pouvez pas répondre autre chose que 1 ou 2 dans une question duo, recommencez !");
+            DuoQuestion(_question,_firstProposition,_secondProposition,_answer);
+        }
+        if(_userAnswer == _answer)
+        {
+            alert("Bravo, vous avez la bonne réponse, vous gagnez 1 points car vous avez répondu à un duo");
+            return 1;
+        }
+        else 
+        {
+            if(_answer==1)
+            {
+                alert("Mauvaise réponse, la bonne réponse était : " + _firstProposition);
+            }
+            else
+            {
+                alert("Mauvaise réponse, la bonne réponse était " + _secondProposition);
+            }
+            return 0;
+        }
+    }
+    
+    function SquareQuestion(_question, _firstProposition,_secondProposition,_thirdProposition,_fourthProposition,_answer)
+    {
+        _userAnswer = parseInt(prompt(_question +"\n1 - " + _firstProposition + "\n2 - " + _secondProposition + "\n3 - " + _thirdProposition + "\n4 - " + _fourthProposition));
+        
+        if(_userAnswer<1&&_userAnswer>4)
+        {
+            alert("Attention, vous ne pouvez pas répondre autre chose que 1,2,3 ou 4 dans une question carré, recommencez !");
+            SquareQuestion(_question,_firstProposition,_secondProposition,_thirdProposition,_fourthProposition,_answer);
+        }
+        if(_userAnswer == _answer)
+        {
+            alert("Bravo, vous avez la bonne réponse, vous gagnez 2 points car vous avez répondu à un Carré");
+            return 2;
+        }
+        else 
+        {
+            if(_answer==1)
+            {
+                alert("Mauvaise réponse, la bonne réponse était : " + _firstProposition);
+            }
+            else if(_answer == 2)
+            {
+                alert("Mauvaise réponse, la bonne réponse était " + _secondProposition);
+            }
+            else if(_answer == 3)
+            {
+                alert("Mauvaise réponse, la bonne réponse était " + _thirdProposition);
+            }
+            else
+            {
+                alert("Mauvaise réponse, la bonne réponse était " + _fourthProposition);
+                alert(_answer)
+            }
+            return 0;
+        }
+    }
+    
+    function CashQuestion(_question, _answer)
+    {
+        _userAnswer = prompt(_question)
+        if(_userAnswer.toLowerCase() == _answer.toLowerCase())
+        {
+            alert("Bravo, vous avez la bonne réponse, vous gagnez 5 points car vous avez répondu cash !");
+            return 5;
+        }
+        else
+        {
+            alert("Mauvaise réponse, la bonne réponse était : " + _answer)
+            return 0;
+        }
+    }
+    </script>
+</html>
