@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Visual Studio Code</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Cours de Visual Studio Code</h1>
+        
+        <h2>Chapitre 1 - Exercice 2 : Créer mon premier site internet</h2>
+        <p>
+            Pour créer votre dossier, il existe plusieurs manière, on peut le faire dans VSCode, en invite de commande aussi, mais le plus classique, c'est bien sur de vous rendre sur votre bureau(windows + D), ensuite vous pouvez créer un nouveau dossier (ctrl + shift + N). Là vous pouvez le renommer, à ce moment là, vous pouvez enter dans ce dossier (enter) et répéter l'opération pour recréer le nombre de dossier qu'il vous faut. Ici, exactement vous pouvez donc faire windows + D, ensuite ctrl + shift + N, renommer votre dossier "Blindcode 2022", enter pour rentrer dans le dossier, et puis refaire ctrl + shift + N, appeler ce dossier IntroVSCode, et on est bon pour la première étape.
+        </p>
+        <p>
+            Pour ouvrir ce dossier dans VSCode, nous allons donc lancer VSCode (si ce n'est pas encore fait, vous pouvez soit le lancer depuis votre bureau grâce à windows + D, et puis vous pouvez chercher à l'aide des flèches VSCode. Sinon vous pouvez aussi appuyer sur la touche Windows et tapper "Visual" dans la barre de recherche, logiquement il ne reste plus qu'à sélectionner VSCode qui vous est proposé en premier). Dans VSCode, on peut utiliser le raccourcis ctrl+k+o pour ouvrir un dossier, vous vous retrouvez dans l'arborescence de votre ordinateur, il nous faut trouver notre dossier que l'on vient de créer ! Pour ça on peut faire deux fois shift + tab, et puis voyager à l'aide des flèches pour monter et descendre dans nos dossier, backspace pour revenir à la branche mère et enter pour rentrer dans un dossier. Logiquement avec tout ça vous pouvez assez facilement revenir à votre bureau dans l'arborescence et puis trouver votre dossier blindcode, ensuite on rentre dans IntroVSCode, une fois que ceci est fait, vous pouvez faire des tabulations jusqu'à arriver sur le bouton "Sélectionner un dossier". Cliquez dessus !
+        </p>
+        <p>
+            On peut maintenant créer nos deux fichier, pour ça, lorsque notre dossier est ouvert dans VSCode, on peut utiliser le raccourcis ctrl + shift + e pour passer de l'arborescence à notre code, c'est un raccourcis très important à se souvenir ! Vous pouvez donc dès maintenant faire une seule fois ctrl + shift + e, puis tout de suite faire shift + tabulation. Vous pouvez maintenant à l'aide des flèches acceder aux boutons qui permettent de créer des fichiers ou des dossier. On peut maintenant créer un fichier appelé index.html, un autre article.html et un dossier Resources.
+        </p>
+        <p>
+            Allez Maintenant sur internet, et allez sur votre moteur de recherche préféré pour aller chercher une photo. Vous pouvez aussi récupérer une image déjà présente sur votre ordinateur ou sur vos réseaux sociaux. Le but sera de sauvegarder cette image dans le dossier Resources. Si c'est une image sur internet, faites enregistrer sous, trouvez votre dossier sur votre bureau et plongez dans l'arborescence jusqu'à Resources. Vous constatez déjà que ce qu'on a fait sur VSCode a bien eu de l'impact sur notre ordinateur !
+        </p>
+        <p>
+            Maintenant que toutes nos ressources extérieurs sont prête on va pouvoir enfin commencer à façonner notre site web ! Notre premier site Web même sans doutes pour la plupart d'entre vous ! Rendez vous dans index.html sur Visual Studio Code. Pour ça, une fois dans VSCode, faites ctrl + shift + e, à l'aide des flèches vous pouvez sélectionner le fichier que vous voulez, dans notre cas, index.html. Appuyez sur enter, et là on est dans le code, on va pouvoir écrire le preset html, pour ce faire, tapez simplement html:5 et puis enter. Vous pouvez parcourir toutes les lignes créée automatiquement, vous allez apercevoir par exemple la langue, que vous pouvez changer de "en" à "fr-BE" pour que la synthèse vocale lise le texte en français et non pas en anglais. Vous pouvez aussi changer le titre du document dans les balises title de "Document" à "Mon Premier Site". 
+        </p>
+        <p>
+            On va enfin pouvoir créer notre lien vers notre article, c'est à dire que index pointera vers article, et donc index représente une page de notre site internet, et article une autre page internet. Notre but ici est donc de créer une ligne de code pour que lorsque l'on clique sur un petit mot, on change de page et on se retrouve sur la page d'article. Un peu comme si sur google vous cliquiez sur un lien qui pointe vers Facebook. Pour ce faire, on va se mettre entre les 2 balises body et appuyer simplement sur la lettre a, ensuite enter. Vous voyez que ça crée une balise a pour vous. Dans l'attribut href, dans les guillemets, vous pouvez écrire le lien vers lequel va pointer ce lien, dans notre cas on peut taper ./article.html ensuite, entre les balises ouvrante et fermante de a, on peut écrire la phrase qui sera écrite à l'écran. Dans notre cas, on peut écrire "Lien vers l'article". 
+        </p>
+        <p>
+            Il est l'heure de sauvegarder notre avancement et de tester si ça marche. Pour sauvegarder on peut faire ctrl + s pour sauvegarder uniquement le fichier dans lequel on est en train de travailler ou ctrl + k, puis relâcher ces deux touches et faire la touche s. Ceci nous permet de sauvegarder tous les fichiers de notre espace de travail, dans notre cas tout ce qui se trouve dans le dossier IntroVSCode. Retournons donc sur notre bureau, voyageons jusqu'à notre fichier index.html et lancez-le avec votre navigateur préféré, pour ma part ça sera Google Chrome. Vous pouvez normalement y voir maintenant votre titre ainsi qu'un lien qui pointe vers notre article. Vous pouvez cliquer dessus, logiquement cela vous montrera une page blanche, en effet, article.html est totalement vide ! Il est temps d'aller le garnir.
+        </p>
+        <p>
+            Retournons donc dans VSCode, et voyageons cette fois dans notre article.html à l'aide du raccourcis ctrl + shift + e, et puis comme précédemment on entre les preset html 5, on change la langue et le titre, sauf que cette fois, dans le body, on va non seulement créer un lien avec la balise a qui pointera vers index.html (en écrivant dans les guillemets du href "./index.html"), mais cette fois, on ne va pas mettre un texte entre les balises a, mais bien une image, pour ça on va tapper img. Dans les guillemets du src on va tapper le lien vers notre image, logiquement il doit ressembler à ceci "./Resources/NomDeLImage.jpeg". Dans les balises alt, on va écrire ce qu'il y a sur l'image. SI vous avez pris une image de montagne, on peut donc écrire "Image de montagne". 
+        </p>
+        <p>
+            Testez votre site comme précédemment. Si tout fonctionne bien, logiquement vous devriez pouvoir cliquer sur l'image pour aller à l'index, et cliquer sur le texte "aller vers l'article" pour aller à l'article. Cela devrait faire une boucle, vous pouvez passer de l'un à l'autre. 
+        </p>
+        <p>
+            Nous allons terminer par mettre un commentaire. Un commentaire est un morceau de texte invisible pour les visiteurs du site, mais pas pour les développeurs, cela nous permet de nous laisser des indications pour expliquer ce que certaines lignes de code font. Allez donc à la ligne en dessous de celle où on a mis le lien avec l'image et faite le raccourcis ctrl + : cela mettra la ligne en vert visuellement, à l'écrite cela écrira les signes plus plus petit que, point d'exclamation, tiret tirer, espace, tiret, tiret, plus grand que. Tout ce que vous écrirez entre les balises ouvrantes et fermantes, c'est-à-dire les deux tirets de gauche et les deux tirets de droite, sera donc un commentaire. vous pouvez y écrire quelque chose du style "La ligne du dessus permet de créer une image avec un lien dessus". N'oubliez pas de sauvegarder avant de regarder sur votre site. La phrase apparaît-elle ? 
+        </p>
+        
+    </div>
+    <div class="navigation">
+        <p><a href="./VSCC1C1.html">Correction Précédente</a></p>
+        <p><a href="../../VSCChapitre1.html">Retour au Chapitre 1</a></p>
+        <p><a href="../../../AccueilVSCode.html">Retour à la sélection du Chapitre</a></p>
+    </div>
+
+    <footer>
+        Cours de Visual Studio Code - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+    </footer>
+
+</body>
+</html>

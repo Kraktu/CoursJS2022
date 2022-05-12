@@ -1,21 +1,58 @@
+* {
+    margin:0;
+    padding:0;
+}
+/* -------------------------------------- */
+body, html {
+    height:100%;
+} 
 body {
-    padding-left: 20%;
-    padding-right: 20%;
     background-color: rgb(0, 0, 75);
     color: gold;
     font-size: larger;
 }
+footer{    
+    position:relative;
+    bottom:0;
+    width:100%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+    background-color: rgb(35, 49, 88);
+}
+/* -------------------------------------- */
+.content {
+    max-width:1280px;
+    min-height:80%;
+    margin:0 auto;
+    position:relative; 
+}  
+.navigation {
+    background-color: rgba(0, 0, 0, 0.267);
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;  
+    position: relative;
+    min-height: 1em;
+  }
+/* -------------------------------------- */ 
 h1 {
     text-align: center;
     text-decoration: underline;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 h2 {
     text-decoration:underline;
+    padding-bottom: 1em;
 }
 
 p {
     color: rgb(255, 255, 255);
+    padding-top: 1em;
+
 }
 
 li {
@@ -29,7 +66,17 @@ a:hover{
     color: white;
     text-decoration: underline;
 }
-footer {
-    padding-top: 20%;
-    padding-left: 15%;
+/* -------------------------------------- */
+.navigation a{
+    float: left;
+    display: block;
+    color: #fffbc1;
+    text-align: center;
+    padding: 1em ;
+    
+    text-decoration: none;
 }
+.navigation a:hover {
+    background-color: gold;
+    color: rgb(35, 49, 88);
+  }

@@ -8,80 +8,80 @@
     <link rel="stylesheet" href="../../../../style/exercices.css">
 </head>
 <body>
-    <h1>Cours de Javascript 2022</h1>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
 
-    <h2>Chapitre 3 - Correction 3 : Sélection de sexe</h2>
+        <h2>Chapitre 3 - Correction 3 : Sélection de sexe</h2>
 
-    <p><b>
-        <br>function SexSelection()
-        <br>{
-        <br>&emsp;_userNumber = parseInt(prompt("Dites nous de quel sexe êtes-vous :\n1)homme\n2)femme\n3)autre"));
-        <br>&emsp;if(_userNumber==1)
-        <br>&emsp;{
-        <br>&emsp;&emsp;alert("Bonjour Monsieur");
-        <br>&emsp;}
-        <br>&emsp;else if (_userNumber==2)
-        <br>&emsp;{
-        <br>&emsp;&emsp;alert("Bonjour Madame");
-        <br>&emsp;}
-        <br>&emsp;else if (_userNumber==3)
-        <br>&emsp;{
-        <br>&emsp;&emsp;alert("Bonjour à vous");
-        <br>&emsp;}
-        <br>&emsp;else
-        <br>&emsp;{
-        <br>&emsp;&emsp;alert("Entrée incorrecte, veuillez recommencer");
-        <br>&emsp;&emsp;SexSelection();
-        <br>&emsp;}
-        <br>}
-        SexSelection();
-    </b></p>
+        <p><b>
+            <br>function SexSelection()
+            <br>{
+            <br>&emsp;_userNumber = parseInt(prompt("Dites nous de quel sexe êtes-vous :\n1)homme\n2)femme\n3)autre"));
+            <br>&emsp;if(_userNumber==1)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Bonjour Monsieur");
+            <br>&emsp;}
+            <br>&emsp;else if (_userNumber==2)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Bonjour Madame");
+            <br>&emsp;}
+            <br>&emsp;else if (_userNumber==3)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Bonjour à vous");
+            <br>&emsp;}
+            <br>&emsp;else
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Entrée incorrecte, veuillez recommencer");
+            <br>&emsp;&emsp;SexSelection();
+            <br>&emsp;}
+            <br>}
+            SexSelection();
+        </b></p>
 
-    <h2>Explications :</h2>
+        <h2>Explications :</h2>
 
-    <p>
-        Cette solution est certes très bien, mais pas très instinctive pour vous, en effet j'utilise ici une notion que nous verrons seulement dans les prochains chapitre, le concept de boucle. Ici donc je crée une fonction qui va enfermer toute mon opération, car le soucis, c'est que notre utilisateur peut se tromper, il peut tapper 4, 5, -1, ou même une chaîne de caractères. Dans ce cas nous voulons bien sur lui afficher un message d'erreur ! Mais idéalement, après le message d'erreur, il ne devrait pas pouvoir accéder à notre site, on devrait lui reposer la question tout simplement ! C'est pourquoi nous déclarons l'entièreté du code dans une fonction, et si la personne se trompe, nous ré-appelons cette fonction. Cela fait donc une boucle tant que nous ne donnons pas de bonne réponse ! Pour le reste, c'est assez simple, c'est une bête application de la théorie du if, else if, else, vous pouvez voir la théorie si vous avez encore du mal avec ça !
-    </p>
+        <p>
+            Cette solution est certes très bien, mais pas très instinctive pour vous, en effet j'utilise ici une notion que nous verrons seulement dans les prochains chapitre, le concept de boucle. Ici donc je crée une fonction qui va enfermer toute mon opération, car le soucis, c'est que notre utilisateur peut se tromper, il peut tapper 4, 5, -1, ou même une chaîne de caractères. Dans ce cas nous voulons bien sur lui afficher un message d'erreur ! Mais idéalement, après le message d'erreur, il ne devrait pas pouvoir accéder à notre site, on devrait lui reposer la question tout simplement ! C'est pourquoi nous déclarons l'entièreté du code dans une fonction, et si la personne se trompe, nous ré-appelons cette fonction. Cela fait donc une boucle tant que nous ne donnons pas de bonne réponse ! Pour le reste, c'est assez simple, c'est une bête application de la théorie du if, else if, else, vous pouvez voir la théorie si vous avez encore du mal avec ça !
+        </p>
 
-    <h2>Solution alternative :</h2>
-    
-    <p><b>
-        <br>_userNumber = parseInt(prompt("Dites nous de quel sexe êtes-vous :\n1)homme\n2)femme\n3)autre"));
-        <br>if(_userNumber==1)
-        <br>{
-        <br>&emsp;alert("Bonjour Monsieur");
-        <br>}
-        <br>else if (_userNumber==2)
-        <br>{
-        <br>&emsp;alert("Bonjour Madame");
-        <br>}
-        <br>else if (_userNumber==3)
-        <br>{
-        <br>&emsp;alert("Bonjour à vous");
-        <br>}
-        <br>else
-        <br>{
-        <br>&emsp;alert("Entrée incorrecte, veuillez recommencer");
-        <br>}
-    </b></p>
+        <h2>Solution alternative :</h2>
 
-    <p><i>
-        Voilà la solution plus classique qui ne s'embête pas de boucler si jamais la personne se trompe, c'est la solution de base qui vient à l'esprit et qui est très correcte, juste un peu moins bonne d'un point de vue utilisateur, car si la personne veut faire fonctionner le programme après s'être trompé, il doit actualiser sa page !
-    </i></p>
+        <p><b>
+            <br>_userNumber = parseInt(prompt("Dites nous de quel sexe êtes-vous :\n1)homme\n2)femme\n3)autre"));
+            <br>if(_userNumber==1)
+            <br>{
+            <br>&emsp;alert("Bonjour Monsieur");
+            <br>}
+            <br>else if (_userNumber==2)
+            <br>{
+            <br>&emsp;alert("Bonjour Madame");
+            <br>}
+            <br>else if (_userNumber==3)
+            <br>{
+            <br>&emsp;alert("Bonjour à vous");
+            <br>}
+            <br>else
+            <br>{
+            <br>&emsp;alert("Entrée incorrecte, veuillez recommencer");
+            <br>}
+        </b></p>
+
+        <p><i>
+            Voilà la solution plus classique qui ne s'embête pas de boucler si jamais la personne se trompe, c'est la solution de base qui vient à l'esprit et qui est très correcte, juste un peu moins bonne d'un point de vue utilisateur, car si la personne veut faire fonctionner le programme après s'être trompé, il doit actualiser sa page !
+        </i></p>
 
 
-    <div class="navigation">
-        <p><a href="../CChapitre3/C3E2C.html">Correction Précédente</a></p>
-        <!-- <p><a href="../CChapitre3/C3E4C.html">Correction Suivante</a></p> -->
-        <p><a href="../../Chapitre3.html">Retour au Chapitre 3</a></p>
-        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
-
-        
     </div>
+        <div class="navigation">
+            <a href="../CChapitre3/C3E2C.html">Correction Précédente</a>
+            <!-- <p><a href="../CChapitre3/C3E4C.html">Correction Suivante</a> -->
+            <a href="../../Chapitre3.html">Retour au Chapitre 3</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>
+        </div>
 
-<footer>
-Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
-</footer>
+    <footer>
+        Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+    </footer>
 
 </body>
 

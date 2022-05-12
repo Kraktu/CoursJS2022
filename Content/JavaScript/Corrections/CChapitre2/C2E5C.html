@@ -8,81 +8,80 @@
     <link rel="stylesheet" href="../../../../style/exercices.css">
 </head>
 <body>
-    <h1>Cours de Javascript 2022</h1>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
 
-    <h2>Chapitre 2 - Correction 5 : Fonction combinée d'anniversaire</h2>
+        <h2>Chapitre 2 - Correction 5 : Fonction combinée d'anniversaire</h2>
 
-    <p><b>
-        function SayAge(_age)
-        <br>{
-        <br>&emsp;alert("You're " + _age + " years old.");
-        <br>}
-        <br>function SayBirthday(_date)
-        <br>{
-        <br>&emsp;alert("You are born on the " + _date + ".")
-        <br>}
-        <br>function Combined(_age,_date)
-        <br>{
-        <br>&emsp;SayAge(_age);
-        <br>&emsp;SayBirthday(_date)
-        <br>}
-        <br>
-        <br>Combined(28,"29/11/1993")
-    </b></p>
+        <p><b>
+            function SayAge(_age)
+            <br>{
+            <br>&emsp;alert("You're " + _age + " years old.");
+            <br>}
+            <br>function SayBirthday(_date)
+            <br>{
+            <br>&emsp;alert("You are born on the " + _date + ".")
+            <br>}
+            <br>function Combined(_age,_date)
+            <br>{
+            <br>&emsp;SayAge(_age);
+            <br>&emsp;SayBirthday(_date)
+            <br>}
+            <br>
+            <br>Combined(28,"29/11/1993")
+        </b></p>
 
-    <h2>Explications :</h2>
+        <h2>Explications :</h2>
 
-    <p>
-        Ici, je vous invite à être stratégique, et bien lire <a href="../../Theorie/TChapitre2/C2T5.html">la théorie relative</a> à cet exercice, car elle est très importante, et c'est un point de matière souvent mal compris. En effet, nous commençons d'abord par déclarer nos deux fonctions demandée par l'exercice. Ensuite, nous allons les appeler au sein d'une troisième fonction qui va avoir comme simple rôle d'appeler ces 2 fonctions. On peut donc réaliser l'appel de Combined() en une seule ligne. La chose à bien intégrer, c'est que, malgré leur nom similaire, le _date dans Combined() et le _date dans SayBirthday() ne sont pas les mêmes d'un point de vue de l'ordinateur, il en va de même pour _age. On aurait pu donner 4 noms différents à chacun de ces paramètres. Le seul truc à ne pas rater, c'est de bien passer en argument de l'appel de SayAge() le paramètre représentant l'âge de Combined() et il en va de même pour la date et SayBirthday(). Ainsi, la valeur 28 est d'abord attribuée à _age de Combined(), ce _age est ensuite utilisé en argument de SayAge(), et c'est donc le _age de SayAge() qui vaut lui aussi maintenant 28, et peut donc maintenant être affiché !
-    </p>
+        <p>
+            Ici, je vous invite à être stratégique, et bien lire <a href="../../Theorie/TChapitre2/C2T5.html">la théorie relative</a> à cet exercice, car elle est très importante, et c'est un point de matière souvent mal compris. En effet, nous commençons d'abord par déclarer nos deux fonctions demandée par l'exercice. Ensuite, nous allons les appeler au sein d'une troisième fonction qui va avoir comme simple rôle d'appeler ces 2 fonctions. On peut donc réaliser l'appel de Combined() en une seule ligne. La chose à bien intégrer, c'est que, malgré leur nom similaire, le _date dans Combined() et le _date dans SayBirthday() ne sont pas les mêmes d'un point de vue de l'ordinateur, il en va de même pour _age. On aurait pu donner 4 noms différents à chacun de ces paramètres. Le seul truc à ne pas rater, c'est de bien passer en argument de l'appel de SayAge() le paramètre représentant l'âge de Combined() et il en va de même pour la date et SayBirthday(). Ainsi, la valeur 28 est d'abord attribuée à _age de Combined(), ce _age est ensuite utilisé en argument de SayAge(), et c'est donc le _age de SayAge() qui vaut lui aussi maintenant 28, et peut donc maintenant être affiché !
+        </p>
 
-    <h2>Solution alternative :</h2>
+        <h2>Solution alternative :</h2>
 
-    <p><b>
-        <br>function SayBirthday(_date)
-        <br>{
-        <br>&emsp;alert("You are born on the " + _date + ".")
-        <br>}
-        <br>
-        <br>function SayAge2(_age,_date)
-        <br>{
-        <br>&emsp;alert("You're " + _age + "years old");
-        <br>&emsp;SayBirthday(_date);
-        <br>}
-        <br>
-        <br>SayAge2(29,"17/08/1992");
-    </b></p>
-    
-    <p><i>
-        Ici, petite alternative, pour réussir l'exercice, mais bien moins correcte que la solution précédente, c'est d'appeler, depuis notre fonction SayAge2() la fonction SayBirthday(). Il y a deux problèmes à cette solution dans l'absolu, même si en effet ça répond à l'énoncé, c'est que premièrement, si nous voulons appeler SayAge2() sans SayBirthday(), nous ne pouvons pas, l'inverse est possible, mais nous somme condamné à appeler SayBirthday() en cascade de SayAge2(). Enfin, SayAge2() est au courant d'une information qui ne l'intéresse pas elle même, à savoir le paramètre _date qui ne lui sert qu'à uniquement donner à SayBirthday. Dans l'absolu, une fonction ne devrait être au courant uniquement que des informations dont elle a besoin pour fonctionner. C'est un moindre problème, mais c'est une bonne habitude à prendre pour bien coder.
-    </i></p>
+        <p><b>
+            <br>function SayBirthday(_date)
+            <br>{
+            <br>&emsp;alert("You are born on the " + _date + ".")
+            <br>}
+            <br>
+            <br>function SayAge2(_age,_date)
+            <br>{
+            <br>&emsp;alert("You're " + _age + "years old");
+            <br>&emsp;SayBirthday(_date);
+            <br>}
+            <br>
+            <br>SayAge2(29,"17/08/1992");
+        </b></p>
 
-    <p><b>
-        <br>function SayAgeAndBirthday(_age,_date)
-        <br>{
-        <br>&emsp;alert("You're " + _age + "years old");
-        <br>&emsp;alert("You are born on the " + _date)
-        <br>}
-        <br>
-        <br>SayAgeAndBirthday(30, "15/12/1991");
-    </b></p>
-    
-    <p><i>
-        Cette solution est convenable, bien qu'un peu tricher par rapport à la consigne. Elle est d'un côté meilleur que la précédente car elle ne multiplie pas les déclaration de fonction, et donc ses paramètres sont tous les deux utiles à son bon fonctionnement, mais d'un côté elle est bien pire, car si nous voulons uniquement afficher la date ou l'âge, nous sommes bloqué, nous sommes quoi qu'il arrive obligés d'appeler les deux. C'est correct, mais pas idéal dans un projet de plus grande ampleur.
-    </i></p>
+        <p><i>
+            Ici, petite alternative, pour réussir l'exercice, mais bien moins correcte que la solution précédente, c'est d'appeler, depuis notre fonction SayAge2() la fonction SayBirthday(). Il y a deux problèmes à cette solution dans l'absolu, même si en effet ça répond à l'énoncé, c'est que premièrement, si nous voulons appeler SayAge2() sans SayBirthday(), nous ne pouvons pas, l'inverse est possible, mais nous somme condamné à appeler SayBirthday() en cascade de SayAge2(). Enfin, SayAge2() est au courant d'une information qui ne l'intéresse pas elle même, à savoir le paramètre _date qui ne lui sert qu'à uniquement donner à SayBirthday. Dans l'absolu, une fonction ne devrait être au courant uniquement que des informations dont elle a besoin pour fonctionner. C'est un moindre problème, mais c'est une bonne habitude à prendre pour bien coder.
+        </i></p>
 
-    <div class="navigation">
-        <p><a href="../CChapitre2/C2E4C.html">Correction Précédente</a></p>
-        <p><a href="../CChapitre2/C2E6C.html">Correction Suivante</a></p>
-        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
-        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>
+        <p><b>
+            <br>function SayAgeAndBirthday(_age,_date)
+            <br>{
+            <br>&emsp;alert("You're " + _age + "years old");
+            <br>&emsp;alert("You are born on the " + _date)
+            <br>}
+            <br>
+            <br>SayAgeAndBirthday(30, "15/12/1991");
+        </b></p>
 
-        
+        <p><i>
+            Cette solution est convenable, bien qu'un peu tricher par rapport à la consigne. Elle est d'un côté meilleur que la précédente car elle ne multiplie pas les déclaration de fonction, et donc ses paramètres sont tous les deux utiles à son bon fonctionnement, mais d'un côté elle est bien pire, car si nous voulons uniquement afficher la date ou l'âge, nous sommes bloqué, nous sommes quoi qu'il arrive obligés d'appeler les deux. C'est correct, mais pas idéal dans un projet de plus grande ampleur.
+        </i></p>
+
     </div>
-
-<footer>
-Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
-</footer>
+        <div class="navigation">
+            <a href="../CChapitre2/C2E4C.html">Correction Précédente</a>
+            <a href="../CChapitre2/C2E6C.html">Correction Suivante</a>
+            <a href="../../Chapitre2.html">Retour au Chapitre 2</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>
+        </div>
+    <footer>
+        Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+    </footer>
 
 </body>
 

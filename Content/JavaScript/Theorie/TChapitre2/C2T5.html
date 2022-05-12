@@ -8,126 +8,127 @@
     <link rel="stylesheet" href="../../../../style/theorie.css">
 </head>
 <body>
-    <h1>Cours de Javascript 2022</h1>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
 
-    <h2>Chapitre 2 - Théorie 5 : Passer des paramètres en arguments</h2>
-    
-    <p>
-        Ce point de théorie n'est pas vraiment une nouvelle matière, et finalement vous avez déjà toutes les infos dans les fiches de théories précédentes pour comprendre ce qu'il va se passer ici, mais c'est souvent mal compris par les gens ou assez peu instinctif, c'est pour cela que vous aurez un exercice en rapport avec cette matière et cette fiche de théorie en plus.
-    </p>
-    <p>
-        La première chose à bien comprendre, c'est qu'une fonction peut appeler une autre fonction. C'est ce qu'on appelle du code en cascade, ainsi si on a :
-    </p>
-    <p><b>
-        function FirstFunc()
-        <br>{
-        <br>&emsp;//Du Code
-        <br>}
-    </b></p>
+        <h2>Chapitre 2 - Théorie 5 : Passer des paramètres en arguments</h2>
+        
+        <p>
+            Ce point de théorie n'est pas vraiment une nouvelle matière, et finalement vous avez déjà toutes les infos dans les fiches de théories précédentes pour comprendre ce qu'il va se passer ici, mais c'est souvent mal compris par les gens ou assez peu instinctif, c'est pour cela que vous aurez un exercice en rapport avec cette matière et cette fiche de théorie en plus.
+        </p>
+        <p>
+            La première chose à bien comprendre, c'est qu'une fonction peut appeler une autre fonction. C'est ce qu'on appelle du code en cascade, ainsi si on a :
+        </p>
+        <p><b>
+            function FirstFunc()
+            <br>{
+            <br>&emsp;//Du Code
+            <br>}
+        </b></p>
 
-    <p><b>
-        function SecondFunc()
-        <br>{
-        <br>&emsp;//Du Code
-        <br>}
-    </b></p>
+        <p><b>
+            function SecondFunc()
+            <br>{
+            <br>&emsp;//Du Code
+            <br>}
+        </b></p>
 
-    <p>On pourrait très bien avoir une troisième fonction qui fait appel aux deux autre fonctions, ainsi on aurait :</p>
+        <p>On pourrait très bien avoir une troisième fonction qui fait appel aux deux autre fonctions, ainsi on aurait :</p>
 
-    <p><b>
-        function ThirdFunc()
-        <br>{
-        <br>&emsp;FirstFunc()
-        <br>&emsp;SecondFunc()
-        <br>}
-    </b></p>
+        <p><b>
+            function ThirdFunc()
+            <br>{
+            <br>&emsp;FirstFunc()
+            <br>&emsp;SecondFunc()
+            <br>}
+        </b></p>
 
-    <p>Cette troisième fonction aurait donc pour rôle d'appeler les deux premières, peut importe pour quoi, on peut imaginer toutes sortes de raison, et cela arrivera très souvent, il suffit de repenser à notre exemple avec la voiture qui veut freiner pour reculer vu plus tôt dans ce chapitre.</p>
+        <p>Cette troisième fonction aurait donc pour rôle d'appeler les deux premières, peut importe pour quoi, on peut imaginer toutes sortes de raison, et cela arrivera très souvent, il suffit de repenser à notre exemple avec la voiture qui veut freiner pour reculer vu plus tôt dans ce chapitre.</p>
 
-    <p>Jusqu'ici, rien d'exceptionnel, par contre, là où ça commence à devenir spécial, c'est lorsque toutes ces fonctions ont des paramètres. Prenons en exemple ces fonctions qui suivent, leurs rôles n'a que très peu d'importance, et je vais volontairement mettre des noms de paramètre pour comprendre qui va où, plus que pour être compréhensible pour un autre développeur.</p>
+        <p>Jusqu'ici, rien d'exceptionnel, par contre, là où ça commence à devenir spécial, c'est lorsque toutes ces fonctions ont des paramètres. Prenons en exemple ces fonctions qui suivent, leurs rôles n'a que très peu d'importance, et je vais volontairement mettre des noms de paramètre pour comprendre qui va où, plus que pour être compréhensible pour un autre développeur.</p>
 
-    <p><b>
-        function FonctionA(_paramA1,_paramA2)
-        <br>{
-        <br>&emsp;// Du code
-        <br>}
-    </b></p>
+        <p><b>
+            function FonctionA(_paramA1,_paramA2)
+            <br>{
+            <br>&emsp;// Du code
+            <br>}
+        </b></p>
 
-    <p><b>
-        function FonctionB(_paramB1,_paramB2,_paramB2)
-        <br>{
-        <br>&emsp;// Du code
-        <br>}
-    </b></p>
+        <p><b>
+            function FonctionB(_paramB1,_paramB2,_paramB2)
+            <br>{
+            <br>&emsp;// Du code
+            <br>}
+        </b></p>
 
-    <p>
-        On a donc une fonction appelée FonctionA qui a deux paramètres, et une fonction FonctionB qui elle en a 3. Créons maintenant une 3ème fonction qui va avoir comme rôle d'appeler ces 2 fonctions, et qui elle a conscience des valeurs qu'il faut donner à ces paramètres (c'est pour comprendre ce que l'on fait, mais ce cas est <b>très peu</b> probable);  
-    </p>
+        <p>
+            On a donc une fonction appelée FonctionA qui a deux paramètres, et une fonction FonctionB qui elle en a 3. Créons maintenant une 3ème fonction qui va avoir comme rôle d'appeler ces 2 fonctions, et qui elle a conscience des valeurs qu'il faut donner à ces paramètres (c'est pour comprendre ce que l'on fait, mais ce cas est <b>très peu</b> probable);  
+        </p>
 
-    <p><b>
-        function FonctionC()
-        <br>{
-        <br>&emsp;FonctionA(5,"Bonjour");
-        <br>&emsp;FonctionB(100,"salut","coucou");
-        <br>}
-    </b></p>
+        <p><b>
+            function FonctionC()
+            <br>{
+            <br>&emsp;FonctionA(5,"Bonjour");
+            <br>&emsp;FonctionB(100,"salut","coucou");
+            <br>}
+        </b></p>
 
-    <p>
-        Dans ce cas :
-    </p>
-    <ul>
-        <li>paramA1 vaudra 5</li>
-        <li>paramA2 vaudra "Bonjour"</li>
-        <li>paramB1 vaudra 100</li>
-        <li>paramB2 vaudra "salut"</li>
-        <li>paramB3 vaudra "coucou"</li>
-    </ul>
+        <p>
+            Dans ce cas :
+        </p>
+        <ul>
+            <li>paramA1 vaudra 5</li>
+            <li>paramA2 vaudra "Bonjour"</li>
+            <li>paramB1 vaudra 100</li>
+            <li>paramB2 vaudra "salut"</li>
+            <li>paramB3 vaudra "coucou"</li>
+        </ul>
 
-    <p>C'est assez simple et ça suit la logique que l'on a déjà vu. Mais imaginons maintenant qu'une fonction FonctionD() appelle aussi la fonction FonctionA() et FonctionB() mais cette fois-ci, elle même ne sait pas d'avance les valeurs qui devront êtres transmises aux fonctions appelées (ce cas peut arriver assez souvent !), bien sur, il existe le cas où ces valeurs sont calculées par cette fonction FonctionD(), auquel cas il suffira de passer les variables en arguments de la fonction correspondante, comme vu dans le chapitre précédemment mais simplement dans le scope de la fonction. Par contre, il y a un monde où cette information doit être donnée par le programme principal. Et c'est ce cas, un peu particulier qui nous intéresse, car si le programme principal ou scope principal on peut dire, est au courant des valeurs qui vont être transmises à la FonctionA() et à la FonctionB(), mais que c'est à l'aide de l'appel de la FonctionD() que l'on va appeler ces deux premières fonctions, et bien il faut d'abord transmettre ces informations à la FonctionD() pour qu'elle puisse à son tour les transmettre aux bonnes fonctions. Concrètement on pourrait avoir ce code :</p>
+        <p>C'est assez simple et ça suit la logique que l'on a déjà vu. Mais imaginons maintenant qu'une fonction FonctionD() appelle aussi la fonction FonctionA() et FonctionB() mais cette fois-ci, elle même ne sait pas d'avance les valeurs qui devront êtres transmises aux fonctions appelées (ce cas peut arriver assez souvent !), bien sur, il existe le cas où ces valeurs sont calculées par cette fonction FonctionD(), auquel cas il suffira de passer les variables en arguments de la fonction correspondante, comme vu dans le chapitre précédemment mais simplement dans le scope de la fonction. Par contre, il y a un monde où cette information doit être donnée par le programme principal. Et c'est ce cas, un peu particulier qui nous intéresse, car si le programme principal ou scope principal on peut dire, est au courant des valeurs qui vont être transmises à la FonctionA() et à la FonctionB(), mais que c'est à l'aide de l'appel de la FonctionD() que l'on va appeler ces deux premières fonctions, et bien il faut d'abord transmettre ces informations à la FonctionD() pour qu'elle puisse à son tour les transmettre aux bonnes fonctions. Concrètement on pourrait avoir ce code :</p>
 
-    <p><b>
-        function FonctionD(_paramD1,_paramD2,_paramD3,_paramD4,_paramD5)
-        <br>{
-        <br>&emsp;FonctionA(_paramD1,_paramD2);
-        <br>&emsp;FonctionB(_paramD3,_paramD4,_paramD5);
-        <br>}
-    </b></p>
+        <p><b>
+            function FonctionD(_paramD1,_paramD2,_paramD3,_paramD4,_paramD5)
+            <br>{
+            <br>&emsp;FonctionA(_paramD1,_paramD2);
+            <br>&emsp;FonctionB(_paramD3,_paramD4,_paramD5);
+            <br>}
+        </b></p>
 
-    <p>Bien sur, dans le cas où FonctionD() n'a pas, elle même, besoin d'autres paramètres pour fonctionner supplémentaire, c'est un exemple simplifié, mais on pourrait rajouter 3 paramètres utiles au simple fonctionnement de la FonctionD() en elle même, ici tous les paramètres seront transmit en tant qu'arguments pour l'appel de la FonctionA() et la FonctionB(). On peut aussi imaginer qu'un seul paramètre serve d'argument à plusieurs endroits, ou toutes les combinaisons que vous voulez.</p>
+        <p>Bien sur, dans le cas où FonctionD() n'a pas, elle même, besoin d'autres paramètres pour fonctionner supplémentaire, c'est un exemple simplifié, mais on pourrait rajouter 3 paramètres utiles au simple fonctionnement de la FonctionD() en elle même, ici tous les paramètres seront transmit en tant qu'arguments pour l'appel de la FonctionA() et la FonctionB(). On peut aussi imaginer qu'un seul paramètre serve d'argument à plusieurs endroits, ou toutes les combinaisons que vous voulez.</p>
 
-    <p>Mais pour avancer, ou plutôt, remonter d'un niveau, on doit donc aller voir l'appel de la FonctionD() depuis le scope principal, celle-ci demande donc 5 arguments, que l'on va pouvoir aller chercher par exemple dans des variables déclarées juste avant l'appel. Par exemple :</p>
+        <p>Mais pour avancer, ou plutôt, remonter d'un niveau, on doit donc aller voir l'appel de la FonctionD() depuis le scope principal, celle-ci demande donc 5 arguments, que l'on va pouvoir aller chercher par exemple dans des variables déclarées juste avant l'appel. Par exemple :</p>
 
-    <p><b>
-        let var1=5;
-        <br>let var2="Bonjour";
-        <br>let var3=100;
-        <br>let var4="Salut";
-        <br>let var5="coucou";
-        <br>FonctionD(var1,var2,var3,var4,var5);
-    </b></p>
+        <p><b>
+            let var1=5;
+            <br>let var2="Bonjour";
+            <br>let var3=100;
+            <br>let var4="Salut";
+            <br>let var5="coucou";
+            <br>FonctionD(var1,var2,var3,var4,var5);
+        </b></p>
 
-    <p>Et au final on aurait exactement le même résultat qu'avec la FonctionC() ! Sauf que les informations auront donc été cherchées dans le scope principal, ensuite transmise en argument à la FonctionD(), puis les paramètres de la FonctionD() auront été utilisé comme argument à l'appel de la FonctionA() et la FonctionB() !</p>
+        <p>Et au final on aurait exactement le même résultat qu'avec la FonctionC() ! Sauf que les informations auront donc été cherchées dans le scope principal, ensuite transmise en argument à la FonctionD(), puis les paramètres de la FonctionD() auront été utilisé comme argument à l'appel de la FonctionA() et la FonctionB() !</p>
 
-    <p>
-        Au final on peut écrire l'égalité suivante :
-    </p>
+        <p>
+            Au final on peut écrire l'égalité suivante :
+        </p>
 
-    <ul>
-        <li>5==var1==_paramD1==_paramA1</li>
-        <li>"Bonjour"==var2==_paramD2==_paramA2</li>
-        <li>100==var3==_paramD3==_paramB1</li>
-        <li>"Salut"==var4==_paramD4==_paramB2</li>
-        <li>"coucou"==var5==_paramD5==_paramB3</li>
-    </ul>
+        <ul>
+            <li>5==var1==_paramD1==_paramA1</li>
+            <li>"Bonjour"==var2==_paramD2==_paramA2</li>
+            <li>100==var3==_paramD3==_paramB1</li>
+            <li>"Salut"==var4==_paramD4==_paramB2</li>
+            <li>"coucou"==var5==_paramD5==_paramB3</li>
+        </ul>
 
-    <p>En fait, si on prend la liste précédente ligne par ligne, en fait on peut faire la comparaison avec une course relai, ils se passent tous l'information les uns après les autres ! En effet, la valeur 5 est stockée dans var1, puis la valeur stockée dans var1 est utilisée comme argument pour remplir le paramètre _paramD1, qui est ensuite lui même utilisé comme argument pour remplir le paramètre _paramA1, et donc la valeur 5 est passée de var1 à _paramD1 et enfin à _paramA1, qui valent donc, à cet appel bien particulier, tous 5.</p>
+        <p>En fait, si on prend la liste précédente ligne par ligne, en fait on peut faire la comparaison avec une course relai, ils se passent tous l'information les uns après les autres ! En effet, la valeur 5 est stockée dans var1, puis la valeur stockée dans var1 est utilisée comme argument pour remplir le paramètre _paramD1, qui est ensuite lui même utilisé comme argument pour remplir le paramètre _paramA1, et donc la valeur 5 est passée de var1 à _paramD1 et enfin à _paramA1, qui valent donc, à cet appel bien particulier, tous 5.</p>
 
-    <div class="navigation">
-        <p><a href="../TChapitre2/C2T4.html">Théorie Précédente</a></p>
-        <p><a href="../../Chapitre2.html">Retour au Chapitre 2</a></p>
-        <p><a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a></p>  
     </div>
-
+        <div class="navigation">
+            <a href="../TChapitre2/C2T4.html">Théorie Précédente</a>
+            <a href="../../Chapitre2.html">Retour au Chapitre 2</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>  
+        </div>
 
 <footer>
 Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
