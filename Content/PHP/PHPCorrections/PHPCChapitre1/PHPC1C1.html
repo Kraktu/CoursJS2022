@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction PHP</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Cours de PHP</h1>
+        <h2>Chapitre 1 - Correction 1 : Installer PHP</h2>
+        <p>
+            Premièrement pour installer PHP (pour Windows), on va d'abord télécharger le ZIP. Pour ce faire, cliquez sur ce lien : <a href="https://windows.php.net/downloads/releases/php-8.1.6-nts-Win32-vs16-x64.zip">https://windows.php.net/downloads/releases/php-8.1.6-nts-Win32-vs16-x64.zip</a>. Ensuite créez un dossier où vous le voulez dans votre ordinateur si vous avez un endroit spécifique pour ce genre de choses, sinon, vous pouvez créer ce dossier, que l'on nommera PHP, à la racine du dossier Programme. Logiquement, pour y aller, c'est dans le C:\Program Files de votre ordinateur. Extrayez-y le dossier fraîchement téléchargé !
+        </p>
+        <p>
+            Vous pouvez supprimer l'archive une fois ceci fait, elle ne nous sert plus à rien !
+        </p>
+        <p>
+            Il ne suffit plus maintenant que de montrer à Windows que nous avons PHP et qu'il peut donc l'utiliser dans l'invite de commande. Pour ça, il faut l'ajouter au variables d'environnement de système. Un peu effrayant comme démarche lorsque l'on fait ça pour la première fois, mais pas d'inquiétude, ça va bien se passer. Appuyez sur votre touche Windows et tapez "variables d'environnement", il devrait vous proposer de les modifier, lancez cette fenêtre !
+        </p>
+        <p>
+            Ici, faites très attention à bien suivre ces étapes de manière minutieuse. Premièrement cliquez sur le bouton "Variables d’environnements..." situé en bas de l'onglet "paramètres système avancés" sur lequel vous êtes normalement tombé. Vous pouvez maintenant, dans le tableau du dessus, c'est à dire les variables de votre utilisateur, aller mettre votre curseur sur "PATH" et cliquer sur modifier. Le raccourcis clavier lorsque vous avez votre curseur sur "PATH" est la touche M, sinon cliquez sur le bouton situé en dessous à l'aide de tabulation. Une fois rentré dans le Path, vous pouvez maintenant à l'aide des boutons ou de votre touche tabulation ou encore le raccourci clavier sur le touche N, cliquer sur le bouton nouveau. Là, vous pourrez y coller le chemin vers le dossier PHP que l'on vient de créer. Normalement, ça devrait être : C:\Program Files\PHP si vous n'avez pas fait autre chose que moi.
+        </p>
+        <p>
+            Il est temps de voir si tout ça marche, cliquez sur OK pour quitter toutes les fenêtres que nous avons ouvert, et fermez tout ce qu'on a utilisé jusque maintenant, car à parti de là, ce qui nous intéresse, c'est l'invite de commande. Je vais vous faire l'affront une unique fois de vous rappeler comment on le fait : appuyez sur votre touche windows, tapez CMD puis la touche enter !
+        </p>
+        <p>
+            L'heure de vérité à sonné, si vous tapez  la commande : php -v, il devrait être écrit quelque chose comme :
+        </p>
+        <p>
+            PHP 8.1.6 (cli) (built: May 11 2022 08:56:01) (NTS Visual C++ 2019 x64)
+            <br>Copyright (c) The PHP Group
+            <br>Zend Engine v4.1.6, Copyright (c) Zend Technologies
+        </p>
+        <p>
+            Si vous avez une erreur due à Visual C++, nous corrigerons ça en classe, mais il suffit de télécharger une version plus moderne de VC++ que vous n'avez sur votre ordinateur, pas de panique !
+        </p>
+    </div>
+    <div class="navigation">
+        <a href="">Correction Suivante</a>
+        <a href="../../PHPChapitre1.html">Retour au Chapitre 1</a>
+        <a href="../../../AcceuilPHP.html">Retour à la sélection du Chapitre</a>
+    </div>  
+    <footer>
+        Cours de PHP - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a> - <a href="https://eqla.be/">Eqla</a>
+    </footer>
+</body>
+</html>
