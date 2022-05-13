@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction PHP</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Cours de PHP</h1>
+        <h2>Chapitre 1 - Correction 2 : Hello World !</h2>
+        <p>
+            Pour commencer, vous pouvez créer un dossier en parallèle de là où vous avez les autres cours Blindcode. Vous pouvez par exemple l'appeler Cours PHP. Dedans vous pourrez créer tous les fichiers que l'on va faire lors de ce cours en suivant les conventions habituelles suivi de .php : CxEx.php, remplacez le x après le C par le chapitre correspondant et le x après le E par le numéro de l'exercice, ici vous pouvez donc créer un fichier C1E2.php 
+        </p>
+        <p>
+            Ouvrez ensuite bien sur ce fichier avec VSCode ! Et commencez votre fichier par les balises PHP, qui sont &lt;?php pour la balise ouvrante et ?> pour la balise fermante. Tant que vous ne faites pas ça, vous n'écrivez pas du PHP, vous écrivez simplement un texte qui sera re-vomi par la console ! Tous les codes que nous écrirons seront donc contenus entre ces deux balises.
+        </p>
+        <p>
+            Enfin, la dernière chose à savoir est que la fonction qui permet d'afficher quelque chose à l'écran, comme print ou alert ou tout autre fonction que vous ayez pu voir, est echo en PHP. Dans notre cas, on peut donc écrire echo "Hello World", et on oublie pas le point-virgule à la fin !! Voici à quoi doit ressembler votre fichier :
+        </p>
+        <p><b>
+            &lt;?php
+            <br>echo "Hello World";
+            <br>?>
+        </b></p>
+        <p>
+            Il ne nous reste plus qu'à afficher le résultat dans la console. Si vous voyez assez, vous pouvez utiliser le terminal de VSCode pour exécuter votre code, mais la console n'est pas très accessible. De toute façon le fonctionnement est le même avec la console Windows, la seule chose est qu'elle est accessible par les synthèses vocales ! Pour lancer la console VSCode, vous pouvez faire le raccourci ctrl + shift + ù dans VSCode même, de là, vous un terminal s'ouvre en dessous de votre code et est directement dans le bon dossier, vous pouvez l'observer sur la ligne où il y a votre curseur. Il ne reste plus qu'une chose à faire, taper php LeNomDuFichier.php, dans notre cas on tape donc :
+        </p>
+        <p><b>
+            php C1E2.php
+        </b></p>
+        <p>
+            Et logiquement, votre résultat apparaît. Pour ceux qui n'utilisent pas ce système, on va donc essayer via la console. Pour ça, deux manière de faire, la plus rapide est d'ouvrir via l'explorateur de fichier l'endroit où vous avez mis votre fichier C1E2.php, de là, dans l'explorateur, vous faites le raccourcis F4, cela mettra votre curseur dans la barre de navigation de fichier, et vous pouvez tout supprimer, soit avec backspace, soit en sélectionnant tout avec le raccourcis ctrl + a, puis backspace une seule fois. Ensuite vous pouvez taper cmd. Cela à pour effet de vous ouvrir une invite de commande, directement placée dans le bon fichier, et là on peut faire :
+        </p>
+        <p><b>
+            php C1E2.php
+        </b></p>
+        <p>
+            La dernière solution est la plus simple et la plus compliquée en même temps. C'est la plus dure à prendre en main, mais c'est sans doutes la plus rapide quand on maîtrise bien le PC. Pour se faire, vous lancez d'abord cmd depuis le menu démarrer, donc on appuie sur la touche windows et on tape cmd dans la barre de recherche, puis enter. Une fois ceci fait, on peut voyager dans le dossier que l'on veut à l'aide de la commande CD. Soit vous copiez le lien direct vers le bon dossier, comme précédemment en ouvrant le bon dossier de manière classique, f4 pour aller dans la barre de navigation, ctrl + a pour tout sélectionner, ctrl + c pour copier, on retourne dans l'invite de commande et on colle après CD, ça donne quelque chose comme ceci :
+        </p>
+        <p><b>
+            CD C:\LeCheminDeMonFichier\LeBonDossier
+        </b></p>
+        <p>
+            Soit vous voyagez jusqu'au bon endroit dossier par dossier depuis CMD comme ceci :
+        </p>
+        <p><b>
+            C:
+            <br>CD LeCheminDeMonFichier
+            <br>CD LeBonDossier
+        </b></p>
+        <p>
+            le résultat est le même, et une fois arrivé dans le bon dossier :
+        </p>
+        <p><b>
+            php C1E2.php
+        </b></p>
+        <p>
+            Quelque soit la méthode que vous utilisez, le résultat devra être "Hello World" dans votre invite de commande !
+        </p>
+
+    </div>
+    <div class="navigation">
+        <a href="./PHPC1C1.html">Correction Précédente</a>
+        <a href="../../PHPChapitre1.html">Retour au Chapitre 1</a>
+        <a href="../../../AcceuilPHP.html">Retour à la sélection du Chapitre</a>
+    </div>  
+    <footer>
+        Cours de PHP - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a> - <a href="https://eqla.be/">Eqla</a>
+    </footer>
+</body>
+</html>
