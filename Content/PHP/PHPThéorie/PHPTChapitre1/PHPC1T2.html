@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie PHP</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Cours de PHP</h1>
+        <h2>Chapitre 1 - Théorie 1 : Écrire dans notre console...</h2>
+        <p>
+            Vous avez 2 solutions bien distincte pour écrire en PHP quelque chose que vous pourrez ensuite lire. La plus classique est echo, mais print marche aussi. Voyons un peut les différence :
+        </p>
+        <p><b>
+            echo("Bonjour je m'appelle Philip");
+        </b></p>
+        <p>
+            C'est la structure que vous verrez le plus souvent, vous avez la <a href="https://www.php.net/manual/fr/function.echo.php">doc complète sur le echo ici </a>, mais les choses à retenir les plus importantes sont que : Il n'y a pas forcément besoin de parenthèses, mais on peut les mettre(c'est assez exceptionnel comme façon de marcher, essayez de garder les parenthèses pour vous familiariser, et enlevez les quand vous serez maître des fonctions !). Echo peut prendre plusieurs argument séparés d'une virgule, ce qui peut parfois jouer le rôle de concaténation !. Deux echos l'un en dessous de l'autre produisent un résultat sans retour à la ligne. (contrairement au JS ou beaucoup de langage). Et echo n'a aucune valeur de retour !! C'est un peu complexe à se représenter, mais sachez que ça a des implications car elle ne peut donc pas être utilisé dans le contexte d'une expression.
+        </p>
+        <p><b>
+            print("Bonjour je m'appelle Philip")
+        </b></p>
+        <p>
+            Ca marche aussi ! Et oui, la seule grosse différence est que print ne peut prendre argument (donc vous devez concaténer vos chaînes de caractères si vous voulez en print plusieurs dans le même print) et print renvoie 1. Ce qui veut dire que l'on peut s'en servir dans des contextes bien précis !
+        </p>
+        <p>
+            Petite particularité, ni echo ni print ne sont des fonctions, ce sont des constructions du langages. Pour savoir la différence entre les deux, je vous renvoie vers <a href="https://fr.acervolima.com/quelle-est-la-difference-entre-une-construction-de-langage-et-une-fonction-integree-en-php/">cette documentation</a>, sachez cependant que là grosse différence est surtout technique et ne nous intéresse pas spécialement en tant que codeur. Une construction de langage est plus rapide à executer pour notre programme. Si d'aventure vous avez le choix entre une construction de langage et une fonction qui font exactement le même, préférez toujours la première solution !
+        </p>
+    </div>
+    <div class="navigation">
+        <a href="./PHPC1T1.html">Théorie Précédente</a>
+        <a href="../../PHPChapitre1.html">Retour au Chapitre 1</a>
+        <a href="../../../AcceuilPHP.html">Retour à la sélection du Chapitre</a>
+    </div>  
+    <footer>
+        Cours de PHP - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a> - <a href="https://eqla.be/">Eqla</a>
+    </footer>
+</body>
+</html>
