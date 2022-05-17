@@ -55,8 +55,21 @@
     "Goethe",
     "Philip"];
     
-    let numberOfQuestions = parseInt(prompt("A combien de questions voulez vous répondre (maximum 10)"));
+    let numberOfQuestions = parseInt(prompt("A combien de questions voulez vous répondre (maximum" + questions.length +")"));
     let score = 0
+
+    if(numberOfQuestions>questions.length)
+    {
+        alert("Vous avez choisi un nombre de question supérieur à la limite maximale, nous vous mettons donc le nombre de question maximum et je vous enlève un point !")
+        score-=1
+        numberOfQuestions=questions.length
+    }
+    else if(numberOfQuestions<=0)
+    {
+        alert("Vous avez choisi un nombre de question trop bas, vous répondre à une seule question avec un malus de 1 point ! Cheh")
+        score-=1
+        numberOfQuestions=1
+    }
     for(let i = 0;i<numberOfQuestions;i++)
     {
         let userChoice = parseInt(prompt(questions[i] + "\nTapez sur \n1- Duo\n2-Carré\n3-Cash"));
@@ -159,6 +172,21 @@
             alert("Mauvaise réponse, la bonne réponse était : " + _answer)
             return 0;
         }
+    }
+
+    //Partie dev :
+
+    if(questions.length!=answers.length)
+    {
+        console.log("Attention ! Le nombre de questions est différents du nombre de réponses !\nquestions : " + questions.length + "\nanswers : " + answers.length)
+    }
+    if(questions.length!=propositions.length)
+    {
+        console.log("Attention ! Le nombre de questions est différents du nombre de propositions !\nquestions : " + questions.length + "\npropositions : " + propositions.length)
+    }
+    if(answers.length!=propositions.length)
+    {
+        console.log("Attention ! Le nombre de réponses est différents du nombre de propositions !\answers : " + answers.length + "\npropositions : " + propositions.length)
     }
     </script>
 </html>
