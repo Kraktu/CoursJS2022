@@ -21,7 +21,7 @@
     </footer>
 </body>
 <script>
-
+    console.log("J'écris pour les développeur, mais le public ne peut pas le lire")
     let questions = ["Quelle est la couleur du cheval blanc d'Henry 4 ?",
     "Quel est le satellite naturel de la terre ?",
     "Quelle est la capitale de la Mongolie ?",
@@ -52,10 +52,10 @@
     "Eqla",
     "Greetje",
     "Freeze Corleone",
-    "Goethe",
+    "Goethe", 
     "Philip"];
     
-    let numberOfQuestions = parseInt(prompt("A combien de questions voulez vous répondre (maximum" + questions.length +")"));
+    let numberOfQuestions = parseint(prompt("A combien de questions voulez vous répondre (maximum" + questions.length +")"));
     let score = 0
 
     if(numberOfQuestions>questions.length)
