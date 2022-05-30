@@ -11,10 +11,30 @@
     <div class="content">
 
         <h1>Cours de PHP</h1>
-        <h2>Chapitre 3 - Exercice 2 : Les fonction récursives</h2>
+        <h2>Chapitre 3 - Exercice 2 : La fiche de personnage de JDR</h2>
         <p>
-            
+            Sans utiliser de boucles classiques (for/while/do while/...), juste à l'aide de fonctions, créez un programme qui :
         </p>
+        <ul>
+            <li>Demandera à l'utilisateur de rentrer son nom d'utilisateur. Ce nom ne peut pas dépasser les 10 caractères et être plus petit que 4 caractères.</li>
+            <li>De tapper aussi son mot de passe, lui n'a pas de taille maximale limite, mais par contre doit faire plus de 7 caractères</li>
+            <li>Choisir la race du personnage que l'utilisateur veut jouer (proposez au moins 5 races différentes, vous pouvez vous inspirer du seigneurs des anneaux ou autre... Pour choisir cette race, l'utilisateur devra tapper 1,2,3,4 ou 5.)</li>
+            <li>Choisir la classe du personnage choisit (vous pouvez vous inspirer de Skyrim, ou Dofus,...) Cette fois, l'utilisateur devra tapper sur a, b, c, d,...  </li>
+            <li>De répartir 10 points de caractéristiques dans les statistiques qui suivent : Intelligence, Force, Charisme, Agilité, Esprit. Pour mettre 1 point dans cette caractéristique, on appuiera sur la première lettre du mot correspondant. On démarre avec 10 points à répartir et 5 points de base dans chacune des caractéristiques. Lorsque on met un point en force par exemple, la force passe à 6, et il ne nous reste que 9 points. Lorsque qu'il n'y a plus de points à répartir, la création de personne est finie.</li>
+        </ul>
+        <p>Deux choses super importantes :</p>
+        <ol>
+            <li>Si la personne se trompe à un moment, l'action en cours recommence. Exemple, si la personne entre un mot de passe avec 2 caractères, vous dites "vous avez fait une erreur, le mot de passe doit faire plus de 4 caractère" et puis on redemande à entrer un mot de passe.</li>
+            <li>A la fin, toutes les informations seront résumé en un petite texte du style :
+                <ul>
+                    <li>Votre nom de compte est : Kraktu</li>
+                    <li>Votre mot de passe est : ******* (le nombre d'étoile doit être égal au nombre de caractère du mot de passe, mais ne montrez pas le mdp, juste des étoiles)</li>
+                    <li>Vous jouez un Elfe</li>
+                    <li>Votre Elfe est de classe Assassin</li>
+                    <li>Votre personnage a 7 d'Intelligence, 5 de Force, 6 de Charisme,...</li>
+                </ul>
+            </li>
+        </ol>
     </div>
     <div class="navigation">
         <a href="./PHPC3E1.html">Exercice Précédent</a>
