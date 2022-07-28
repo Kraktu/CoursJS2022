@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch exoFacto1",
+            "request": "launch",
+            "mainClass": "exoFacto1",
+            "projectName": "Kraktu.github.io_547ac7de"
+        },
+        {
+            "type": "java",
+            "name": "Launch c4e6",
+            "request": "launch",
+            "mainClass": "c4e6",
+            "projectName": "Kraktu.github.io_547ac7de"
+        },
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Java</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Cours de Java</h1>
+        <h2>Chapitre 3 - Exercice 9 : Factoriser une calculatrice ?</h2>
+        <p>
+            Reprenez le code qui suit, La ligne d'appel d'Operation doit m'écrire : 
+            <br>L'opération effectuée est un * 
+            <br>le résultat de 5*7 = 35 
+            <br>c'était le résultat de l'opération *.
+        </p>
+        <p>
+            Bien sur, elle peut marcher avec le +, le - et le / aussi. Votre but est de factoriser les 4 fonctions en 1.
+        </p>
+        <p><code>
+            <br>public class exoFacto {
+            <br>    public static void main(String[] args) {
+            <br>        Operation(5,"*",7); 
+            <br>    }
+            <br>    // Voici les 4 fonction qu'il faut transformer en une seule !
+            <br>    public void Addition(int a, int b)
+            <br>    {
+            <br>        System.out.println("L'opération effectuée est un +");
+            <br>        System.out.println("Le résultat de " + a + " + " + b + " = " + (a+b));
+            <br>        System.out.println("C'était le résultat de l'opération +");
+            <br>    }
+            <br>    public void Soustraction(int a, int b)
+            <br>    {
+            <br>        System.out.println("L'opération effectuée est un -");
+            <br>        System.out.println("Le résultat de " + a + " - " + b + " = " + (a-b));
+            <br>        System.out.println("C'était le résultat de l'opération -");
+            <br>    }
+            <br>    public void Multiplication(int a, int b)
+            <br>    {
+            <br>        System.out.println("L'opération effectuée est un *");
+            <br>        System.out.println("Le résultat de " + a + " * " + b + " = " + (a*b));
+            <br>        System.out.println("C'était le résultat de l'opération *");
+            <br>    }
+            <br>    public void Division(int a, int b)
+            <br>    {
+            <br>        System.out.println("L'opération effectuée est un /");
+            <br>        System.out.println("Le résultat de " + a + " / " + b + " = " + (a/b));
+            <br>        System.out.println("C'était le résultat de l'opération /");
+            <br>    }
+            <br>}
+            
+        </code></p>
+        
+    </div>
+    <div class="navigation">
+        <a href="./JavaC3E8.html">Exercice Précédent</a>
+        <a href="./JavaC3E10.html">Exercice Suivant</a>
+        <a href="../../JavaChapitre3.html">Retour au Chapitre 3</a>
+        <a href="../../../AccueilJava.html">Retour à la sélection du Chapitre</a>
+    </div>  
+    <footer>
+        Cours de Java - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a> - <a href="https://eqla.be/">Eqla</a>
+    </footer>
+</body>
+</html>
