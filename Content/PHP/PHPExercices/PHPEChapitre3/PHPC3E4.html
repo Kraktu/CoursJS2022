@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice PHP</title>
+    <link rel="stylesheet" href="../../../../style/exercices.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Cours de PHP</h1>
+        <h2>Chapitre 3 - Exercice 4 : Rappel complet</h2>
+        <p>
+            Cet exercice nous permettra de revoir tous les concepts vu au cours d'algorithmie. L'idée sera au final d'avoir au moins :
+            <ul>
+                <li>Une fonction</li>
+                <li>Des variables</li>
+                <li>Des conditions (if/else if / else)</li>
+                <li>Un Switch</li>
+                <li>Des boucles (for/while/do while)</li>
+            </ul>
+        </p>
+        <p>
+            Pour cela, il faudra faire un exercice très simple qui va se compléter au fur et à mesure. Dans les grandes eaux, c'est un programme de calcul de l'IMC (indice de masse corporelle), au début ça sera très simple, mais ça va se complexifier en avançant !
+        </p>
+        <p>
+            Voici la liste des choses à faire. Vous devez ABSOLUMENT me valider chaque étape avant de passer à la suivante, car une étape mal réaliser peu vous paralyser les suivantes ! (Cela ne vous empêche pas d'y réfléchir si je suis occupé avec un autre groupe).
+        </p>
+        <p>
+            Petit indice : Si vous hésitez entre solution Q&D (Quick and Dirty, rapide et sale en français) ou une solution plus longue mais plus propre, je vous invite toujours, lors de cet exercice, de faire au plus propre et plus complet possible. Car en effet, même si un code rapide et efficace, lors des autres exercices peut être justement le plus efficace, ici, comme votre code va grossir, et se reposer sur ce que vous avez développé précédemment plus ce que vous aurez fait est précis et complet, plus ça sera facile de venir re-greffer quelque chose de nouveau et propre dessus.
+        </p>
+        <p>
+            <ol>
+                <li>Votre programme demande à l'utilisateur de rentrer sa taille, puis son poids. Le programme calculera et dira l'IMC de la personne</li>
+                <li>Votre programme fera l'étape précédente mais en boucle. C'est à dire que vous direz "Voulez vous calculer un IMC", si la personne dit oui, ça propose de rentrer la taille et le poids, si la personne dit non, le programme dit au revoir et s'arrête. Tant que la personne ne dit pas "non", ça redemandera les infos pour calculer l'IMC.</li>
+                <li>Contrairement à l'étape d'avant, cette fois, si en effet, l'utilisateur tape bien "oui" à la question "voulez vous calculer un IMC". Et il s'arrête bien toujours si on répond "non". Mais par contre, si on écrit tout autre chose, le programme devrai dire "Je ne vous ai pas compris, vous devez répondre oui ou non" et attendre que l'utilisateur retape une réponse. Tout ceci doit continuer le fonctionnement normal du programme.</li>
+                <li>L'IMC permet de classer les gens dans des catégories de poids. Allez chercher sur internet les différentes catégories et en fonction de l'IMC calculé par la personne, dites lui à quelle catégorie il appartient. Par exemple : "Vous avez un IMC de 37, vous êtes dans la catégorie obèse"</li>
+                <li>Y a une catégorie qui est considérée comme "normale". Si la personne n'est pas dans cette catégorie, dites lui combien de kilos elle doit perdre pour tomber dans la catégorie normale. Par exemple, si je pèse 95 kilos pour 1m90, je suis en surpoids de 5 kilos. Je vais donc dire à la personne : "Votre IMC est de 26, vous êtes en surpoids, perdez 5 kilos pour ne plus êtes en surpoids." Attention, si la personne est trop maigre, il faut bien lui dire de PRENDRE quelques kilos, pas les perdre.</li>
+                <li>Assurez vous que jamais des chiffres à rallonges n'arrivent à l'écran ! Maximum 1 chiffre après la virgule ! (25.3, 42.3,... Mais pas 45.6595 d'IMC !)</li>
+                <li>On va étoffer ce qu'on a fait il y a deux points. En gros, cette fois, votre but sera de dire, à la personne, un interval de poids objectif. Si pour une personne qui fait 1m80, elle devrait peser entre 65 et 80 kilos pour être considérée "normale", mais qu'elle fait 40 kilos. Dites lui maintenant qu'elle doit prendre 15 kilos, pour peser entre 65 et 80 kilos.</li>
+                <li>Suite logique, dites à la personne l'interval de poids qu'elle peut gagner. Pour reprendre l'exemple précédent, vous pouvez dire, pour peser entre 65 et 80 kilos, vous devriez prendre entre 15 et 30 kilos.</li>
+                <li>Un kilos de graisse fait environ 7700 calories. Une personne moyenne consomme 2000 calories par jours. Demandez à la personne en combien de temps et elle veut prendre ou perdre son poids. Conseillez en fonction de la demandez un déficit ou un excédent calorique théorique que la personne devrait faire par jour. Par exemple, si la personne est en surpoids de 1 kilos, et qu'elle veut le perdre en 2 semaine, elle devrait perdre 7700 calories en 2 semaines. en sachant qu'elle consomme naturellement 2.000 calories de base, elle consomme en 2 semaine 28.000 calories. Elle devra donc consommer seulement 20.300 calories sur ces deux semaines, et donc consommer maximum 1450 calories par jours pour perdre 1 kilo de graisse en 2 semaines ! </li>
+                <li>La consommation calorique augmente avec la taille. En effet, une personne plus petite, consomme moins de calories qu'une personne plus grande. La valeur de 2.000 calories est une moyenne pour les gens de 1m60. Chaque centimètre en plus permet de consommer 2% de calories en plus. Arrangez vous pour que votre calcul s'adapte à la taille de la personne. Ainsi une personne de 1m80 pourra consommer 2800 calories (2000 + (2000*(2%*20))) par jour plutôt que 2.000 ! Pour reprendre l'exemple précédent, elle devra donc consommer non pas 1450 calories, mais 2250 !</li>
+            </ol>
+        </p>
+    </div>
+    <div class="navigation">
+        <a href="./PHPC3E3.html">Exercice Précédent</a>
+        <!-- <a href="./PHPC2E5.html">Exercice Suivant</a> -->
+        <a href="../../PHPChapitre3.html">Retour au Chapitre 3</a>
+        <a href="../../../AcceuilPHP.html">Retour à la sélection du Chapitre</a>
+    </div>  
+    <footer>
+        Cours de PHP - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a> - <a href="https://eqla.be/">Eqla</a>
+    </footer>
+</body>
+</html>
