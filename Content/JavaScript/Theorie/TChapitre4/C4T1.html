@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
+
+        <h2>Chapitre 4 - Théorie 1 : La boucle While</h2>
+        <p>
+            Le petit mot while en programmation permet d'exécuter un bout de code en boucle un certain nombre de fois. Il fonctionne un peut comme un if, dans le sens où, on exécutera le code qui suivra dans son scope (ses accolades) que si la condition du while est à true. La grosse différence avec le if, c'est que, bien sûr, le code s'exécute en boucle premièrement, mais que du coup, forcément, dans son scope, il faut au moins une instruction qui permet de manipuler la condition, pour que quoi qu'il arrive, celle-ci puisse passer à false à force d'exécuter la boucle. On a donc :
+        </p>
+        <p>
+            <ul>
+                <li>while(condition)</li>
+                <li>{</li>
+                <li>instruction à exécuter en boucle</li>
+                <li>instruction qui change la condition</li>
+                <li>}</li>
+            </ul>
+        </p>
+        <p>
+            Si on oublie une instruction qui permet de changer la condition, on va arriver dans le cas d'une boucle infinie, voilà pourquoi c'est important. La condition est bien sur une expression booléenne dont le résultat ne peut être que true ou false. Nous allons voir 2 boucles while, une bonne et une mauvaise :
+        </p>
+        <p>
+            Mauvaise boucle while :
+            <br>
+            <code>
+                let isLooping =true;
+                <br>let i =0; 
+                <br>while(isLooping)
+                <br>{
+                <br>&emsp;i++ 
+                <br>&emsp;alert("Hello World") 
+                <br>}
+            </code>
+        </p>
+        <p>
+            <ul>
+                <li>isLooping : Booléen qui va contrôler si on boucle. Lorsqu'il est à false, la boucle s'arrête, lorsqu'il est true, la boucle tourne.</li>
+                <li>i : Compteur qui permet de compter le nombre de tour de boucle.</li>
+                <li>i++ : Incrémentation du compteur. Dès qu'on rentre dans la boucle, i passe à 1, puis à 2, puis à 3,... On fait +1 à chaque tour.</li>
+                <li>alert("Hello World") : Ce qu'on veut exécuter en boucle.</li>
+            </ul>
+        </p>
+
+        <p>
+            Le soucis de cette boucle, c'est que isLooping n'a aucun moyen de passer à false ! Donc la boucle tournera à l'infini, et là c'est la catastrophe, c'est le crash du programme. On doit donner une possibilité de sortie à notre programme !
+        </p>
+
+        <p>
+            Bonne boucle while :
+            <br>
+            <code>
+                let isLooping =true;
+                <br>let i =0; 
+                <br>while(isLooping)
+                <br>{
+                <br>&emsp;i++ 
+                <br>&emsp;alert("Hello World") 
+                <br>&emsp;if(i>=10)
+                <br>&emsp;{
+                <br>&emsp;&emsp;isLooping=false;
+                <br>&emsp;}
+                <br>}
+            </code>
+        </p>
+        <p>
+            Ici on a une bonne boucle, car on a le contrôle dans le while de la condition. Lorsque que i deviendra supérieur ou égal à 10, isLooping passera à false grâce à notre nouveau if. Et la boucle s'arrêtera donc. Ici, donc, on a l'instruction alert("Hello World") qui va s'exécuter 10 fois.
+        </p>
+        <p>
+            Meilleure boucle while :
+            <br>
+            <code>
+                <br>let i =0; 
+                <br>while(i<=10)
+                <br>{
+                <br>&emsp;i++ 
+                <br>&emsp;alert("Hello World") 
+                <br>}
+            </code>
+        </p>
+        <p>
+            Ici, c'est la même chose qu'au dessus, mais en raccourcis. En effet, i<=10 est déjà une expression booléenne, qui sera manipulée par le i++, et donc naturellement, i commencera à 0, la condition sera vraie, jusqu'à ce qu'on arrive à i qui vaut 11, là la boucle s'arrête car 11<=10 est faux, on ne rentre plus dans le while.
+        </p>
+        <p>
+            Dernière petite subtilité, une fois la boucle while stoppée, on passe à la suite du code. Donc si on a :
+        </p>
+        <p>
+            <code>
+                <br>let i =0; 
+                <br>while(i<=10)
+                <br>{
+                <br>&emsp;i++ 
+                <br>&emsp;alert("Hello World") 
+                <br>}
+                <br>alert("Fin de mon code")
+            </code>
+        </p>
+        <p>
+            Et bien ça va alert 10 fois de suite Hello World, ensuite ça va bien dire Fin de mon code, car on arrivera à la fin de la boucle, et donc on en sort, mais on continue de parcourir la suite du code comme toujours, ça ne change pas, comme avec un if, un appel de fonction, ou tout ce qu'on a vu précédemment !
+        </p>
+    </div>
+        <div class="navigation">
+            <a href="../TChapitre4/C4T2.html">Théorie Suivante</a>
+            <a href="../../Chapitre4.html">Retour au Chapitre 4</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>
+        </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>
