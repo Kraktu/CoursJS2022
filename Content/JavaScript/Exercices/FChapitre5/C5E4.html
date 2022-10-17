@@ -15,7 +15,6 @@
         <h2>Chapitre 5 - Exercice 4 : Alphabet Ascii</h2>
         <p>
             Écrire TOUT l'alphabet en minuscule et en majuscule à à l'aide d'une boucle for sans utiliser une seule string ou char dans vos variables ! Uniquement des ints !!
-            
         </p>
         
     </div>
@@ -35,6 +34,11 @@
 
 <script>
     // Votre résolution ici :
-
+    let display ="";
+    for (let i = 97 ; i <123 ; i++) {
+         display+=String.fromCharCode(i) + "\n";
+    }
+    
+    alert(display);
 </script>
 </html>

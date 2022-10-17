@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
+
+        <h2>Chapitre 5 - Théorie 1 : La boucle for</h2>
+        <p>
+            La boucle for, tout comme la boucle while sert à répéter des instructions plusieurs fois. La grande différence avec la boucle while est, au delà de la déclaration, que la boucle for ne peut être utilisée que dans le cadre où le nombre de tour de boucle est connu à l'avance par le programme. La limite est un nombre fini. En effet, comme on l'a vu, la boucle while utilise un simple booléen comme condition, cela veut donc dire que n'importe quelle opération booléenne peut être utilisée comme condition. Ainsi, par exemple, on peut avec une boucle while, répéter une instruction en attendant que l'utilisateur appuie sur une touche, ou qu'un certain nombre soit tiré au hasard, etc. Pour la boucle for, c'est différent, on va voir ça en regardant de plus près comment on la déclare. Nous allons prendre comme exemple une boucle qui va tourner 10fois.
+        </p>
+        <p><code>
+            for(let i = 0; i < 10; i++)
+            <br>{
+            <br>&emsp;//code à exécuter en boucle
+            <br>}
+        </code></p>
+        <p>la structure de la boucle for va donc comme suis : for(pointDeDépart;Limite;PasEntreDeuxTours)</p>
+        <p>le let i =0; permet de déclarer le point de départ de la boucle. Ainsi on peut soit déclarer une nouvelle variable (i dans notre exemple), soit récupérer une variable déclarée avant bien sur. Ici, ça veut donc dire que la boucle démarre à 0.</p>
+        <p>Le i < 10; est la limite, c'est le booléen qui correspond à la condition du while. Quand cette condition passe de true à false, la boucle s'arrête. Donc si dès que i est égal à 10 ou plus, la boucle s'arrêtera.</p>
+        <p>Enfin, le i++; est le pas entre deux tours de boucle. C'est l'incrémentation qui sera appliquée au compteur à chaque nouveau tour de boucle. Ici, i++ veut dire qu'on va rajouter +1 à i à chaque tour de boucle. On pourrait avoir par exemple i+=2. Ce qui rajouterai 2 à i à chaque tour de boucle. Ou i/=3 ce qui diviserai i par 3 à chaque tour de boucle, etc. On peut y mettre ce qu'on veut comme opération. </p>
+        <p>Pour expliquer dans le détail, au premier tour de boucle, i vaudra 0, on va vérifier si i est plus petit que 10. Dans ce cas, oui, on va donc exécuter le code dans les accolades. Ensuite, on refait un tour, donc on fait +1 à i. i vaut maintenant 1, on pose la question "est-ce que i est plus petit que 10 ?" la réponse est oui, on exécute donc le code dans les accolades, on fait +1 à i, etc. Une fois arrivé au 10ème tour, i vaut 11, et la condition du coup devient "est-ce que i est inférieur à 10", hors i vaut 10, donc la condition passe à faux et la boucle s'arrête !</p>
+        <p>Il n'y a rien d'autre à dire sur la boucle for réellement. C'est un peu spécial à déclarer, il faut prendre le coup au début, mais c'est la boucle la plus simple à utiliser.</p>
+
+    </div>
+        <div class="navigation">
+            <a href="../TChapitre4/C5T2.html">Théorie Suivante</a>
+            <a href="../../Chapitre5.html">Retour au Chapitre 5</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>
+        </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

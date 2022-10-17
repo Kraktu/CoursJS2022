@@ -35,6 +35,16 @@
 
 <script>
     // Votre résolution ici :
+    let initialUserInput = "";
+    let finalUserInput = prompt("Entrez une phrase, je vais la zozotter :");
 
+    while(initialUserInput!=finalUserInput)
+    {
+        initialUserInput = finalUserInput;
+        finalUserInput = initialUserInput.replace("j","z");
+        finalUserInput = finalUserInput.replace("ch","z");
+    }
+
+    alert(finalUserInput);
 </script>
 </html>

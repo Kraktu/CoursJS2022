@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
+
+        <h2>Chapitre 4 - Théorie 2 : les mots clefs Break/Continue </h2>
+        <p>
+            Lorsque vous êtes dans une boucle, il existe 2 mots clefs assez important qui sont les mots break et continue. Ce sont deux petites instructions qui permettent de faire des actions très précise lors du déroulement d'une boucle. Le mot break permet d'arrêter la boucle lorsqu'on le rencontre, quand au mot continue, il permet de sauter le reste des instructions de l'itération en cours pour passer au tout de boucle suivant. Ils sont souvent placé dans des conditions, pour s'exécuter à un moment précis de la boucle. Imaginons 2 cas particulier, le premier, vous voulez arrêter une boucle qui dit les chiffres de 1 à 10 sensée durer 10 tours au bout du troisième, l'autre cas, vous voulez écrire tous les nombres de 1 à 10, sauf le nombre 3.
+        </p>
+<br>
+        <h3>Break</h3>
+
+        <p>
+            On va donc utiliser le mot break pour arrêter la boucle prématurément, ainsi dans notre boucle while, on aura :
+        </p>
+        <p><code>
+            let i = 1;
+            <br>while( i < 11 )
+            <br>{
+                <br>&emsp;alert(i);
+                <br>&emsp;if(i==3)
+                <br>&emsp;{
+                <br>&emsp;&emsp;break;
+                <br>&emsp;}
+                <br>&emsp;i++;
+            <br>}
+        </code></p>
+        <p>
+            On peut voir que cette boucle veut normalement aller de 1 à 11, et écrire les nombre, mais une fois que la boucle atteindra le moment où i vaut 3, on va bien alert le 3, mais ensuite, on va rentrer dans le if, et "break" du while, c'est à dire sortir. La boucle s'arrêtera donc à 3. Bien sur, le code n'arrête pas totalement son exécution, si vous avez des instructions après l'accolade fermante du while, on continuera là dessus. Ici, l'utilité est toute relative. On va plutôt breaker dans des cas particuliers rencontrés, il est en effet assez inutile de définir une boucle qui tourne 10 fois pour l'arrêter au bout de 3. Mais par contre, il peut parfois être utile de réagir à une interaction de l'utilisateur. Par exemple, tourner 100 fois dans notre boucle, sauf si l'utilisateur tape sur la touche "y", à ce moment là, on pourra utiliser le mot break de manière plus intéressante. Ainsi on exécute en boucle une instruction, si l'utilisateur fait "y", la boucle break. 
+        </p>
+<br>
+        <h3>Continue</h3>
+
+        <p>
+            A contrario, le mot continue ne permet pas de mettre fin à la boucle, mais simplement sauter l'instruction en cours.
+        </p>
+        <p><code>
+            let i = 1;
+            <br>while( i < 11 )
+            <br>{
+                <br>&emsp;if(i==3)
+                <br>&emsp;{
+                <br>&emsp;&emsp;continue;
+                <br>&emsp;}
+                <br>&emsp;alert(i);
+                <br>&emsp;i++;
+            <br>}
+        </code></p>
+        <p>
+            Ici, on va bien écrire les chiffres 1 et 2 normalement, mais une fois arrivé au chiffre 3, on va rentrer dans le if. Le code ne lira pas ce qu'il se passe entre le moment où on rencontre le continue et l'accolade fermante du while, uniquement sur ce tour de boucle ! On recommencera donc bien à i=4. On aura donc 1, 2, 4, 5, 6, 7, 8, 9, 10. Le mot continue peut simplement se faire remplacer par un if/else bien placé souvent ! Comme par exemple ci-dessous :
+        </p>
+        <p><code>
+            let i = 1;
+            <br>while( i < 11 )
+            <br>{
+                <br>&emsp;if(i!=3)
+                <br>&emsp;{
+                    <br>&emsp;alert(i);
+                <br>&emsp;}
+                <br>&emsp;i++;
+            <br>}
+        </code></p>
+        <p>
+            Ici, on aurait la même chose d'un point de vue résultat. On écrira tous les nombres quand ils ne sont pas égaux à 3. On peut donc choisir les deux solutions. Peut-être que la solution sera plus claire par moment et moins par d'autres. Utiliser le mot continue n'est pas très naturel pour moi, mais si il l'est pour vous, n'hésitez pas à vous en servir !
+        </p>
+
+
+    </div>
+        <div class="navigation">
+            <a href="../TChapitre4/C4T1.html">Théorie Précédente </a>
+            <a href="../../Chapitre4.html">Retour au Chapitre 4</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>
+        </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>

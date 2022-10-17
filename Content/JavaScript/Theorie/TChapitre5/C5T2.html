@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie Javascript</title>
+    <link rel="stylesheet" href="../../../../style/theorie.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Cours de Javascript 2022</h1>
+
+        <h2>Chapitre 5 - Théorie 2 : Les opérations sur les strings</h2>
+        <p>
+            Jusque maintenant, nous avons vu des notions algorithmiques qui sont sensiblement commune et les mêmes à tous les langages de programmations depuis des dizaines d'années. Ici par contre, on va attaquer quelque chose d'un peu plus poussé et évolué d'un point de vue purement du développement, mais qui, pour nous, va faciliter grandement notre code et le développement de nos futurs projets.
+        </p>
+        <br>
+        <h3>Un petit exemple pour commencer</h3>
+        <p>Imaginez que pour une raison quelconque vous ayez besoin de récupérer une chaîne de caractère uniquement composée de minuscule. Une solution pourrait être de le résoudre purement algorithmiquement avec les notions que vous avez vu jusque là, comme suis :</p>
+        <p><code>
+            let userInput = prompt("Entrez un mot, je le transformerai en minuscule")
+            <br>for(let i = 0; i < userInput.length; i++;)
+            <br>{
+            <br>&emsp;if(userInput.charCodeAt(i) > 64 && userInput.charCodeAt(i) < 91 )
+            <br>&emsp;{
+            <br>&emsp;&emsp;userInput.charCodeAt(i) = userInput.charCodeAt(i) + 32:
+            <br>&emsp;}
+            <br>}
+        </code></p>
+        <p>Dans cet exemple, on va récupérer chacun des caractères qui compose notre string les uns après les autres, on va récupérer la valeur Ascii qui lui correspond, ("A" = 65, ... , "Z" = 90, "a" = 97, ... ,  "z" =112). Si la valeur numérique est comprise entre 65 et 90, c'est une majuscule, on la remplace donc par son équivalent avec 32 place de plus dans la table Ascii, ce qui donne la même lettre en minuscule</p>
+        <p>Et bien, même si cette méthode est totalement correcte et valide, on peut très bien faire beaucoup plus simple. En effet, il existe des fonctions "built-in", "de base", ... Qui nous permettent de faire des opérations relativement complexe sans s'embêter. Ainsi, une fonction qui s'appelle toLowerCase() existe déjà en JS, qui remplace tous les caractères majuscules en minuscule.</p>
+        <br>
+        <h3>Retour à la théorie</h3>
+        <p>En fait, il y a beaucoup d'opérations qui sont très souvent répétée ou "commune" en programmation, et pour faciliter la vie des développeurs, plutôt que de réinventer la roue à chaque fois, certains langages ont inséré, dans leur structure de base, des fonctions spécifiques pour ces actions répétitives. Ainsi, dans notre exemple, plutôt que de faire cette boucle for barbare, en soit, vous pouvez juste faire : </p>
+        <p><code> userInput = userInput.toLowerCase()</code></p>
+        <p>C'est ce qu'on appelle, faire une opération sur une string. Il en existe un paquet, et quand vous regardez notre code précédent, on a utilisé l'opération "charCodeAt()" aussi. A ne pas confondre avec le "length" qui n'est pas une opération, c'est un élément qui défini notre string, c'est une propriété de celle-ci. Une opération, ou une méthode, est une fonction, et fini par un couple de parenthèse. Par contre, attention, faire une opération sur une string ne va pas remplacer la string sur laquelle on fait l'opération. En effet, c'est une fonction, elle renvoie au programme le résultat attendu, donc il ne faut pas oublier que si on ve stocker se résultat pour le réutiliser plusieurs fois, il faut bien affecter la valeur obtenue par l'opération dans une nouvelle variable.</p>
+        <p>Si j'ai :</p>
+        <p><code>let userInput = "Bonjour Je suis Philip"</code></p>
+        <p>comme code de base, regardez bien ce qui va suivre :</p>
+        <p><code>alert(userInput.toLowerCase())</code></p>
+        <p>ceci va bien m'afficher "bonjour je suis philip", par contre si je fais :</p>
+        <p><code>
+            userInput.toLowerCase();
+            <br>alert(userInput);
+        </code></p>
+        <p>Le résultat est toujours "Bonjour Je Suis Philip" car on a pas stocké le résultat de l'opération qu'on a fait. Si on veut stocker que le résultat il faut faire un égal à un moment</p>
+        <p><code>
+            userInput=userInput.toLowerCase();
+            <br>alert(userInput);
+        </code></p>
+        <p>Ici on aura bien "bonjour je suis philip". Enfin, pour être sur que vous ayez compris, regardez ceci :</p>
+        <p><code>
+            let userInput = "Je Suis Gentil";
+            <br> let userInput2 = userInput.toLowerCase();
+        </code></p>
+        <p>Que vaut userInput et userInput2 à votre avis ?</p>
+        <ul>
+            <li>userInput vaut "Je Suis Gentil"</li>
+            <li>userInput2 faut "je suis gentil"</li>
+        </ul>
+
+        <h3>Quelques fonctions utiles...</h3>
+        <p>Je ne pourrais pas toute les lister, et il sera très simple de trouver une liste complète ou celle qui vous intéresse sur internet. Par exemple si vous vouliez savoir comment transformer votre chaîne de caractère en minuscule, on aurait pu tapper sur google "js transformer string minuscule". Vous auriez trouvé votre bonheur ! Je vous conseille cela dit de toujours passer par l'anglais. En effet, il sera plus simple de trouver de la doc de qualité et vous verrez que vos réponses seront dans vos questions. En demandant à google "js string to lower case" vous serez très vite tombé sur la méthode "toLowerCase()"</p>
+        <p>Voici quand même quelques fonctions utiles pour résoudre nos exercices : </p>
+        <p><i>Attention, si je mets str, c'est car on a besoin d'une string particulière ou une variable pour l'utiliser, si je mets String, il faut mettre aussi String de votre côté, c'est qu'on part du type String et pas d'une str en particulier !</i></p>
+        <ul>
+            <li>str.repeat(nbr) : répétera la string qui précède le . nbr nombre de fois.</li>
+            <li>str.replace(strToReplace,wantedStr) : remplacera, dans la string qui précède le . la première occurrence de strToReplace par wantedStr.</li>
+            <li>String.fromCharCode(nbr) : donnera un caractère en fonction du nbr donné en paramètre selon la table Ascii</li>
+            <li>str.charCodeAt(index) : donnera le numéro dans la table Ascii du caractère placé à l'endroit de l'index donné en paramètre en commençant par 0. si index = 2, on ira voir le 3ème caractère de la string, si c'est 5, le 6ème, etc.</li>
+            <li>str.slice(startingIndex,endingIndex=str.length-1) : Permet de récupérer une partie de la string entre startingIndex et endingIndex. Si endingIndex n'est pas spécifiée, on récupère la string depuis starting index jusque la fin.</li>
+            <li>str.toLowerCase() : transforme la chaîne de caractère en minuscule</li>
+            <li>str.toUpperCase() : transforme la chaîne de caractère en majuscule.</li>
+        </ul>
+
+    </div>
+        <div class="navigation">
+            <a href="../TChapitre4/C5T1.html">Théorie Précédente</a>
+            <a href="../../Chapitre5.html">Retour au Chapitre 5</a>
+            <a href="../../../AccueilJS.html">Retour à la sélection du Chapitre</a>
+        </div>
+
+
+<footer>
+Cours de Javascript 2022 - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a>
+</footer>
+
+</body>
+
+</html>
