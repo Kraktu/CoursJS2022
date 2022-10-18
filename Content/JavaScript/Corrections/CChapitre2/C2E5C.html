@@ -13,7 +13,7 @@
 
         <h2>Chapitre 2 - Correction 5 : Fonction combinée d'anniversaire</h2>
 
-        <p><b>
+        <p><b><code>
             function SayAge(_age)
             <br>{
             <br>&emsp;alert("You're " + _age + " years old.");
@@ -29,7 +29,7 @@
             <br>}
             <br>
             <br>Combined(28,"29/11/1993")
-        </b></p>
+        </code></b></p>
 
         <h2>Explications :</h2>
 
@@ -39,7 +39,7 @@
 
         <h2>Solution alternative :</h2>
 
-        <p><b>
+        <p><b><code>
             <br>function SayBirthday(_date)
             <br>{
             <br>&emsp;alert("You are born on the " + _date + ".")
@@ -52,13 +52,13 @@
             <br>}
             <br>
             <br>SayAge2(29,"17/08/1992");
-        </b></p>
+        </code></b></p>
 
         <p><i>
             Ici, petite alternative, pour réussir l'exercice, mais bien moins correcte que la solution précédente, c'est d'appeler, depuis notre fonction SayAge2() la fonction SayBirthday(). Il y a deux problèmes à cette solution dans l'absolu, même si en effet ça répond à l'énoncé, c'est que premièrement, si nous voulons appeler SayAge2() sans SayBirthday(), nous ne pouvons pas, l'inverse est possible, mais nous somme condamné à appeler SayBirthday() en cascade de SayAge2(). Enfin, SayAge2() est au courant d'une information qui ne l'intéresse pas elle même, à savoir le paramètre _date qui ne lui sert qu'à uniquement donner à SayBirthday. Dans l'absolu, une fonction ne devrait être au courant uniquement que des informations dont elle a besoin pour fonctionner. C'est un moindre problème, mais c'est une bonne habitude à prendre pour bien coder.
         </i></p>
 
-        <p><b>
+        <p><b><code>
             <br>function SayAgeAndBirthday(_age,_date)
             <br>{
             <br>&emsp;alert("You're " + _age + "years old");
@@ -66,7 +66,7 @@
             <br>}
             <br>
             <br>SayAgeAndBirthday(30, "15/12/1991");
-        </b></p>
+        </code></b></p>
 
         <p><i>
             Cette solution est convenable, bien qu'un peu tricher par rapport à la consigne. Elle est d'un côté meilleur que la précédente car elle ne multiplie pas les déclaration de fonction, et donc ses paramètres sont tous les deux utiles à son bon fonctionnement, mais d'un côté elle est bien pire, car si nous voulons uniquement afficher la date ou l'âge, nous sommes bloqué, nous sommes quoi qu'il arrive obligés d'appeler les deux. C'est correct, mais pas idéal dans un projet de plus grande ampleur.

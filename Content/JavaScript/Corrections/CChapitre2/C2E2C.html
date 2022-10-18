@@ -13,14 +13,14 @@
 
         <h2>Chapitre 2 - Correction 2 : Salutation personnalisée</h2>
 
-        <p><b>
+        <p><b><code>
             function SayHelloToSomeone(_name)
             <br>{
             <br>&emsp;alert("Hello " + _name);
             <br>}
             <br>
             <br>SayHelloToSomeone(prompt("What's your name ?"))
-        </b></p>
+        </code></b></p>
 
         <h2>Explications :</h2>
 
@@ -30,7 +30,7 @@
 
         <h2>Solution alternative :</h2>
 
-        <p><b>
+        <p><b><code>
             <br>function SayHelloToSomeone(_name)
             <br>{
             <br>&emsp;alert("Hello " + _name);
@@ -38,24 +38,24 @@
             <br>
             <br>let name = "Philip";
             <br>SayHelloToSomeone(name);
-        </b></p>
+        </code></b></p>
 
         <p><i>
            Ici, passons en argument une variable déclarée au préalable. Notez bien que le nom du paramètre _name et de la variable name, bien que se ressemblant, n'a aucune importance, ici, les deux valeurs représentent un nom, donc j'ai choisi de les appeler name, mais l'une aurait pu s'appeler variable et l'autre parameter, ça aurait marché de la même manière, c'est un nom que nous utilisons en tant que développeur pour nous retrouver dans le code, rien de plus. 
         </i></p>
-        <p><b>
+        <p><b><code>
             <br>function SayHelloToSomeone(_name)
             <br>{
             <br>&emsp;alert("Hello " + _name);
             <br>}
             <br>
             <br>SayHelloToSomeone("Jean");
-        </b></p>
+        </code></b></p>
 
         <p><i>
             Ici, on donne directement en paramètre une chaîne de caractère, bien qu'équivalent à la solution du dessus, ici, nous ne réservons pas d'espace mémoire pour stocker l'information du nom Jean, ce qui est un peu moins gourmand pour notre programme. Pourquoi stocker le nom si nous ne réutilisons pas ? Par contre, le "soucis" dans les deux dernières solutions est que nous ne demandons pas l'avis de l'utilisateur. Alors ce n'est pas une faute, mais il est vrai que bien souvent nous ne savons pas le nom de l'utilisateur avant d'executer le code...
         </i></p>
-        <p><b>
+        <p><b><code>
             <br>function SayHelloToSomeone(_name)
             <br>{
             <br>&emsp;alert("Hello " + _name);
@@ -63,7 +63,7 @@
             <br>
             <br>let username = prompt("What's your username ?");
             <br>SayHelloToSomeone(username);
-        </b></p>
+        </code></b></p>
 
         <p><i>
             Enfin, cette dernière solution est une combinaison de la demande à l'utilisateur via la fonction prompt() et du stockage de l'information via une variable. Nous allons donc récupérer la valeur de retour de la fonction prompt() avant de la passer en paramètre. C'est sans doute la meilleure solution dans le cas ou notre projet serait de plus grande ampleur.

@@ -13,7 +13,7 @@
         
         <h2>Chapitre 2 - Correction 6 : Somme d'âges</h2>
         
-        <p><b>
+        <p><b><code>
             <br>function AgeSum(_firstAge,_secondAge)
             <br>{
             <br>&emsp;alert("The first person is " + _firstAge + " years old, the second one is " + _secondAge + " years old.");
@@ -22,7 +22,7 @@
             <br>}
             <br>
             <br>alert("The sum of both ages is : " + AgeSum(15, 32));
-        </b></p>
+        </code></b></p>
     
         <h2>Explications :</h2>
     
@@ -38,7 +38,7 @@
     
         <h2>Solution alternative :</h2>
     
-        <p><b>
+        <p><b><code>
             <br>function AgeSum(_firstAge,_secondAge)
             <br>{
             <br>&emsp;alert("The first person is " + _firstAge + " years old, the second one is " + _secondAge + " years old.");
@@ -48,7 +48,7 @@
             <br>
             <br>let ageSum=AgeSum(18,26);
             <br>alert("The sum of both ages is : " + ageSum);
-        </b></p>
+        </code></b></p>
         
         <p><i>
             En vérité, ce code ressemble très fort au précédent, la seule chose qui change, c'est que, avant d'afficher le message dans le alert, nous stockons la valeur de retour de AgeSum() dans une variable. Ensuite, nous utilisons cette variable qui stock maintenant la sommes des âges dans le alert(). C'est l'équivalent de la solution du dessus, mais encore une fois, cette solution est un peu meilleure dans le cas d'un gros programme, car si nous voulons à l'avenir réutiliser cette somme, le fait de l'avoir stockée nous permet simplement de réutiliser cette variable plutôt que de recalculer la somme. La fonction quant à elle sera éventuellement réutilisée pour recalculer une nouvelle somme entre 2 autres âges. Pour faire simple, de manière générale, on évite de rappeler une fonction pour recalculer quelque chose qu'on a déjà calculé, on préfère stocker le résultat du calcul lors de la première execution de la fonction dans une variable. En effet, ici c'est un calcul simple, mais imaginez une fonction qui calcule... La force d'attraction d'une planète située à 150 année lumière sur la terre en prenant en compte toutes les forces parasites sur la route, et bien cela serait certainement un calcul extrêmement complexe, pour autant, le résultat, si ça tombe, vaudrait au hasard 253 Newton. Si jamais on veut réutiliser cette valeur, il sera plus simple pour notre ordinateur de se rappeler du chiffre 253 plutôt que de calculer une nouvelle fois toute cette opération compliquée !

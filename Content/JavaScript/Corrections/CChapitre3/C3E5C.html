@@ -14,22 +14,27 @@
         
         <h2>Chapitre 3 - Correction 5 : Détecteur de langue</h2>
         
-        <p><b>
-            
-        </b></p>
+        <p><b><code>
+            let userInput = prompt("Dites moi bonjour dans votre langue et je vous dirai quelle langue vous parlez :");
+        <br>if (userInput=="bonjour"||userInput=="salut") 
+        <br>&emsp;alert("Vous parlez Français");
+        <br>else if(userInput=="hallo")
+        <br>&emsp;alert("Vous parlez Allemand");
+        <br>else if(userInput=="goeiedag"||userInput=="g'dag")
+        <br>&emsp;alert("Vous parlez Néerlandais");
+        <br>else if(userInput=="hello"|| userInput == "hi")
+        <br>&emsp;alert("Vous parlez Anglais");
+        <br>else if(userInput="hola")
+        <br>&emsp;alert("Vous parlez Espagnol");
+        <br>else
+        <br>&emsp;alert("Langue non reconnue");
+        </code></b></p>
         
         <h2>Explications :</h2>
         
         <p>
             
         </p>
-    
-        <h2>Solution alternative :</h2>
-        
-        <p><i>
-            
-        </i></p>
-        
         
     </div>
         <div class="navigation">
@@ -48,5 +53,18 @@
 <script>
     // Ma correction :
 
+    let userInput = prompt("Dites moi bonjour dans votre langue et je vous dirai quelle langue vous parlez :");
+    if (userInput=="bonjour"||userInput=="salut") 
+        alert("Vous parlez Français");
+    else if(userInput=="hallo")
+        alert("Vous parlez Allemand");
+    else if(userInput=="goeiedag"||userInput=="g'dag")
+        alert("Vous parlez Néerlandais");
+    else if(userInput=="hello"|| userInput == "hi")
+        alert("Vous parlez Anglais");
+    else if(userInput="hola")
+        alert("Vous parlez Espagnol");
+    else
+        alert("Langue non reconnue");
 </script>
 </html>

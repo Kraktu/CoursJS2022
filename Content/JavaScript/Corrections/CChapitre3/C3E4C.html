@@ -14,20 +14,231 @@
         
         <h2>Chapitre 3 - Correction 4 : Horaire de train</h2>
         
-        <p><b>
-            
-        </b></p>
+        <p><b><code>
+            <br>let monsMorningHour = " 9h10";
+            <br>let monsAfternoonHour = "13h30";
+            <br>let monsEveningHour = "22h56";
+        <br>
+            <br>let bruxellesMorningHour = "10h33";
+            <br>let bruxellesAfternoonHour = "14h42";
+            <br>let bruxellesEveningHour = "19h02";
+        <br>
+            <br>let nivellesMorningHour = "5h34";
+            <br>let nivellesAfternoonHour = "15h13";
+            <br>let nivellesEveningHour = "20h00";
+        <br>
+            <br>let charleroiMorningHour = "7h45";
+            <br>let charleroiAfternoonHour = "12h53";
+            <br>let charleroiEveningHour = "23h02";
+        <br>
+            <br>alert("Bienvenue dans l'application SNCB qui sert à savoir l'horaire de vos trains, vous allez devoir saisir une destination et une période de la journée pour que je puisse vous donner l'heure de départ de votre train.");
+        <br>
+            <br>let destinationNbr = DestinationChoice();
+            <br>let periodNbr = PeriodChoice();
+            <br>let destination = "";
+            <br>let period = "";
+        <br>
+            <br>if(destinationNbr == 1)
+            <br>{
+            <br>&emsp;destination=="Bruxelles";
+            <br>&emsp;if(periodNbr==1)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = bruxellesMorningHour; 
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==2)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = bruxellesAfternoonHour;
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==3)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = bruxellesEveningHour;
+            <br>&emsp;}
+            <br>}
+        <br>
+            <br>if(destinationNbr == 2)
+            <br>{
+            <br>&emsp;destination=="Mons";
+            <br>&emsp;if(periodNbr==1)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = monsMorningHour; 
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==2)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = monsAfternoonHour;
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==3)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = monsEveningHour;
+            <br>&emsp;}
+            <br>}
+        <br>
+            <br>if(destinationNbr == 3)
+            <br>{
+            <br>&emsp;destination=="Nivelles";
+            <br>&emsp;if(periodNbr==1)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = nivellesMorningHour; 
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==2)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = nivellesAfternoonHour;
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==3)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = nivellesEveningHour;
+            <br>&emsp;}
+            <br>}
+        <br>
+            <br>if(destinationNbr == 4)
+            <br>{
+            <br>&emsp;destination=="Charleroi";
+            <br>&emsp;if(periodNbr==1)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = charleroiMorningHour; 
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==2)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = charleroiAfternoonHour;
+            <br>&emsp;}
+            <br>&emsp;if(periodNbr==3)
+            <br>&emsp;{
+            <br>&emsp;&emsp;period = charleroiEveningHour;
+            <br>&emsp;}
+            <br>}
+        <br>
+            <br>alert("Votre train à destination de " + destination + " partira à " + period + ". Bon voyage !")
+        <br>
+            <br>function DestinationChoice()
+            <br>{
+            <br>&emsp;_destination = parseInt(prompt("Choisissez votre destination en entrant le chiffre correspondant :\n1 - Bruxelles\n2 - Mons\n3 - Nivelles\n4 - Charleroi"));
+            <br>&emsp;if(_destination>4||_destination < 0)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Donnée entrée incorrecte, veuillez recommencer");
+            <br>&emsp;&emsp;DestinationChoice();
+            <br>&emsp;}
+            <br>&emsp;else
+            <br>&emsp;{
+            <br>&emsp;&emsp;return _destination;
+            <br>&emsp;}
+            <br>}
+            <br>function PeriodChoice()
+            <br>{
+            <br>&emsp;_period = parseInt(prompt("Choisissez votre période de la journée à laquelle vous voudrez partir :\n1 - Matin\n2 - Après-midi\n3 - Soir"));
+            <br>&emsp;if(_period>3||_period < 0)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Donnée entrée incorrecte, veuillez recommencer");
+            <br>&emsp;&emsp;PeriodChoice();
+            <br>&emsp;}
+            <br>&emsp;else
+            <br>&emsp;{
+            <br>&emsp;&emsp;return _period;
+            <br>&emsp;}
+            <br>}
+        </code></b></p>
         
         <h2>Explications :</h2>
         
         <p>
-            
+            On va déclarer toutes nos périodes en haut, dans des variables, ça sera plus simple de les modifier dans le futur si on en a besoin. Ensuite, on a 2 fonctions qui nous permettent boucler en cas d'erreur de l'utilisateur pour lui redemander de choisir un bon input. Enfin, la solution que vous avez sans doute envisagé, c'est de faire une suite de if imbriqué, c'est à dire d'abord de demander la destination, une fois la destination choisie, on refait des if dans le if pour faire choisir la période.
         </p>
         
         <h2>Solution alternative :</h2>
         
+        <p><b><code>
+            let monsMorningHour = " 9h10";
+            <br>let monsAfternoonHour = "13h30";
+            <br>let monsEveningHour = "22h56";
+        <br>
+            <br>let bruxellesMorningHour = "10h33";
+            <br>let bruxellesAfternoonHour = "14h42";
+            <br>let bruxellesEveningHour = "19h02";
+        <br>
+            <br>let nivellesMorningHour = "5h34";
+            <br>let nivellesAfternoonHour = "15h13";
+            <br>let nivellesEveningHour = "20h00";
+        <br>
+            <br>let charleroiMorningHour = "7h45";
+            <br>let charleroiAfternoonHour = "12h53";
+            <br>let charleroiEveningHour = "23h02";
+        <br>
+            <br>alert("Bienvenue dans l'application SNCB qui sert à savoir l'horaire de vos trains, vous allez devoir saisir une destination et une période de la journée pour que je puisse vous donner l'heure de départ de votre train.");
+        <br>
+            <br>let destinationNbr = DestinationChoice();
+            <br>let periodNbr = PeriodChoice();
+            <br>let destination = "";
+            <br>let period = "";
+        <br>
+            <br>if(destinationNbr == 1)
+            <br>{
+            <br>&emsp;destination=="Bruxelles";
+            <br>&emsp;period = FakePeriodSwitch(periodNbr,bruxellesMorningHour,bruxellesAfternoonHour,bruxellesEveningHour)
+            <br>}
+        <br>
+            <br>if(destinationNbr == 2)
+            <br>{
+            <br>&emsp;destination=="Mons";
+            <br>&emsp;period = FakePeriodSwitch(periodNbr,monsMorningHour,monsAfternoonHour,monsEveningHour)
+            <br>}
+        <br>
+            <br>if(destinationNbr == 3)
+            <br>{
+            <br>&emsp;destination=="Nivelles";
+            <br>    period = FakePeriodSwitch(periodNbr,nivellesMorningHour,nivellesAfternoonHour,nivellesEveningHour)
+            <br>}
+        <br>
+            <br>if(destinationNbr == 4)
+            <br>{
+            <br>&emsp;destination=="Charleroi";
+            <br>&emsp;period = FakePeriodSwitch(periodNbr,charleroiMorningHour,charleroiAfternoonHour,charleroiEveningHour)
+            <br>}
+        <br>
+            <br>alert("Votre train à destination de " + destination + " partira à " + period + ". Bon voyage !")
+            <br>
+            <br>function DestinationChoice()
+            <br>{
+            <br>&emsp;_destination = parseInt(prompt("Choisissez votre destination en entrant le chiffre correspondant :\n1 - Bruxelles\n2 - Mons\n3 - Nivelles\n4 - Charleroi"));
+            <br>&emsp;if(_destination>4||_destination < 0)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Donnée entrée incorrecte, veuillez recommencer");
+            <br>&emsp;&emsp;DestinationChoice();
+            <br>&emsp;}
+            <br>&emsp;else
+            <br>&emsp;{
+            <br>&emsp;&emsp;return _destination;
+            <br>&emsp;}
+            <br>}
+            <br>function PeriodChoice()
+            <br>{
+            <br>&emsp;_period = parseInt(prompt("Choisissez votre période de la journée à laquelle vous voudrez partir :\n1 - Matin\n2 - Après-midi\n3 - Soir"));
+            <br>&emsp;if(_period>3||_period < 0)
+            <br>&emsp;{
+            <br>&emsp;&emsp;alert("Donnée entrée incorrecte, veuillez recommencer");
+            <br>&emsp;&emsp;PeriodChoice();
+            <br>&emsp;}
+            <br>&emsp;else
+            <br>&emsp;{
+            <br>&emsp;&emsp;return _period;
+            <br>&emsp;}
+            <br>}
+            <br>function FakePeriodSwitch(periodChoice,firstPeriod, secondPeriod, thirdPeriod)
+            <br>{
+            <br>&emsp;if(periodChoice==1)
+            <br>&emsp;{
+            <br>&emsp&emsp;return firstPeriod; 
+            <br>&emsp;}
+            <br>&emsp;if(periodChoice==2)
+            <br>&emsp;{
+            <br>&emsp;&emsp;return secondPeriod;
+            <br>&emsp;}
+            <br>&emsp;if(periodChoice==3)
+            <br>&emsp;{
+            <br>&emsp;&emsp;return thirdPeriod;
+            <br>&emsp;}
+            <br>}
+        </code></b></p>
+
         <p><i>
-            
+            Il y a potentiellement plein de solutions alternatives, mais si vous n'utilisez pas de fonctions, à l'heure actuelle, vous ne pouvez pas boucler en cas de mauvaise réponse de l'utilisateur. On doit donc utiliser une fonction récursive. La plus grande amélioration ici est le repérage du fait que finalement, toutes nos suites de if une fois la destination choisie sont les mêmes. Il est donc bien plus simple de créer une fonction qui permet de créer le choix et qui attend en paramètre les potentielles périodes de temps. Si tous les trains respectent le même fonctionnement (à savoir 3 train par jour), on peut potentiellement ajouter maintenant une infinité de train avec un minimum de nouvelles lignes. 
         </i></p>
         
         
@@ -45,7 +256,7 @@
         
 </body>
 <script>
-    // Ma correction :
+    // ma correction
     let monsMorningHour = " 9h10";
     let monsAfternoonHour = "13h30";
     let monsEveningHour = "22h56";
@@ -72,73 +283,29 @@
     if(destinationNbr == 1)
     {
         destination=="Bruxelles";
-        if(periodNbr==1)
-        {
-           period = bruxellesMorningHour; 
-        }
-        if(periodNbr==2)
-        {
-            period = bruxellesAfternoonHour;
-        }
-        if(periodNbr==3)
-        {
-            period = bruxellesEveningHour;
-        }
+        period = FakePeriodSwitch(periodNbr,bruxellesMorningHour,bruxellesAfternoonHour,bruxellesEveningHour)
     }
 
     if(destinationNbr == 2)
     {
         destination=="Mons";
-        if(periodNbr==1)
-        {
-           period = monsMorningHour; 
-        }
-        if(periodNbr==2)
-        {
-            period = monsAfternoonHour;
-        }
-        if(periodNbr==3)
-        {
-            period = monsEveningHour;
-        }
+        period = FakePeriodSwitch(periodNbr,monsMorningHour,monsAfternoonHour,monsEveningHour)
     }
 
     if(destinationNbr == 3)
     {
         destination=="Nivelles";
-        if(periodNbr==1)
-        {
-           period = nivellesMorningHour; 
-        }
-        if(periodNbr==2)
-        {
-            period = nivellesAfternoonHour;
-        }
-        if(periodNbr==3)
-        {
-            period = nivellesEveningHour;
-        }
+        period = FakePeriodSwitch(periodNbr,nivellesMorningHour,nivellesAfternoonHour,nivellesEveningHour)
     }
 
     if(destinationNbr == 4)
     {
         destination=="Charleroi";
-        if(periodNbr==1)
-        {
-           period = charleroiMorningHour; 
-        }
-        if(periodNbr==2)
-        {
-            period = charleroiAfternoonHour;
-        }
-        if(periodNbr==3)
-        {
-            period = charleroiEveningHour;
-        }
+        period = FakePeriodSwitch(periodNbr,charleroiMorningHour,charleroiAfternoonHour,charleroiEveningHour)
     }
 
     alert("Votre train à destination de " + destination + " partira à " + period + ". Bon voyage !")
-
+    
     function DestinationChoice()
     {
         _destination = parseInt(prompt("Choisissez votre destination en entrant le chiffre correspondant :\n1 - Bruxelles\n2 - Mons\n3 - Nivelles\n4 - Charleroi"));
@@ -165,6 +332,21 @@
             return _period;
         }
     }
-    // à améliorer en classe !
+    function FakePeriodSwitch(periodChoice,firstPeriod, secondPeriod, thirdPeriod)
+    {
+        if(periodChoice==1)
+        {
+           return firstPeriod; 
+        }
+        if(periodChoice==2)
+        {
+            return secondPeriod;
+        }
+        if(periodChoice==3)
+        {
+            return thirdPeriod;
+        }
+    }
+
 </script>
 </html>
