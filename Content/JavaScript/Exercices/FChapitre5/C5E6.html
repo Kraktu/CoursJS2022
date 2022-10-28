@@ -39,6 +39,46 @@
 
 <script>
     // Votre résolution ici :
+    let userInput = prompt("Entrez une phrase");
+    let upperCaseNbr = lowerCaseNbr = spaceNbr = vowelsNbr = consonantNbr = 0;
+
+    let upperUserInput = userInput.toUpperCase();
+    let lowerUserInput = userInput.toLowerCase();
+    
+    let vowels = "aeiouy";
+    let consonent = "bcdfghjklmnpqrstvwxz";
+
+    for (let i = 0; i < userInput.length; i++) {
+        if(userInput.charAt(i) == " ")
+        {
+            spaceNbr++;
+        }
+        else if(upperUserInput.charAt(i) != userInput.charAt(i))
+        {
+            lowerCaseNbr++;
+        }
+        else if(lowerUserInput.charAt(i) != userInput.charAt(i))
+        {
+            upperCaseNbr++;
+        }
+        for (let j = 0; j < vowels.length; j++) {
+            if (vowels.charAt(j)==lowerUserInput.charAt(i)) {
+                vowelsNbr++;
+            }
+        }
+        for (let j = 0; j < consonent.length; j++) {
+            if (consonent.charAt(j)==lowerUserInput.charAt(i)) {
+                consonantNbr++;
+            }
+        }
+    }
+
+    alert("Dans la phrase : \"" + userInput + "\" il y a :\n" +
+    upperCaseNbr + " majuscules." +
+    lowerCaseNbr + " minuscules." +
+    spaceNbr + " espaces." +
+    vowelsNbr + " voyelles." +
+    consonantNbr + " consonnes.");
 
 </script>
 </html>
