@@ -5,12 +5,12 @@ var no_tab_mode = 1;
 var mermaid_enabled = 1;
 var toc_pane_div = "right_pane_content";
 var dir_index_pane_div = "";
-var html_url_prefix = "";
-var CONFIGURED_HTML_URL_PREFIX = "";
+var html_url_prefix = "/Symbiose/output/html";
+var CONFIGURED_HTML_URL_PREFIX = "/Symbiose/output/html";
 var RELATIVE_PATHS = 0;
 var documentation_mode = 1;
 var tab_mode = !no_tab_mode;
-var gzip_hash = '220800502078397130214125443394918112030'                       // used to check whether the localStorage data is stale
+var gzip_hash = '103670103255952820900526801286465500646'                       // used to check whether the localStorage data is stale
 
 // global cache
 var fn_cache_ls_available = null;
@@ -480,7 +480,7 @@ function get_graph_data(){
     return get_html_url_prefix()+'/obs.html/data/graph.json';
 }
 function get_html_url_prefix(){
-    return ''  // this value is replaced by the actual url prefix when compiled
+    return '/Symbiose/output/html'  // this value is replaced by the actual url prefix when compiled
 }
 
 function signal_js_enabled(container){
