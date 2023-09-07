@@ -69,6 +69,9 @@ Pour se battre toujours sur l'accessibilité, un grand effort sera fait au point
 ---------------------------------------------------------------------------   
 # Footer   
    
+[^update]: Contenu déjà existant mis à jour.   
+[^new]: Ajout de nouveau contenu   
+   
 ##### Tags   
 `{_obsidian_pattern_tag_TableDesMatières}` `{_obsidian_pattern_tag_symbiose}` `{_obsidian_pattern_tag_création}`    
    
