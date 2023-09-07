@@ -30,6 +30,9 @@ C'est ici que les courageuse [Enzyme](../../../../../Cr%C3%A9ations/Symbiose/Gam
    
 ## Graphisme   
    
+### Premier jet   
+   
+   
    
 ---------------------------------------------------------------------------   
 # Footer   

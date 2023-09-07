@@ -26,6 +26,8 @@ Les yeux sont un endroit de haute technologie, sous haute surveillance et très 
 Il y a bien sûr quelques travailleurs en tout genre qui s'y rendent, principalement des [Globule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Globule.md) (les plus sérieux) et sinon, de la sécurité aux portes d'accès, on ne fait pas n'importe quoi, et pas n'importe qui y passe !   
    
 ## Graphisme   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/oeil.jpg)   
    
    
 ---------------------------------------------------------------------------   

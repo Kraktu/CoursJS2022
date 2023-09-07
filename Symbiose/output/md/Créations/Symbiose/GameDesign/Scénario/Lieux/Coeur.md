@@ -38,6 +38,8 @@ Le coeur est alimenté en ressources trouvées dans le système [Digestif](../..
 Il y a une grande population de [Globule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Globule.md) qui viennent se recharger avant transporter leur ressources partout dans l'[hôte](/not_created.md). C'est un énorme croisement, on y trouve un peu de tout tout le temps.   
    
 ## Graphisme   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/coeur.jpg)   
    
    
 ---------------------------------------------------------------------------   

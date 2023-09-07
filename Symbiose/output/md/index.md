@@ -10,18 +10,33 @@ tags:
    
 # Header :   
    
-Symbiose est le projet de jeu vidéo lancé par l'équipe [Icy Sneakers](/not_created.md) de [Eqla](/not_created.md) et où je suis devenu Coordinateur et Game Designer principal, ainsi que codeur.   
+Symbiose est le projet de jeu vidéo lancé par l'équipe [Icy Sneakers](/not_created.md) de [Eqla](/not_created.md).   
    
    
 -------------------------------------------------------------------------------   
 # Body   
 ## Ressources   
    
+### I   
    
 - [Idées](./Cr%C3%A9ations/Symbiose/Id%C3%A9es.md)   
-- [Scénario Principal](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Sc%C3%A9nario%20Principal.md)   
-- [Personnages](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages.md)   
+   
+### L   
+   
 - [Lieux](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Lieux.md)   
+   
+### P   
+   
+- [Personnages](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages.md)[^update]   
+   
+### S   
+   
+- [Scénario Principal](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Histoire/Sc%C3%A9nario%20Principal.md)   
+- [Sous Intrigues](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Histoire/Secondaires/Sous%20Intrigues.md)[^update]   
+   
+### T   
+   
+- [Todolist Perso](./Cr%C3%A9ations/Symbiose/Todolist%20Perso.md)[^new]   
    
 ## Game Design   
    
@@ -33,7 +48,7 @@ Symbiose s'inspire de des mécaniques de jeu de [Reigns](https://fr.wikipedia.or
 - [Le rythme cardiaque](/not_created.md)   
 - [L'état général de l'hôte](/not_created.md)   
    
-Si une de ces jauges crève le plafond ou s'effondre, la partie est perdue et nous en recommençons une, à la manière d'un [Rogue Lite](https://www.blacknutlemag.com/fr/c-est-quoi-un-roguelite), la gestion au fur et à mesure des mort est de plus en plus simple, et nous permet d'avancer dans le [Scénario Principal](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Sc%C3%A9nario%20Principal.md), ainsi que dans les [Sous Intrigues](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Sous%20Intrigues.md).    
+Si une de ces jauges crève le plafond ou s'effondre, la partie est perdue et nous en recommençons une, à la manière d'un [Rogue Lite](https://www.blacknutlemag.com/fr/c-est-quoi-un-roguelite), la gestion au fur et à mesure des mort est de plus en plus simple, et nous permet d'avancer dans le [Scénario Principal](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Histoire/Sc%C3%A9nario%20Principal.md), ainsi que dans les [Sous Intrigues](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Histoire/Secondaires/Sous%20Intrigues.md).    
    
 Au cours de cette aventure, nous allons rencontrer toujours de nouveaux [Personnages](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages.md), faire des [Donjon](/not_created.md), visiter des [Lieux](./Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Lieux.md).   
    

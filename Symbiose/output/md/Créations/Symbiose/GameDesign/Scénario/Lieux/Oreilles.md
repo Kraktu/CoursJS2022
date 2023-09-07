@@ -28,6 +28,8 @@ Un peu comme le [Nez](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9
 On y croise quelques [Follicule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Follicule.md) mais très peu c'est surtout un endroit de recherche.   
    
 ## Graphisme   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/Oreille.jpg)   
    
    
 ---------------------------------------------------------------------------   

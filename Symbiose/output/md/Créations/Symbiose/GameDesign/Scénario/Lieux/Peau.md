@@ -28,6 +28,9 @@ La plupart du temps, les soucis à l'encontre de celle-ci viendront de l'extéri
 A l'extérieur, c'est le terrain de calme des [Follicule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Follicule.md), par contre, à l'intérieur, la sécurité est assurée par tous les [Anticorps](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Anticorps.md) et les [Lymphocyte](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Lymphocyte.md), mais la zone est tellement grande que toutes sorte de particules circulent tout le long de celle-ci.   
    
 ## Graphisme   
+### Premier jet   
+   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/Peau.jpg)   
    
    
 ---------------------------------------------------------------------------   

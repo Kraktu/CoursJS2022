@@ -28,6 +28,8 @@ Lors de l'ouverture des portes, un grand courant d'air allant de l'intérieur ve
 Principalement des [Follicule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Follicule.md) y vivent en grande quantité, heureux et attentif à la moindre intrusion.   
    
 ## Graphisme   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/nez.jpg)   
    
    
 ---------------------------------------------------------------------------   

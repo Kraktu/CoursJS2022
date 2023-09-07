@@ -26,6 +26,8 @@ Un peu comme les goblins dans le seigneur des anneaux naissent dans les entraill
 C'est la lieu de naissance de l'armée et donc des [Lymphocyte](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Lymphocyte.md), il y a aussi une grande quantité de [Globule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Globule.md) pour faire tourner la boutique, mais c'est surtout principalement des Lymphocytes.   
    
 ## Graphisme   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/os.jpg)   
    
    
 ---------------------------------------------------------------------------   

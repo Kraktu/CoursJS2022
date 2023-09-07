@@ -27,6 +27,8 @@ C'est les [Globule](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9na
    
 ## Graphisme   
    
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/poumon.jpg)   
+   
    
 ---------------------------------------------------------------------------   
 # Footer   

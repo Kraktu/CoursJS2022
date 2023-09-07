@@ -26,8 +26,8 @@ C'est dans le cerveau que se passe les actions conscientes de l'hôtes, c'est do
 Lieu de vie de prédilection des populations de [Neurone](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Neurone.md) et du [Représentant](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Repr%C3%A9sentant.md).   
    
 ## Graphisme   
-   
-   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/cerveau.jpg)   
    
    
 ---------------------------------------------------------------------------   

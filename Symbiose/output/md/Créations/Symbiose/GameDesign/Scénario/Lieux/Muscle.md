@@ -26,6 +26,8 @@ Les muscles sont un lieu de vie et de détente après le travail, malheureusemen
 Les muscles sont le lieu de prédilection des [Hormone](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Hormone.md) de manière générale, mais aussi des [Lymphocyte](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Lymphocyte.md) et des [Anticorps](../../../../../Cr%C3%A9ations/Symbiose/GameDesign/Sc%C3%A9nario/Personnages/Anticorps.md) après leurs services.   
    
 ## Graphisme   
+### Premier jet   
+![](../../../../../z-Ressources/Images/Symbiose/Lieux/muscle.jpg)   
    
    
 ---------------------------------------------------------------------------   
