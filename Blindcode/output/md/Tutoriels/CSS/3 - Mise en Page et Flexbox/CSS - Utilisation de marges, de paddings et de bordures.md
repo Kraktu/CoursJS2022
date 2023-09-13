@@ -1,0 +1,33 @@
+---
+Cours: CSS
+Projet: Blindcode
+Type: Cours
+date: 2023-09-01
+tags:
+- cours
+- blindcode
+- css
+- programmation
+- frontend
+---
+   
+# Header :   
+   
+   
+-------------------------------------------------------------------------------   
+# Body   
+   
+## Titre   
+   
+   
+---------------------------------------------------------------------------   
+# Footer   
+   
+   
+- [Accueil - CSS](../../../Tutoriels/CSS/Accueil%20-%20CSS.md)   
+- [Précédent](../../../Tutoriels/CSS/3%20-%20Mise%20en%20Page%20et%20Flexbox/CSS%20-%20Introduction%20%C3%A0%20la%20mise%20en%20page.md)   
+- [Suivant](../../../Tutoriels/CSS/3%20-%20Mise%20en%20Page%20et%20Flexbox/CSS%20-%20Exercices%20-%20Cr%C3%A9ation%20de%20mises%20en%20page%20simples.md)   
+##### Tags   
+`{_obsidian_pattern_tag_cours}` `{_obsidian_pattern_tag_blindcode}` `{_obsidian_pattern_tag_css}` `{_obsidian_pattern_tag_programmation}` `{_obsidian_pattern_tag_frontend}`   
+   
+*créé le 2023-09-01 à 11:20*
