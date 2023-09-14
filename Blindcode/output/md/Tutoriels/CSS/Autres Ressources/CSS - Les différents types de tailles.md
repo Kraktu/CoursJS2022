@@ -6,8 +6,8 @@ date: 2023-09-12
 tags:
 - cours
 - blindcode
-- untagged
-- todo
+- css
+- documentation
 ---
    
 # Header :   
@@ -75,6 +75,6 @@ En utilisant ces différentes unités de taille en CSS, vous pouvez créer des m
    
 - [Accueil - CSS](../../../Tutoriels/CSS/Accueil%20-%20CSS.md)   
 ##### Tags   
-`{_obsidian_pattern_tag_cours}` `{_obsidian_pattern_tag_blindcode}` `{_obsidian_pattern_tag_untagged}` `{_obsidian_pattern_tag_todo}`   
+`{_obsidian_pattern_tag_cours}` `{_obsidian_pattern_tag_blindcode}` `{_obsidian_pattern_tag_css}` `{_obsidian_pattern_tag_documentation}`    
    
 *créé le 2023-09-12 à 15:53*

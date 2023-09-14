@@ -276,6 +276,7 @@
 		<button id="folder-9" class="dir-button" onclick="toggle_dir(this.id)">Autres Ressources</button>
 		<div id="folder-container-9" class="dir-container requires_js " path="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources">
 			<ul class="dir-list">
+				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les Timing Functions pour les transitions.html"  >CSS - Les Timing Functions pour les transitions</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les différents types de tailles.html"  >CSS - Les différents types de tailles</a></li>
 			</ul>
 		</div>
@@ -383,9 +384,53 @@
 </div>
                         <div class="container">
                                 <div class="content"><h1 id="header">Header :</h1>
+<p>Même si beaucoup d'animation précises peuvent se faire directement en Javascript, il existe des fonctions prédéfinies pour faire des transitions plus générique en CSS, il est important de les connaître pour gagner du temps lors de votre développement, cela vous permettra de ne pas réinventer la roue à chaque fois !   </p>
 <hr />
 <h1 id="body">Body</h1>
-<h2 id="titre">Titre</h2>
+<h2 id="utilisation-des-transitions-pour-ameliorer-l-experience-utilisateur">Utilisation des Transitions pour Améliorer l'Expérience Utilisateur</h2>
+<h3 id="1-introduction-aux-transitions-css">1. Introduction aux Transitions CSS</h3>
+<h4 id="1-1-qu-est-ce-qu-une-transition">1.1 Qu'est-ce qu'une Transition ?</h4>
+<p>Une transition CSS est une technique qui permet de créer une animation fluide lorsqu'une propriété CSS change d'état. Par exemple, vous pouvez animer le changement de couleur de fond d'un bouton lorsque l'utilisateur passe la souris dessus, ce qui rendra l'interaction plus agréable.   </p>
+<h4 id="1-2-proprietes-de-transition">1.2 Propriétés de Transition</h4>
+<p>Pour utiliser une transition, vous devez spécifier les propriétés CSS que vous souhaitez animer, ainsi que la durée de l'animation. Les propriétés de transition couramment utilisées sont <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, et <code>transition-delay</code>.   </p>
+<h4 id="1-3-exemple-simple">1.3 Exemple Simple</h4>
+<p>Voici un exemple simple de création d'une transition pour un lien lorsque la souris le survole :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Propriétés de transition */</span>
+<span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">transition-property</span><span class="p">:</span><span class="w"> </span><span class="kc">color</span><span class="p">,</span><span class="w"> </span><span class="k">background-color</span><span class="p">;</span>
+<span class="w">    </span><span class="k">transition-duration</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+<span class="w">    </span><span class="k">transition-timing-function</span><span class="p">:</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Changement de couleur de lien lorsqu&#39;il est survolé */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="2-utilisation-avancee-des-transitions">2. Utilisation Avancée des Transitions</h3>
+<h4 id="2-1-transition-sur-differentes-proprietes">2.1 Transition sur Différentes Propriétés</h4>
+<p>Vous pouvez animer plusieurs propriétés en même temps. Par exemple, vous pouvez animer la couleur du texte, la taille de la police et le fond d'un bouton lorsqu'il est survolé.   </p>
+<h4 id="2-2-timing-functions">2.2 Timing Functions</h4>
+<p>La propriété <code>transition-timing-function</code> permet de contrôler la façon dont l'animation progresse. Les valeurs courantes incluent <code>ease</code>, <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, et <code>ease-in-out</code>, chacune donnant une sensation différente à l'animation. Pour plus d'info sur celles-ci, je vous invite à regarder ma <a href="/Blindcode/output/html/Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Les%20Timing%20Functions%20pour%20les%20transitions.html">documentation sur les Timing Functions</a>.   </p>
+<h4 id="2-3-retard-de-transition">2.3 Retard de Transition</h4>
+<p>Vous pouvez ajouter un délai à une transition en utilisant la propriété <code>transition-delay</code>. Cela permet de déterminer quand l'animation commence après que la propriété change.   </p>
+<h3 id="3-transitions-pour-ameliorer-l-experience-utilisateur">3. Transitions pour Améliorer l'Expérience Utilisateur</h3>
+<h4 id="3-1-boutons-et-liens">3.1 Boutons et Liens</h4>
+<p>Les transitions peuvent être utilisées pour créer des effets de survol doux pour les boutons et les liens, ce qui rend l'interaction plus intuitive.   </p>
+<h4 id="3-2-menu-de-navigation">3.2 Menu de Navigation</h4>
+<p>Lors de la création de menus de navigation, les transitions peuvent aider à indiquer visuellement quel élément est actuellement survolé ou sélectionné.   </p>
+<h4 id="3-3-galeries-d-images">3.3 Galeries d'Images</h4>
+<p>Les transitions sont très utiles pour les galeries d'images, où elles permettent de créer des diaporamas élégants et fluides.   </p>
+<h3 id="4-mini-exercice-pratique">4. Mini Exercice Pratique</h3>
+<h4 id="4-1-creez-une-transition-de-bouton">4.1 Créez une Transition de Bouton</h4>
+<p>Pour mettre en pratique ce que vous avez appris, créez une page web simple contenant un bouton. Appliquez une transition pour animer le changement de couleur de fond du bouton lorsqu'il est survolé. Utilisez également différentes valeurs pour <code>transition-duration</code> et <code>transition-timing-function</code> pour expérimenter avec les animations.   </p>
 <hr />
 <h1 id="footer">Footer</h1>
 <ul>
@@ -419,13 +464,13 @@
 
 </div>
 <div class="graph requires_js ">
-    <div id="A96014947102052658504397545514320394372{level}" class="graph_div"></div>
+    <div id="A314752830009904653043479277234218205732{level}" class="graph_div"></div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B96014947102052658504397545514320394372{level}" level="{level}" note_temp_id="96014947102052658504397545514320394372" onclick="window.ObsHtmlGraph.run(this, '96014947102052658504397545514320394372', 'css - utilisation des transitions');">
+        <button class="graph_button graph_show_button" id="B314752830009904653043479277234218205732{level}" level="{level}" note_temp_id="314752830009904653043479277234218205732" onclick="window.ObsHtmlGraph.run(this, '314752830009904653043479277234218205732', 'css - utilisation des transitions');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C96014947102052658504397545514320394372{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C314752830009904653043479277234218205732{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>

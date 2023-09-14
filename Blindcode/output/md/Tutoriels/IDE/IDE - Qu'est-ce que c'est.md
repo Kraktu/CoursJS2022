@@ -34,7 +34,7 @@ Voici une liste de quelques-uns des principaux IDE utilisés aujourd'hui, ainsi 
    
     - Langages pris en charge : Java, C++, PHP, Python, et plus.   
     - Domaines d'application : Développement d'applications Java, Android, Web, etc.   
-2. **Visual Studio (VS) :   
+2. **Visual Studio (VS)** :   
    
     - Langages pris en charge : C#   
     - Domaines d'application : Développement d'applications Windows, Web, Azure, etc.   

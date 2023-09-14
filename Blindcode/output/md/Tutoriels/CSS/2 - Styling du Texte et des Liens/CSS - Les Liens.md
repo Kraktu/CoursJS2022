@@ -13,7 +13,7 @@ tags:
    
 # Header :   
    
-Les liens hypertextes (ou simplement les liens) sont essentiels pour la navigation web, et en utilisant[CSS](../../../Tutoriels/CSS/1%20-%20Introduction%20%C3%A0%20CSS%20et%20Accessibilit%C3%A9/CSS%20-%20Introduction%20-%20Qu%27est-ce%20que%20CSS%20et%20pourquoi%20c%27est%20important.md), vous pouvez personnaliser leur apparence pour les rendre attrayants et informatifs.   
+Les liens hypertextes (ou simplement les liens) sont essentiels pour la navigation web, et en utilisant [CSS](../../../Tutoriels/CSS/1%20-%20Introduction%20%C3%A0%20CSS%20et%20Accessibilit%C3%A9/CSS%20-%20Introduction%20-%20Qu%27est-ce%20que%20CSS%20et%20pourquoi%20c%27est%20important.md), vous pouvez personnaliser leur apparence pour les rendre attrayants et informatifs.   
    
    
 -------------------------------------------------------------------------------   
@@ -116,7 +116,7 @@ Exemple avec un ID :
 Cette méthode marche pour tout ce que nous voyons au cours, et n'est pas spécifique aux liens, mais il me semble que c'est le bon moment pour vous en parler.   
 ## Pseudo-classes Additionnelles   
    
-Outre les pseudo-classes `:hover`, `:active`, et `:visited`, il existe d'autres pseudo-classes CSS que vous pouvez utiliser pour cibler des états spécifiques des liens, tels que `:focus` pour les liens actuellement en focus ou `:not()` pour exclure certains liens de la stylisation.   
+Outre les pseudo-classes `:hover`, `:active`, et `:visited`, il existe d'autres pseudo-classes CSS que vous pouvez utiliser pour cibler des états spécifiques des liens, tels que `:focus` pour les liens actuellement en focus ou `:not()` pour exclure certains liens de la stylisation. Nous verrons tout ça en détail un peu plus loin.   
    
    
 ---------------------------------------------------------------------------   

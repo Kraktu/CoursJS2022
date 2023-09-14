@@ -106,6 +106,8 @@ Bienvenue sur le portail du cours de CSS pour blindcode, vous trouverez ici tous
 - [HTML - Les balises principales](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Les%20balises%20principales.md)   
 - [HTML - Les attributs](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Les%20attributs.md)   
 - [HTML - Template index](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Template%20index.md)   
+- [CSS - Les différents types de tailles](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Les%20diff%C3%A9rents%20types%20de%20tailles.md)   
+- [CSS - Les Timing Functions pour les transitions](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Les%20Timing%20Functions%20pour%20les%20transitions.md)   
    
    
    

@@ -5,7 +5,7 @@
         <head>
                 <!-- Page information -->
                 <meta charset="UTF-8" />
-                <meta name="node_id" content="css - images réactives">
+                <meta name="node_id" content="css - les timing functions pour les transitions">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="/Blindcode/output/html/favicon.ico" />
 
@@ -47,7 +47,7 @@
 
                 <!-- Onload tweaks -->
                 <script>
-                        const CURRENT_NODE = 'css - images réactives';
+                        const CURRENT_NODE = 'css - les timing functions pour les transitions';
                         const HTML_URL_PREFIX = '/Blindcode/output/html';
                         const PAGE_DEPTH = 3;
                 </script>
@@ -171,7 +171,7 @@
             }
         </script>
                                     <div class="graph_header_div requires_js">
-            <a id="graph_link" class="system-link" href="/Blindcode/output/html/obs.html/graph/index.html?node=css - images réactives" title="Open fullpage Graph">
+            <a id="graph_link" class="system-link" href="/Blindcode/output/html/obs.html/graph/index.html?node=css - les timing functions pour les transitions" title="Open fullpage Graph">
                     <img class="graph_header_div_svg" src = "/Blindcode/output/html/obs.html/static/graph.svg" alt="Open fullpage Graph" style="margin: 2px; width: 17px;"/>
             </a>
         </div>
@@ -254,11 +254,11 @@
 			</ul>
 		</div>
 		<button id="folder-7" class="dir-button" onclick="toggle_dir(this.id)">4 - Responsive Design et Médias</button>
-		<div id="folder-container-7" class="dir-container requires_js active" path="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias">
+		<div id="folder-container-7" class="dir-container requires_js " path="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias">
 			<ul class="dir-list">
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Création de mises en page responsives simples.html"  >CSS - Exercices - Création de mises en page responsives simples</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Grid et les images réactives.html"  >CSS - Exercices - Grid et les images réactives</a></li>
-				<li><a class="active" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Images réactives.html"  >CSS - Images réactives</a></li>
+				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Images réactives.html"  >CSS - Images réactives</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Introduction au responsive design.html"  >CSS - Introduction au responsive design</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation de CSS Grid pour des mises en page plus avancées.html"  >CSS - Utilisation de CSS Grid pour des mises en page plus avancées</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation des media queries.html"  >CSS - Utilisation des media queries</a></li>
@@ -274,9 +274,9 @@
 			</ul>
 		</div>
 		<button id="folder-9" class="dir-button" onclick="toggle_dir(this.id)">Autres Ressources</button>
-		<div id="folder-container-9" class="dir-container requires_js " path="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources">
+		<div id="folder-container-9" class="dir-container requires_js active" path="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources">
 			<ul class="dir-list">
-				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les Timing Functions pour les transitions.html"  >CSS - Les Timing Functions pour les transitions</a></li>
+				<li><a class="active" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les Timing Functions pour les transitions.html"  >CSS - Les Timing Functions pour les transitions</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les différents types de tailles.html"  >CSS - Les différents types de tailles</a></li>
 			</ul>
 		</div>
@@ -386,23 +386,132 @@
                                 <div class="content"><h1 id="header">Header :</h1>
 <hr />
 <h1 id="body">Body</h1>
-<h2 id="titre">Titre</h2>
+<h2 id="les-timing-function-les-plus-utilisees">Les Timing Function les plus utilisées</h2>
+<h3 id="1-ease">1. <code>ease</code></h3>
+<p>La valeur <code>ease</code> est l'une des timing functions les plus couramment utilisées. Elle crée une transition en douceur en commençant lentement, accélérant au milieu de l'animation, puis ralentissant à nouveau à la fin. Cela donne un effet d'animation naturel.   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">ease</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="2-linear">2. <code>linear</code></h3>
+<p>La timing function <code>linear</code> crée une transition linéaire, ce qui signifie que la valeur de la propriété change à un rythme constant tout au long de l'animation. Il n'y a pas d'accélération ou de décélération.   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">linear</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="3-ease-in">3. <code>ease-in</code></h3>
+<p>La timing function <code>ease-in</code> crée une transition en commençant lentement et en accélérant à la fin. Cela donne un effet d'entrée progressif, idéal pour les éléments qui apparaissent à l'écran.   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">ease-in</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="4-ease-out">4. <code>ease-out</code></h3>
+<p>La timing function <code>ease-out</code> crée une transition en commençant rapidement et en ralentissant à la fin. Cela donne un effet de sortie progressif, utile lorsque les éléments disparaissent de l'écran.   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">ease-out</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="5-ease-in-out">5. <code>ease-in-out</code></h3>
+<p>La timing function <code>ease-in-out</code> est un mélange d'<code>ease-in</code> et d'<code>ease-out</code>. Elle commence lentement, accélère au milieu et ralentit à la fin, créant une transition en douceur dans les deux sens. La description écrite ressemble à celle de <code>ease</code>, pourtant, ce n'est pas exactement la même transition. en effet, <code>ease-in-out</code> a une entrée et une sortie à la même smoothness, <code>ease</code> elle a une attaque plus rapide, l'élément arrive vite à l'écran au début et plus lente sur la fin, c'est à dire que la stabilisation sur l'état final se fait plus lentement, vous pouvez imaginer comme un poids qu'on laisse tomber sur un coussin d'air dans un tube presque hermétique.    </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="6-cubic-bezier">6. <code>cubic-bezier()</code></h3>
+<p>La fonction <code>cubic-bezier()</code> vous permet de créer des courbes de synchronisation personnalisées en spécifiant des points de contrôle. Cela offre un contrôle précis sur la progression de l'animation.   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Exemple de cubic-bezier() personnalisée */</span>
+<span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">cubic-bezier</span><span class="o">(</span><span class="nt">0</span><span class="p">.</span><span class="nc">42</span><span class="o">,</span><span class="w"> </span><span class="nt">0</span><span class="o">,</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">58</span><span class="o">,</span><span class="w"> </span><span class="nt">1</span><span class="o">);</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, les valeurs <code>0.42</code>, <code>0</code>, <code>0.58</code>, et <code>1</code> définissent les coordonnées de contrôle de la courbe de synchronisation.   </p>
+<p>Je ne vais pas rentrer dans les détails de cette transition, mais imaginez qu'une transition est en fait une courbe, 0 étant l'origine de l'état de l'élément et 1 l'état auquel on veut arriver. Ces valeurs contrôlent donc la clef de modification de cette courbe. On peut imaginer que ces coordonnées sont les coordonnées X et Y d'un poids qui va influencer la courbe. Les deux premières données influent sur l'entrée de la courbe, et les deux dernière sur la fin. Ainsi, notre droit qui, à la base va de <code>(0,0)</code> à <code>(1,1)</code> va prendre une courbure en fonction du placement de ces deux points. Je ne vais pas faire de cours de math approfondi sur le fonctionnement, mais si vous voulez une prévisualisation du graphique et de l'effet, vous pouvez les trouver sur <a href="https://cubic-bezier.com/" class="external-link">ce site</a>. Sachez que c'est très fortement utilisé aussi dans l'industrie du jeu vidéo pour faire des animations entre autre.   </p>
+<h3 id="7-steps">7. <code>steps()</code></h3>
+<p>La fonction <code>steps()</code> est utilisée pour créer des animations à étapes, où la propriété change brusquement à des intervalles définis. Par exemple, vous pouvez l'utiliser pour créer une animation d'images clignotantes.   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Exemple de steps() pour une animation à 5 étapes */</span>
+<span class="nt">transition-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">steps</span><span class="o">(</span><span class="nt">5</span><span class="o">,</span><span class="w"> </span><span class="nt">start</span><span class="o">);</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, <code>steps(5, start)</code> divise l'animation en 5 étapes distinctes.   </p>
+<p>Les timing functions sont un outil puissant pour ajuster le comportement des transitions et des animations CSS. Expérimentez avec différentes fonctions pour obtenir l'effet souhaité dans vos projets web. Les transitions fluides et les animations agréables peuvent améliorer considérablement l'expérience utilisateur sur votre site web.   </p>
+<p>Les timing functions que j'ai mentionnées précédemment sont parmi les plus couramment utilisées et les plus importantes en CSS. Cependant, il existe d'autres timing functions moins courantes qui peuvent également être utilisées pour des cas spécifiques. Voici quelques-unes de ces timing functions moins courantes :   </p>
+<h3 id="1-step-start-et-step-end">1. <code>step-start</code> et <code>step-end</code></h3>
+<p>Les valeurs <code>step-start</code> et <code>step-end</code> de la propriété <code>animation-timing-function</code> sont utilisées pour créer des animations à étapes où la propriété change brusquement au début ou à la fin de chaque étape.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">animation-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">step-start</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, la propriété change brusquement au début de chaque étape de l'animation.   </p>
+<h3 id="2-frames">2. <code>frames()</code></h3>
+<p>La fonction <code>frames()</code> est utilisée pour créer des animations basées sur des images clés (keyframes). Vous pouvez spécifier une liste de valeurs de propriété à des moments précis de l'animation.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">animation-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">frames</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="w"> </span><span class="nt">10</span><span class="o">,</span><span class="w"> </span><span class="nt">20</span><span class="o">,</span><span class="w"> </span><span class="nt">30</span><span class="o">);</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, des images clés (keyframes) sont spécifiées aux moments 0%, 10%, 20%, et 30% de l'animation.   </p>
+<h3 id="3-step-middle">3. <code>step-middle</code></h3>
+<p>La valeur <code>step-middle</code> de la propriété <code>animation-timing-function</code> est une timing function intermédiaire entre <code>step-start</code> et <code>step-end</code>, ce qui signifie que la propriété change brusquement au milieu de chaque étape.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="nt">animation-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">step-middle</span><span class="o">;</span>
+</code></pre></div>
+
+
+</div>
+
 <hr />
 <h1 id="footer">Footer</h1>
 <ul>
 <li><a href="/Blindcode/output/html/Tutoriels/CSS/Accueil%20-%20CSS.html">Accueil - CSS</a>   </li>
-<li><a href="/Blindcode/output/html/Tutoriels/CSS/4%20-%20Responsive%20Design%20et%20M%C3%A9dias/CSS%20-%20Exercices%20-%20Cr%C3%A9ation%20de%20mises%20en%20page%20responsives%20simples.html">Précédent</a>   </li>
-<li><a href="/Blindcode/output/html/Tutoriels/CSS/4%20-%20Responsive%20Design%20et%20M%C3%A9dias/CSS%20-%20Utilisation%20de%20CSS%20Grid%20pour%20des%20mises%20en%20page%20plus%20avanc%C3%A9es.html">Suivant</a>   </li>
 </ul>
 <h5 id="tags">Tags</h5>
-<p><a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/cours/index.html">cours</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/blindcode/index.html">blindcode</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/css/index.html">css</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/programmation/index.html">programmation</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/frontend/index.html">frontend</a>   </p>
-<p><em>créé le 2023-09-01 à 11:21</em></p></div>
+<p><a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/cours/index.html">cours</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/blindcode/index.html">blindcode</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/css/index.html">css</a> <a class="inline-tag" href="/Blindcode/output/html/obs.html/tags/documentation/index.html">documentation</a>    </p>
+<p><em>créé le 2023-09-14 à 14:19</em></p></div>
 <div class="note-footer">
 <div class="backlinks">
 <h2>Backlinks</h2>
 <ul>
-	<li><a class="backlink" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Création de mises en page responsives simples.html">css - exercices - création de mises en page responsives simples</a></li>
-	<li><a class="backlink" href="/Blindcode/output/html/Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation de CSS Grid pour des mises en page plus avancées.html">css - utilisation de css grid pour des mises en page plus avancées</a></li>
+	<li><a class="backlink" href="/Blindcode/output/html/Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Utilisation des transitions.html">css - utilisation des transitions</a></li>
 	<li><a class="backlink" href="/Blindcode/output/html/Tutoriels/CSS/Accueil - CSS.html">accueil - css</a></li>
 </ul>
 </div>
@@ -413,20 +522,19 @@
 	<li><a class="backlink" href="/Blindcode/output/html/obs.html/tags/cours/index.html">cours</a></li>
 	<li><a class="backlink" href="/Blindcode/output/html/obs.html/tags/blindcode/index.html">blindcode</a></li>
 	<li><a class="backlink" href="/Blindcode/output/html/obs.html/tags/css/index.html">css</a></li>
-	<li><a class="backlink" href="/Blindcode/output/html/obs.html/tags/programmation/index.html">programmation</a></li>
-	<li><a class="backlink" href="/Blindcode/output/html/obs.html/tags/frontend/index.html">frontend</a></li>
+	<li><a class="backlink" href="/Blindcode/output/html/obs.html/tags/documentation/index.html">documentation</a></li>
 </ul>
 </div>
 
 </div>
 <div class="graph requires_js ">
-    <div id="A115026195468928979620202419548460711829{level}" class="graph_div"></div>
+    <div id="A128061272862088917166764624447669139377{level}" class="graph_div"></div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B115026195468928979620202419548460711829{level}" level="{level}" note_temp_id="115026195468928979620202419548460711829" onclick="window.ObsHtmlGraph.run(this, '115026195468928979620202419548460711829', 'css - images réactives');">
+        <button class="graph_button graph_show_button" id="B128061272862088917166764624447669139377{level}" level="{level}" note_temp_id="128061272862088917166764624447669139377" onclick="window.ObsHtmlGraph.run(this, '128061272862088917166764624447669139377', 'css - les timing functions pour les transitions');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C115026195468928979620202419548460711829{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C128061272862088917166764624447669139377{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>

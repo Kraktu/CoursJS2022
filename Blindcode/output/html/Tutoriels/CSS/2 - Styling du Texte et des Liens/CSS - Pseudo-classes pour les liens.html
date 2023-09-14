@@ -276,6 +276,7 @@
 		<button id="folder-9" class="dir-button" onclick="toggle_dir(this.id)">Autres Ressources</button>
 		<div id="folder-container-9" class="dir-container requires_js " path="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources">
 			<ul class="dir-list">
+				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les Timing Functions pour les transitions.html"  >CSS - Les Timing Functions pour les transitions</a></li>
 				<li><a class="" href="/Blindcode/output/html/Tutoriels/CSS/Autres Ressources/CSS - Les différents types de tailles.html"  >CSS - Les différents types de tailles</a></li>
 			</ul>
 		</div>
@@ -385,7 +386,175 @@
                                 <div class="content"><h1 id="header">Header :</h1>
 <hr />
 <h1 id="body">Body</h1>
-<h2 id="titre">Titre</h2>
+<p>Bien sûr, voici les points du cours pour l'utilisation des différentes pseudo-classes CSS appliquées uniquement aux liens (<code>&lt;a&gt;</code>) :   </p>
+<h2 id="pseudo-classes-pour-les-liens-a">Pseudo-Classes pour les Liens (<code>&lt;a&gt;</code>)</h2>
+<p>Les pseudo-classes pour les liens sont des sélecteurs CSS spéciaux qui permettent de définir des styles spécifiques pour les liens dans différentes situations, améliorant ainsi l'expérience de l'utilisateur lors de la navigation.   </p>
+<h3 id="1-hover">1. <code>:hover</code></h3>
+<p>La pseudo-classe <code>:hover</code> est activée lorsque l'utilisateur survole un lien avec la souris. Cela permet de créer des effets visuels interactifs lorsqu'un lien est survolé.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Changement de couleur lorsque le lien est survolé */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<span class="w">    </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, lorsque l'utilisateur survole un lien, le texte du lien devient rouge et un soulignement est ajouté.   </p>
+<h3 id="2-focus">2. <code>:focus</code></h3>
+<p>La pseudo-classe <code>:focus</code> est activée lorsque le lien est sélectionné avec le clavier (par exemple, en utilisant la touche Tab pour naviguer à travers les liens). Cela améliore l'accessibilité en indiquant clairement quel lien est actuellement sélectionné.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour les liens lorsqu&#39;ils sont en focus au clavier */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, lorsque l'utilisateur sélectionne un lien avec le clavier, une bordure bleue de 2 pixels est affichée autour du lien pour indiquer qu'il est en focus.   </p>
+<h3 id="3-active">3. <code>:active</code></h3>
+<p>La pseudo-classe <code>:active</code> est activée lorsque l'utilisateur clique sur un lien. Elle est souvent utilisée pour créer un effet visuel momentané lorsqu'un élément est en cours de clic.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour les liens lorsqu&#39;ils sont activés (clic) */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">active</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">orange</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, le texte du lien devient orange lorsque l'utilisateur clique dessus.   </p>
+<h3 id="4-visited">4. <code>:visited</code></h3>
+<p>La pseudo-classe <code>:visited</code> permet de cibler les liens déjà visités par l'utilisateur. Cela peut être utile pour afficher différemment les liens déjà consultés par rapport aux liens non visités.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour les liens déjà visités */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">visited</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, les liens visités affichent une couleur violette.   </p>
+<h3 id="5-nth-child">5. <code>:nth-child()</code></h3>
+<p>La pseudo-classe <code>:nth-child()</code> permet de cibler un lien en fonction de sa position parmi les enfants de son parent. Elle est souvent utilisée pour créer des mises en page dynamiques.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour chaque deuxième lien dans une liste */</span>
+<span class="nt">ul</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">2n</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f0f0f0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, chaque deuxième lien dans une liste sera coloré en gris clair.   </p>
+<h3 id="6-not">6. <code>:not()</code></h3>
+<p>La pseudo-classe <code>:not()</code> permet d'exclure des liens spécifiques de la sélection. Elle est utile lorsque vous souhaitez styliser tous les liens, sauf certains.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour tous les liens, sauf ceux avec la classe &quot;external&quot; */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">.</span><span class="nc">external</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, tous les liens, à l'exception de ceux avec la classe "external," auront un soulignement.   </p>
+<h3 id="7-first-child">7. <code>:first-child</code></h3>
+<p>La pseudo-classe <code>:first-child</code> cible le premier enfant d'un élément parent. Vous pouvez l'utiliser pour appliquer un style spécifique au premier lien parmi les enfants d'un conteneur.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour le premier lien parmi les enfants d&#39;une liste */</span>
+<span class="nt">ul</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">first-child</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, le premier lien à l'intérieur d'une liste sera mis en gras.   </p>
+<h3 id="8-last-child">8. <code>:last-child</code></h3>
+<p>La pseudo-classe <code>:last-child</code> cible le dernier enfant d'un élément parent. Vous pouvez l'utiliser pour appliquer un style spécifique au dernier lien parmi les enfants d'un conteneur.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour le dernier lien parmi les enfants d&#39;une liste */</span>
+<span class="nt">ul</span><span class="w"> </span><span class="nt">a</span><span class="p">:</span><span class="nd">last-child</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<p>Dans cet exemple, le dernier lien à l'intérieur d'une liste n'aura pas de marge inférieure.   </p>
+<p>Ici, nous utilisons toutes ces pseudos classes sur des liens, car ce sont en général les éléments interactifs les plus basique avec lesquels on joue. En effet, vous pourriez utiliser certaines de ces pseudos classes sur d'autres éléments, mais il se peut que ça soit perturbant pour vos utilisateurs. Pour le coup, je ne suis pas WebDesigner donc je vous laisse un peu bidouiller avec tout ça sur d'autres éléments, vous pouvez vous amuser à zoomer sur un <code>&lt;p&gt;</code> au survol par exemple !   </p>
+<h2 id="quelques-autres-pseudo-classes-bonus">Quelques autres pseudo-classes bonus...</h2>
+<p>Les pseudo-classes que nous avons couvertes jusqu'à présent sont parmi les plus couramment utilisées lors de la stylisation des liens. Cependant, il existe quelques autres pseudo-classes moins courantes qui peuvent être utiles dans des cas spécifiques, bien que leur utilisation soit moins répandue. Voici quelques-unes de ces pseudo-classes supplémentaires :   </p>
+<h3 id="9-empty">9. <code>:empty</code></h3>
+<p>La pseudo-classe <code>:empty</code> permet de cibler des éléments HTML qui sont complètement vides, c'est-à-dire ceux qui n'ont pas de contenu textuel ni d'enfants.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour les liens vides */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">empty</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">gray</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="10-target">10. <code>:target</code></h3>
+<p>La pseudo-classe <code>:target</code> est utilisée pour cibler un élément spécifique qui est actuellement la cible d'un lien d'ancrage (ancre) dans l'URL. Elle est souvent utilisée pour créer des effets de mise en évidence pour les éléments ciblés.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour l&#39;élément avec l&#39;ID correspondant à la cible de l&#39;ancre actuelle */</span>
+<span class="p">#</span><span class="nn">section2</span><span class="p">:</span><span class="nd">target</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
+<h3 id="11-enabled-et-disabled">11. <code>:enabled</code> et <code>:disabled</code></h3>
+<p>Ces pseudo-classes sont utilisées pour cibler des éléments de formulaire qui sont activés ou désactivés.   </p>
+<p>Exemple :   </p>
+<div class="lang-css">
+
+<div class="codehilite"><pre><span></span><code><span class="c">/* Style pour les liens désactivés */</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">disabled</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">gray</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+</div>
+
 <hr />
 <h1 id="footer">Footer</h1>
 <ul>
@@ -419,13 +588,13 @@
 
 </div>
 <div class="graph requires_js ">
-    <div id="A294349131073740209440683936911397630462{level}" class="graph_div"></div>
+    <div id="A15506653204090132966385924987978195672{level}" class="graph_div"></div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B294349131073740209440683936911397630462{level}" level="{level}" note_temp_id="294349131073740209440683936911397630462" onclick="window.ObsHtmlGraph.run(this, '294349131073740209440683936911397630462', 'css - pseudo-classes pour les liens');">
+        <button class="graph_button graph_show_button" id="B15506653204090132966385924987978195672{level}" level="{level}" note_temp_id="15506653204090132966385924987978195672" onclick="window.ObsHtmlGraph.run(this, '15506653204090132966385924987978195672', 'css - pseudo-classes pour les liens');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C294349131073740209440683936911397630462{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C15506653204090132966385924987978195672{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>

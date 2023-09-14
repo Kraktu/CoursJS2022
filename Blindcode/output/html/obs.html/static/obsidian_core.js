@@ -10,7 +10,7 @@ var CONFIGURED_HTML_URL_PREFIX = "/Blindcode/output/html";
 var RELATIVE_PATHS = 0;
 var documentation_mode = 1;
 var tab_mode = !no_tab_mode;
-var gzip_hash = '290893824678863477264851985033445155107'                       // used to check whether the localStorage data is stale
+var gzip_hash = '127699842516104608197844187072509339469'                       // used to check whether the localStorage data is stale
 
 // global cache
 var fn_cache_ls_available = null;
