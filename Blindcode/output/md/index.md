@@ -1,12 +1,12 @@
 ---
-date: 17/07/2023
-projet: Moi
+Projet: Moi
+Type: BDD
+date: 2023-07-17
 tags:
 - TableDesMatières
 - guide
 - rappel
 - documentation
-type: BDD
 ---
    
 # Header   
@@ -23,6 +23,7 @@ Ce fichier regroupe tous les liens vers les guides et autres rappel que je fais 
 - [DataView](./Tutoriels/Obsidian/DataView.md) : Gestion et affichage de donnée dans [Obsidian](/not_created.md)   
 - [ObsidianHTML](./Tutoriels/Obsidian/ObsidianHTML.md) : Guide d'utilisation pour mettre un [Vault](/not_created.md) en ligne   
 - [Markdown](./Tutoriels/Obsidian/Markdown.md) : liste des différentes syntaxe utile pour [Obsidian](/not_created.md) entre autre   
+- [Natural Languages Date](./Tutoriels/Obsidian/Natural%20Languages%20Date.md) : Explication de la syntaxe du plug-in pour écrire les dates plus facilement    
 ## Programmation :   
    
    

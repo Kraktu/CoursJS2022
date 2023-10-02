@@ -51,7 +51,7 @@ Dans cet exemple, `h1` est le sélecteur, et les propriétés `color` et `font-s
 1. **Sélecteur d'Élément :** Cible tous les éléments d'un type spécifique. Par exemple, `<h1>` cible tous les titres de niveau 1. Il s'agit donc de vos [balises HTML](../../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Les%20balises%20principales.md).   
 2. **Sélecteur de Classe :** Cible tous les éléments ayant une classe spécifique. Par exemple, `.ma-classe` cible tous les éléments avec la classe "ma-classe".   
 3. **Sélecteur d'ID :** Cible un élément spécifique avec un attribut ID unique. Par exemple, `#mon-id` cible l'élément avec l'ID "mon-id".   
-4. **Sélecteur Universel :** Cible tous les éléments de la page. Il s'écrit simplement `*`.   
+4. **Sélecteur Universel :** Cible tous les éléments de la page. Il s'écrit simplement `*`. Pour plus d'info, lisez la doc du [sélécteur universel](../../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Le%20s%C3%A9l%C3%A9cteur%20universel.md)   
 5. **Sélecteur de Descendant :** Cible des éléments qui sont des descendants d'un autre élément. Par exemple, `nav ul` cible toutes les listes non ordonnées (`<ul>`) qui sont des descendants d'un élément `<nav>`.   
    
 #### Propriétés CSS de base :   

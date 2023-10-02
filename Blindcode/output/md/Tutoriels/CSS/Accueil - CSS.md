@@ -57,6 +57,7 @@ Bienvenue sur le portail du cours de CSS pour blindcode, vous trouverez ici tous
    
 - [CSS - Introduction à la mise en page](../../Tutoriels/CSS/3%20-%20Mise%20en%20Page%20et%20Flexbox/CSS%20-%20Introduction%20%C3%A0%20la%20mise%20en%20page.md)   
 - [CSS - Utilisation de marges, de paddings et de bordures](../../Tutoriels/CSS/3%20-%20Mise%20en%20Page%20et%20Flexbox/CSS%20-%20Utilisation%20de%20marges%2C%20de%20paddings%20et%20de%20bordures.md)   
+- [CSS - Le Positionnement](../../Tutoriels/CSS/3%20-%20Mise%20en%20Page%20et%20Flexbox/CSS%20-%20Le%20Positionnement.md)   
 - [CSS - Exercices - Création de mises en page simples](../../Tutoriels/CSS/3%20-%20Mise%20en%20Page%20et%20Flexbox/CSS%20-%20Exercices%20-%20Cr%C3%A9ation%20de%20mises%20en%20page%20simples.md)   
    
 #### Session 2    
@@ -100,14 +101,30 @@ Bienvenue sur le portail du cours de CSS pour blindcode, vous trouverez ici tous
 - [CSS - Présentation des projets aux autres étudiants](../../Tutoriels/CSS/5%20-%20Projets%20et%20%C3%89valuation/CSS%20-%20Pr%C3%A9sentation%20des%20projets%20aux%20autres%20%C3%A9tudiants.md)   
 - [CSS - Evaluation des projets](../../Tutoriels/CSS/5%20-%20Projets%20et%20%C3%89valuation/CSS%20-%20Evaluation%20des%20projets.md)   
    
+### Chapitres Bonus   
+*Lorsque vous avez le temps, n'hésitez pas à dig 0dans cette matière qui vous apprendra des petites choses, que je trouve plus négligeable vu le temps que nous avons, mais qui sont toujours sympa à voir !*   
+   
+- [CSS - Changement de style des listes](../../Tutoriels/CSS/6%20-%20Chapitres%20Bonus/CSS%20-%20Changement%20de%20style%20des%20listes.md)   
+- [CSS - Importer une police](../../Tutoriels/CSS/6%20-%20Chapitres%20Bonus/CSS%20-%20Importer%20une%20police.md)   
+- [CSS - La mediaquery Print](../../Tutoriels/CSS/6%20-%20Chapitres%20Bonus/CSS%20-%20La%20mediaquery%20Print.md)   
+   
 ## Ressources :   
    
+### HTML   
    
 - [HTML - Les balises principales](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Les%20balises%20principales.md)   
 - [HTML - Les attributs](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Les%20attributs.md)   
 - [HTML - Template index](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Template%20index.md)   
+- [HTML - Images Réactives](../../Tutoriels/HTML/Autres%20Ressources/HTML%20-%20Images%20R%C3%A9actives.md)   
+   
+### CSS   
+   
 - [CSS - Les différents types de tailles](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Les%20diff%C3%A9rents%20types%20de%20tailles.md)   
+- [CSS - Le sélécteur universel](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Le%20s%C3%A9l%C3%A9cteur%20universel.md)   
 - [CSS - Les Timing Functions pour les transitions](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Les%20Timing%20Functions%20pour%20les%20transitions.md)   
+- [CSS - Les principales valeurs de la propriété display](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Les%20principales%20valeurs%20de%20la%20propri%C3%A9t%C3%A9%20display.md)   
+- [CSS - Le Conteneur et la Hiérarchie](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Le%20Conteneur%20et%20la%20Hi%C3%A9rarchie.md)   
+- [CSS - Le fichier reset](../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Le%20fichier%20reset.md)   
    
    
    

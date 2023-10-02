@@ -90,7 +90,7 @@ Les balises HTML définissent également la structure de la page, en indiquant d
 #### 6. Formulaires et Entrées :   
    
    
-- `<form>` : Conteneur pour les éléments de formulaire.   
+- `<form>` : [Conteneur](../../../Tutoriels/CSS/Autres%20Ressources/CSS%20-%20Le%20Conteneur%20et%20la%20Hi%C3%A9rarchie.md#qu'est-ce-qu'un-conteneur-en-css-?) pour les éléments de formulaire.   
 - `<input>` : Différents types d'entrées (texte, mot de passe, case à cocher, etc.).   
 - `<label>` : Étiquette pour une entrée de formulaire.   
 - `<textarea>` : Zone de texte multiligne.   

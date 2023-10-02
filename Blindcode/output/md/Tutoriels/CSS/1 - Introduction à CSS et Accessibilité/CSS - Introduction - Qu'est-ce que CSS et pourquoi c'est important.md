@@ -53,7 +53,7 @@ Dans ce cours, nous explorerons les principes fondamentaux du CSS, de la syntaxe
    
 - [Accueil - CSS](../../../Tutoriels/CSS/Accueil%20-%20CSS.md)   
 - [Précédent](../../../Tutoriels/CSS/1%20-%20Introduction%20%C3%A0%20CSS%20et%20Accessibilit%C3%A9/CSS%20-%20Pr%C3%A9sentation%20du%20cours%20et%20des%20objectifs.md)   
-- [Suivant](../../../Tutoriels/CSS/1%20-%20Introduction%20%C3%A0%20CSS%20et%20Accessibilit%C3%A9/CSS%20-%20Comment%20Inclure%20du%20CSS%20dans%20un%20fichier%20HTML.md)   
+- [Suivant](../../../Tutoriels/CSS/1%20-%20Introduction%20%C3%A0%20CSS%20et%20Accessibilit%C3%A9/CSS%20-%20Syntaxe%20de%20base.md)   
 ##### Tags   
 `{_obsidian_pattern_tag_cours}` `{_obsidian_pattern_tag_blindcode}` `{_obsidian_pattern_tag_css}` `{_obsidian_pattern_tag_programmation}` `{_obsidian_pattern_tag_frontend}`   
    
