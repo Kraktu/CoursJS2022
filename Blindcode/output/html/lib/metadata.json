@@ -1,0 +1,1939 @@
+{
+  "vaultName": "Philip Dupont",
+  "lastExport": 1710315730361,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title outliner-plugin-dnd",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "Tutoriels/Accessibilité/Théorie/Accessibilité - Pourquoi c'est important.md",
+    "Tutoriels/Accessibilité/Théorie/Accessibilité - Principes de l'accessibilité pour les mises en page réactives.md",
+    "Tutoriels/Accessibilité/Théorie/Accessibilité - Tests et vérifications de l'accessibilité avec des outils en ligne.md",
+    "Tutoriels/Accessibilité/Théorie/desktop.ini",
+    "Tutoriels/Accessibilité/Accueil - Accessibilité.md",
+    "Tutoriels/Accessibilité/desktop.ini",
+    "Tutoriels/Algorithmie/0 - Le plus important/Algo - Utilisation des Concepts Appris pour Résoudre des Problèmes.md",
+    "Tutoriels/Algorithmie/0 - Le plus important/desktop.ini",
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Entrée et Sortie de Données.md",
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Opérations Mathématiques de Base.md",
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Structure Générale du Pseudo-Code.md",
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Variables et Types de Données.md",
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/desktop.ini",
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Boucles (POUR, TANT QUE).md",
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Instructions de Saut (SAUTER, CONTINUER).md",
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - La Boucle POUR CHAQUE.md",
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Structure CASE (Choix Multiple).md",
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Structures Conditionnelles (SI...ALORS...SINON).md",
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/desktop.ini",
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Allocation Dynamique de Mémoire.md",
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Structure de données associatives (Dictionnaires, Maps).md",
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Variables Composées (Enregistrements, Structures).md",
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Variables Composées (Tableaux, Listes).md",
+    "Tutoriels/Algorithmie/3 - Structure de Données/desktop.ini",
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Définition et Appel de Fonctions.md",
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Paramètres et Retours de Fonctions.md",
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Portée des Variables.md",
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Réutilisation de Code.md",
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/desktop.ini",
+    "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/Algo - Gestion d'Erreurs avec des Structures Conditionnelles.md",
+    "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/Algo - Utilisation des Exceptions.md",
+    "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/desktop.ini",
+    "Tutoriels/Algorithmie/6 - Récursivité/Algo - Cas de Base et Cas Récursifs.md",
+    "Tutoriels/Algorithmie/6 - Récursivité/Algo - Exemples de Fonctions Récursives.md",
+    "Tutoriels/Algorithmie/6 - Récursivité/Algo - Principe de la Récursivité.md",
+    "Tutoriels/Algorithmie/6 - Récursivité/desktop.ini",
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/Algo - Analyse de la Complexité.md",
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/Algo - Notation Big O.md",
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/Algo - Notion de Complexité Temporelle et Spatiale.md",
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/desktop.ini",
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Comparaison des Algorithmes de Tri.md",
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri à Bulles.md",
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri par Insertion.md",
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri par Sélection.md",
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri Rapide (Quicksort).md",
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/desktop.ini",
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Commenter le Code.md",
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Nommage des Variables et des Fonctions.md",
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Organisation du Code.md",
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Schémas de raisonnement résolution d'exercice de programmation.canvas",
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Tests Unitaires.md",
+    "Tutoriels/Algorithmie/Autres Ressources/desktop.ini",
+    "Tutoriels/Algorithmie/Accueil - Algorithmie.md",
+    "Tutoriels/Algorithmie/desktop.ini",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Comment Inclure du CSS dans un fichier HTML.md",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Exercices - Les bases du CSS.md",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Introduction - Qu'est-ce que CSS et pourquoi c'est important.md",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Présentation du cours et des objectifs.md",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Résolution - Les bases du CSS.md",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Syntaxe de base.md",
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/desktop.ini",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Exercices - Les pseudo-classes et les transitions.md",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Exercices - Mise en forme du texte et des liens.md",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Les Liens.md",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Pseudo-classes pour les liens.md",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Styling du texte - Police, taille, espacement, alignement.md",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Utilisation des transitions.md",
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/desktop.ini",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Exercices - Création de mises en page simples.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Exercices - Flexbox avancé.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Exercices - Mise en page avec Flexbox.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Flexbox - Introduction et utilisation.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Flexbox avancé - Alignement, ordre, etc.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Introduction à la mise en page.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Le Positionnement.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Utilisation de marges, de paddings et de bordures.md",
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/desktop.ini",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Création de mises en page responsives simples.md",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Grid et les images réactives.md",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Images réactives.md",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Introduction au responsive design.md",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation de CSS Grid pour des mises en page plus avancées.md",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation des media queries.md",
+    "Tutoriels/CSS/4 - Responsive Design et Médias/desktop.ini",
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Evaluation des projets.md",
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Présentation des projets aux autres étudiants.md",
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Présentation du projet final.md",
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Travail en groupe.md",
+    "Tutoriels/CSS/5 - Projets et Évaluation/desktop.ini",
+    "Tutoriels/CSS/6 - Chapitres Bonus/CSS - Changement de style des listes.md",
+    "Tutoriels/CSS/6 - Chapitres Bonus/CSS - Importer une police.md",
+    "Tutoriels/CSS/6 - Chapitres Bonus/CSS - La mediaquery Print.md",
+    "Tutoriels/CSS/6 - Chapitres Bonus/desktop.ini",
+    "Tutoriels/CSS/Autres Ressources/CSS - Le Conteneur et la Hiérarchie.md",
+    "Tutoriels/CSS/Autres Ressources/CSS - Le fichier reset.md",
+    "Tutoriels/CSS/Autres Ressources/CSS - Le sélecteur universel.md",
+    "Tutoriels/CSS/Autres Ressources/CSS - Les différents types de tailles.md",
+    "Tutoriels/CSS/Autres Ressources/CSS - Les principales valeurs de la propriété display.md",
+    "Tutoriels/CSS/Autres Ressources/CSS - Les Timing Functions pour les transitions.md",
+    "Tutoriels/CSS/Autres Ressources/desktop.ini",
+    "Tutoriels/CSS/Accueil - CSS.md",
+    "Tutoriels/CSS/desktop.ini",
+    "Tutoriels/GIT/GITHUB/desktop.ini",
+    "Tutoriels/GIT/GITHUB/GITHUB - GitHub Pages pour avoir son site gratuit.md",
+    "Tutoriels/GIT/GITHUB/GITHUB - Les bases et à quoi ça sert.md",
+    "Tutoriels/GIT/GITHUB/GITHUB - Les Repositories GitHub.md",
+    "Tutoriels/GIT/Principal/desktop.ini",
+    "Tutoriels/GIT/Principal/GIT - Les bases et à quoi ça sert.md",
+    "Tutoriels/GIT/Accueil - Git.md",
+    "Tutoriels/GIT/desktop.ini",
+    "Tutoriels/HTML/Autres Ressources/desktop.ini",
+    "Tutoriels/HTML/Autres Ressources/HTML - Les attributs.md",
+    "Tutoriels/HTML/Autres Ressources/HTML - Les balises principales.md",
+    "Tutoriels/HTML/Autres Ressources/HTML - Template index.md",
+    "Tutoriels/HTML/Cours/desktop.ini",
+    "Tutoriels/HTML/Cours/HTML - Exercices - Ajout d'attributs alt et de balises sémantiques.md",
+    "Tutoriels/HTML/Cours/HTML - Images Réactives.md",
+    "Tutoriels/HTML/Cours/HTML - Présentation et Utilité.md",
+    "Tutoriels/HTML/Cours/HTML - Résolution - Ajout d'attributs alt et de balises sémantiques.md",
+    "Tutoriels/HTML/Cours/HTML - Utilisation de balises sémantiques.md",
+    "Tutoriels/HTML/Cours/HTML - Utilisation de l'attribut alt pour les images.md",
+    "Tutoriels/HTML/Accueil - HTML.md",
+    "Tutoriels/HTML/desktop.ini",
+    "Tutoriels/IDE/PHPStorm/Accueil - PHPStorm.md",
+    "Tutoriels/IDE/PHPStorm/desktop.ini",
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Exercice sur la base.md",
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Installation Mac.md",
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Installation Windows.md",
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Les bases.md",
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Les raccourcis.md",
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Théorie.md",
+    "Tutoriels/IDE/Théorie/desktop.ini",
+    "Tutoriels/IDE/Théorie/IDE - La suite JetBrains.md",
+    "Tutoriels/IDE/Théorie/IDE - Qu'est-ce que c'est.md",
+    "Tutoriels/IDE/VSCode/Accueil - VSCode.md",
+    "Tutoriels/IDE/VSCode/desktop.ini",
+    "Tutoriels/IDE/VSCode/VSCode - Théorie.md",
+    "Tutoriels/IDE/Accueil - IDE.md",
+    "Tutoriels/IDE/desktop.ini",
+    "Tutoriels/Informatique/Accueil - Informatique.md",
+    "Tutoriels/Informatique/desktop.ini",
+    "Tutoriels/Informatique/Informatique - Algèbre de Bool.md",
+    "Tutoriels/Informatique/Informatique - Explication de l'Internet of Things (IoT).md",
+    "Tutoriels/Informatique/Informatique - Intro à l'Intelligence Artificielle.md",
+    "Tutoriels/Informatique/Informatique - Introduction à Bootstrap.md",
+    "Tutoriels/Informatique/Informatique - Introduction à Java.md",
+    "Tutoriels/Informatique/Informatique - Introduction à Javascript.md",
+    "Tutoriels/Informatique/Informatique - Introduction à Laravel.md",
+    "Tutoriels/Informatique/Informatique - Introduction à Python.md",
+    "Tutoriels/Informatique/Informatique - Introduction à R.md",
+    "Tutoriels/Informatique/Informatique - Introduction au langage C.md",
+    "Tutoriels/Informatique/Informatique - Introduction au langage C#.md",
+    "Tutoriels/Informatique/Informatique - Introduction au SQL.md",
+    "Tutoriels/Informatique/Informatique - L'Open Source.md",
+    "Tutoriels/Informatique/Informatique - La conception d'application et ses métiers.md",
+    "Tutoriels/Informatique/Informatique - La Ligne de Commande.md",
+    "Tutoriels/Informatique/Informatique - Le concept d'API.md",
+    "Tutoriels/Informatique/Informatique - Le DOM.md",
+    "Tutoriels/Informatique/Informatique - Le Modèle-Vue-Contrôleur (MVC).md",
+    "Tutoriels/Informatique/Informatique - Le Modulo.md",
+    "Tutoriels/Informatique/Informatique - Le référencement d'un site web.md",
+    "Tutoriels/Informatique/Informatique - Les Bases de Données.md",
+    "Tutoriels/Informatique/Informatique - Les deux familles de Programmation.md",
+    "Tutoriels/Informatique/Informatique - Qu'est-ce qu'un Framework.md",
+    "Tutoriels/Informatique/Informatique - Qu'est-ce qu'un langage de programmation.md",
+    "Tutoriels/Obsidian/Core/desktop.ini",
+    "Tutoriels/Obsidian/Core/Le Programme Obsidian.md",
+    "Tutoriels/Obsidian/Core/Markdown.md",
+    "Tutoriels/Obsidian/Plugins/DataView.md",
+    "Tutoriels/Obsidian/Plugins/desktop.ini",
+    "Tutoriels/Obsidian/Plugins/Natural Languages Date.md",
+    "Tutoriels/Obsidian/Plugins/ObsidianHTML.md",
+    "Tutoriels/Obsidian/Accueil - Obsidian.md",
+    "Tutoriels/Obsidian/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/1 - Introduction à la Programmation Procédurale/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/1 - Introduction à la Programmation Procédurale/PHP - Présentation en tant que langage de programmation procédurale.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Exercices Bonus Conditions.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Installation et configuration de l'environnement.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Les Boucles.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Opérateurs et expressions.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Structure de contrôle conditionnelle.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Structure générale d'un Script.md",
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Variables et types de données.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Définition et utilisation de fonctions en PHP.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Les Strict Types.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Passage de paramètres de fonction.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Portée des variables.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Retour de valeurs de fonction.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Retour de valeurs de fonction avec Typage.md",
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Typage de paramètre.md",
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Challenge sur les tableaux.md",
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Fonctions de tableau utiles.md",
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Manipulation de tableaux (tableaux indexés et associatifs).md",
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Opérations de base sur les chaînes de caractères.md",
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Tableau à deux dimensions.md",
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Conventions de nommage.md",
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Envoi de données de formulaire.md",
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Fichier multiples et Includes.md",
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Rappel des formulaires HTML.md",
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Traitement des données de formulaire.md",
+    "Tutoriels/PHP/A - Procédural PHP/6 - Travailler avec les fichiers en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/7 - Introduction aux bases de données en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/8 - Introduction à la sécurité en PHP/desktop.ini",
+    "Tutoriels/PHP/A - Procédural PHP/desktop.ini",
+    "Tutoriels/PHP/B - POO PHP/1 - Introduction à la programmation Orientée Objet en PHP/desktop.ini",
+    "Tutoriels/PHP/B - POO PHP/2 - Classes et Objets en PHP/desktop.ini",
+    "Tutoriels/PHP/B - POO PHP/3 - Constructeurs et Destructeurs en PHP/desktop.ini",
+    "Tutoriels/PHP/B - POO PHP/desktop.ini",
+    "Tutoriels/PHP/Accueil - PHP.md",
+    "Tutoriels/PHP/desktop.ini",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/desktop.ini",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Ecriture de fichier CSV.md",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Ecriture de fichier texte.md",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture de fichier CSV.md",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture de fichier texte.md",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture et écriture de fichier CSV.md",
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture et écriture de fichier texte.md",
+    "Tutoriels/Python/Accueil - Python.md",
+    "Tutoriels/Python/desktop.ini",
+    "Tutoriels/UXDesign/conception.md",
+    "Tutoriels/UXDesign/decouvrir.md",
+    "Tutoriels/UXDesign/desktop.ini",
+    "Tutoriels/UXDesign/mesurer.md",
+    "Tutoriels/UXDesign/Notes ux design.md",
+    "Tutoriels/UXDesign/Persona.md",
+    "Tutoriels/UXDesign/test.md",
+    "Tutoriels/Accueil - Tutoriels.md",
+    "Tutoriels/desktop.ini",
+    "lib/media/phpstorm-license.png",
+    "lib/media/php-storm-install.png",
+    "lib/media/créer-un-nouveau-fichier.png",
+    "lib/media/créer-un-nouveau-projet.png",
+    "lib/media/accéder-aux-extensions.png",
+    "lib/media/resultobsidianhtml.png",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/other-plugins.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "Tutoriels/Accessibilité/Théorie/Accessibilité - Pourquoi c'est important.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6910,
+      "exportedPath": "tutoriels/accessibilité/théorie/accessibilité-pourquoi-c'est-important.html",
+      "dependencies": []
+    },
+    "Tutoriels/Accessibilité/Théorie/Accessibilité - Principes de l'accessibilité pour les mises en page réactives.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4358,
+      "exportedPath": "tutoriels/accessibilité/théorie/accessibilité-principes-de-l'accessibilité-pour-les-mises-en-page-réactives.html",
+      "dependencies": []
+    },
+    "Tutoriels/Accessibilité/Théorie/Accessibilité - Tests et vérifications de l'accessibilité avec des outils en ligne.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6779,
+      "exportedPath": "tutoriels/accessibilité/théorie/accessibilité-tests-et-vérifications-de-l'accessibilité-avec-des-outils-en-ligne.html",
+      "dependencies": []
+    },
+    "Tutoriels/Accessibilité/Théorie/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/accessibilité/théorie/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Accessibilité/Accueil - Accessibilité.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1218,
+      "exportedPath": "tutoriels/accessibilité/accueil-accessibilité.html",
+      "dependencies": []
+    },
+    "Tutoriels/Accessibilité/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/accessibilité/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/0 - Le plus important/Algo - Utilisation des Concepts Appris pour Résoudre des Problèmes.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6053,
+      "exportedPath": "tutoriels/algorithmie/0-le-plus-important/algo-utilisation-des-concepts-appris-pour-résoudre-des-problèmes.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/0 - Le plus important/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/0-le-plus-important/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Entrée et Sortie de Données.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4221,
+      "exportedPath": "tutoriels/algorithmie/1-les-bases-du-pseudo-code/algo-entrée-et-sortie-de-données.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Opérations Mathématiques de Base.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3317,
+      "exportedPath": "tutoriels/algorithmie/1-les-bases-du-pseudo-code/algo-opérations-mathématiques-de-base.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Structure Générale du Pseudo-Code.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2847,
+      "exportedPath": "tutoriels/algorithmie/1-les-bases-du-pseudo-code/algo-structure-générale-du-pseudo-code.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/Algo - Variables et Types de Données.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4140,
+      "exportedPath": "tutoriels/algorithmie/1-les-bases-du-pseudo-code/algo-variables-et-types-de-données.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/1-les-bases-du-pseudo-code/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Boucles (POUR, TANT QUE).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4846,
+      "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/algo-boucles-(pour,-tant-que).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Instructions de Saut (SAUTER, CONTINUER).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3467,
+      "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/algo-instructions-de-saut-(sauter,-continuer).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - La Boucle POUR CHAQUE.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3466,
+      "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/algo-la-boucle-pour-chaque.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Structure CASE (Choix Multiple).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4984,
+      "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/algo-structure-case-(choix-multiple).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/Algo - Structures Conditionnelles (SI...ALORS...SINON).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5441,
+      "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/algo-structures-conditionnelles-(si...alors...sinon).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/2 - Structure de Contrôle/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Allocation Dynamique de Mémoire.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4103,
+      "exportedPath": "tutoriels/algorithmie/3-structure-de-données/algo-allocation-dynamique-de-mémoire.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Structure de données associatives (Dictionnaires, Maps).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3736,
+      "exportedPath": "tutoriels/algorithmie/3-structure-de-données/algo-structure-de-données-associatives-(dictionnaires,-maps).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Variables Composées (Enregistrements, Structures).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3866,
+      "exportedPath": "tutoriels/algorithmie/3-structure-de-données/algo-variables-composées-(enregistrements,-structures).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/3 - Structure de Données/Algo - Variables Composées (Tableaux, Listes).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4690,
+      "exportedPath": "tutoriels/algorithmie/3-structure-de-données/algo-variables-composées-(tableaux,-listes).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/3 - Structure de Données/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/3-structure-de-données/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Définition et Appel de Fonctions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3866,
+      "exportedPath": "tutoriels/algorithmie/4-sous-programmes/algo-définition-et-appel-de-fonctions.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Paramètres et Retours de Fonctions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4092,
+      "exportedPath": "tutoriels/algorithmie/4-sous-programmes/algo-paramètres-et-retours-de-fonctions.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Portée des Variables.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5516,
+      "exportedPath": "tutoriels/algorithmie/4-sous-programmes/algo-portée-des-variables.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/Algo - Réutilisation de Code.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6204,
+      "exportedPath": "tutoriels/algorithmie/4-sous-programmes/algo-réutilisation-de-code.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/4 - Sous-Programmes/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/4-sous-programmes/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/Algo - Gestion d'Erreurs avec des Structures Conditionnelles.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3171,
+      "exportedPath": "tutoriels/algorithmie/5-gestion-d'erreurs-et-exceptions/algo-gestion-d'erreurs-avec-des-structures-conditionnelles.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/Algo - Utilisation des Exceptions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5602,
+      "exportedPath": "tutoriels/algorithmie/5-gestion-d'erreurs-et-exceptions/algo-utilisation-des-exceptions.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/5-gestion-d'erreurs-et-exceptions/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/6 - Récursivité/Algo - Cas de Base et Cas Récursifs.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3040,
+      "exportedPath": "tutoriels/algorithmie/6-récursivité/algo-cas-de-base-et-cas-récursifs.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/6 - Récursivité/Algo - Exemples de Fonctions Récursives.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4298,
+      "exportedPath": "tutoriels/algorithmie/6-récursivité/algo-exemples-de-fonctions-récursives.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/6 - Récursivité/Algo - Principe de la Récursivité.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3886,
+      "exportedPath": "tutoriels/algorithmie/6-récursivité/algo-principe-de-la-récursivité.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/6 - Récursivité/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/6-récursivité/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/Algo - Analyse de la Complexité.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3916,
+      "exportedPath": "tutoriels/algorithmie/7-complexité-algorithmique/algo-analyse-de-la-complexité.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/Algo - Notation Big O.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 7054,
+      "exportedPath": "tutoriels/algorithmie/7-complexité-algorithmique/algo-notation-big-o.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/Algo - Notion de Complexité Temporelle et Spatiale.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4322,
+      "exportedPath": "tutoriels/algorithmie/7-complexité-algorithmique/algo-notion-de-complexité-temporelle-et-spatiale.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/7 - Complexité Algorithmique/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/7-complexité-algorithmique/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Comparaison des Algorithmes de Tri.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3498,
+      "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/algo-comparaison-des-algorithmes-de-tri.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri à Bulles.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3217,
+      "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/algo-tri-à-bulles.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri par Insertion.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3231,
+      "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/algo-tri-par-insertion.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri par Sélection.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3291,
+      "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/algo-tri-par-sélection.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/Algo - Tri Rapide (Quicksort).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4088,
+      "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/algo-tri-rapide-(quicksort).html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/8 - Algorithme de Tri/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Commenter le Code.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6678,
+      "exportedPath": "tutoriels/algorithmie/autres-ressources/algo-commenter-le-code.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Nommage des Variables et des Fonctions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4759,
+      "exportedPath": "tutoriels/algorithmie/autres-ressources/algo-nommage-des-variables-et-des-fonctions.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Organisation du Code.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4612,
+      "exportedPath": "tutoriels/algorithmie/autres-ressources/algo-organisation-du-code.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Schémas de raisonnement résolution d'exercice de programmation.canvas": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 12116,
+      "exportedPath": "tutoriels/algorithmie/autres-ressources/algo-schémas-de-raisonnement-résolution-d'exercice-de-programmation.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Autres Ressources/Algo - Tests Unitaires.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4667,
+      "exportedPath": "tutoriels/algorithmie/autres-ressources/algo-tests-unitaires.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Autres Ressources/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/autres-ressources/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/Accueil - Algorithmie.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2955,
+      "exportedPath": "tutoriels/algorithmie/accueil-algorithmie.html",
+      "dependencies": []
+    },
+    "Tutoriels/Algorithmie/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/algorithmie/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Comment Inclure du CSS dans un fichier HTML.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5492,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/css-comment-inclure-du-css-dans-un-fichier-html.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Exercices - Les bases du CSS.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4723,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/css-exercices-les-bases-du-css.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Introduction - Qu'est-ce que CSS et pourquoi c'est important.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4018,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/css-introduction-qu'est-ce-que-css-et-pourquoi-c'est-important.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Présentation du cours et des objectifs.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5075,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/css-présentation-du-cours-et-des-objectifs.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Résolution - Les bases du CSS.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1245,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/css-résolution-les-bases-du-css.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/CSS - Syntaxe de base.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4539,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/css-syntaxe-de-base.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Exercices - Les pseudo-classes et les transitions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3486,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/css-exercices-les-pseudo-classes-et-les-transitions.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Exercices - Mise en forme du texte et des liens.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3748,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/css-exercices-mise-en-forme-du-texte-et-des-liens.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Les Liens.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4325,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/css-les-liens.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Pseudo-classes pour les liens.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6396,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/css-pseudo-classes-pour-les-liens.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Styling du texte - Police, taille, espacement, alignement.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2721,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/css-styling-du-texte-police,-taille,-espacement,-alignement.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/CSS - Utilisation des transitions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3949,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/css-utilisation-des-transitions.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/2 - Styling du Texte et des Liens/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Exercices - Création de mises en page simples.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3160,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-exercices-création-de-mises-en-page-simples.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Exercices - Flexbox avancé.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3370,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-exercices-flexbox-avancé.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Exercices - Mise en page avec Flexbox.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3156,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-exercices-mise-en-page-avec-flexbox.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Flexbox - Introduction et utilisation.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4910,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-flexbox-introduction-et-utilisation.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Flexbox avancé - Alignement, ordre, etc.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6042,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-flexbox-avancé-alignement,-ordre,-etc.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Introduction à la mise en page.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4294,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-introduction-à-la-mise-en-page.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Le Positionnement.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3772,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-le-positionnement.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/CSS - Utilisation de marges, de paddings et de bordures.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4709,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/css-utilisation-de-marges,-de-paddings-et-de-bordures.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/3 - Mise en Page et Flexbox/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Création de mises en page responsives simples.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3425,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/css-exercices-création-de-mises-en-page-responsives-simples.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Exercices - Grid et les images réactives.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3956,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/css-exercices-grid-et-les-images-réactives.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Images réactives.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3912,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/css-images-réactives.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Introduction au responsive design.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4711,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/css-introduction-au-responsive-design.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation de CSS Grid pour des mises en page plus avancées.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 9283,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/css-utilisation-de-css-grid-pour-des-mises-en-page-plus-avancées.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/CSS - Utilisation des media queries.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4085,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/css-utilisation-des-media-queries.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/4 - Responsive Design et Médias/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/4-responsive-design-et-médias/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Evaluation des projets.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1312,
+      "exportedPath": "tutoriels/css/5-projets-et-évaluation/css-evaluation-des-projets.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Présentation des projets aux autres étudiants.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2849,
+      "exportedPath": "tutoriels/css/5-projets-et-évaluation/css-présentation-des-projets-aux-autres-étudiants.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Présentation du projet final.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6516,
+      "exportedPath": "tutoriels/css/5-projets-et-évaluation/css-présentation-du-projet-final.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/5 - Projets et Évaluation/CSS - Travail en groupe.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4955,
+      "exportedPath": "tutoriels/css/5-projets-et-évaluation/css-travail-en-groupe.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/5 - Projets et Évaluation/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/5-projets-et-évaluation/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/6 - Chapitres Bonus/CSS - Changement de style des listes.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3442,
+      "exportedPath": "tutoriels/css/6-chapitres-bonus/css-changement-de-style-des-listes.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/6 - Chapitres Bonus/CSS - Importer une police.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 8423,
+      "exportedPath": "tutoriels/css/6-chapitres-bonus/css-importer-une-police.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/6 - Chapitres Bonus/CSS - La mediaquery Print.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5213,
+      "exportedPath": "tutoriels/css/6-chapitres-bonus/css-la-mediaquery-print.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/6 - Chapitres Bonus/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/6-chapitres-bonus/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/CSS - Le Conteneur et la Hiérarchie.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3906,
+      "exportedPath": "tutoriels/css/autres-ressources/css-le-conteneur-et-la-hiérarchie.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/CSS - Le fichier reset.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4148,
+      "exportedPath": "tutoriels/css/autres-ressources/css-le-fichier-reset.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/CSS - Le sélecteur universel.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5900,
+      "exportedPath": "tutoriels/css/autres-ressources/css-le-sélecteur-universel.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/CSS - Les différents types de tailles.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3460,
+      "exportedPath": "tutoriels/css/autres-ressources/css-les-différents-types-de-tailles.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/CSS - Les principales valeurs de la propriété display.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4747,
+      "exportedPath": "tutoriels/css/autres-ressources/css-les-principales-valeurs-de-la-propriété-display.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/CSS - Les Timing Functions pour les transitions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6362,
+      "exportedPath": "tutoriels/css/autres-ressources/css-les-timing-functions-pour-les-transitions.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Autres Ressources/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/autres-ressources/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/Accueil - CSS.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3588,
+      "exportedPath": "tutoriels/css/accueil-css.html",
+      "dependencies": []
+    },
+    "Tutoriels/CSS/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/css/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/GITHUB/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/git/github/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/GITHUB/GITHUB - GitHub Pages pour avoir son site gratuit.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3582,
+      "exportedPath": "tutoriels/git/github/github-github-pages-pour-avoir-son-site-gratuit.html",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/GITHUB/GITHUB - Les bases et à quoi ça sert.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3701,
+      "exportedPath": "tutoriels/git/github/github-les-bases-et-à-quoi-ça-sert.html",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/GITHUB/GITHUB - Les Repositories GitHub.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3315,
+      "exportedPath": "tutoriels/git/github/github-les-repositories-github.html",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/Principal/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/git/principal/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/Principal/GIT - Les bases et à quoi ça sert.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3229,
+      "exportedPath": "tutoriels/git/principal/git-les-bases-et-à-quoi-ça-sert.html",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/Accueil - Git.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 783,
+      "exportedPath": "tutoriels/git/accueil-git.html",
+      "dependencies": []
+    },
+    "Tutoriels/GIT/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/git/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Autres Ressources/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/html/autres-ressources/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Autres Ressources/HTML - Les attributs.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3926,
+      "exportedPath": "tutoriels/html/autres-ressources/html-les-attributs.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Autres Ressources/HTML - Les balises principales.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5227,
+      "exportedPath": "tutoriels/html/autres-ressources/html-les-balises-principales.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Autres Ressources/HTML - Template index.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2331,
+      "exportedPath": "tutoriels/html/autres-ressources/html-template-index.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/html/cours/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/HTML - Exercices - Ajout d'attributs alt et de balises sémantiques.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3826,
+      "exportedPath": "tutoriels/html/cours/html-exercices-ajout-d'attributs-alt-et-de-balises-sémantiques.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/HTML - Images Réactives.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5307,
+      "exportedPath": "tutoriels/html/cours/html-images-réactives.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/HTML - Présentation et Utilité.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2954,
+      "exportedPath": "tutoriels/html/cours/html-présentation-et-utilité.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/HTML - Résolution - Ajout d'attributs alt et de balises sémantiques.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2081,
+      "exportedPath": "tutoriels/html/cours/html-résolution-ajout-d'attributs-alt-et-de-balises-sémantiques.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/HTML - Utilisation de balises sémantiques.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4827,
+      "exportedPath": "tutoriels/html/cours/html-utilisation-de-balises-sémantiques.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Cours/HTML - Utilisation de l'attribut alt pour les images.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3852,
+      "exportedPath": "tutoriels/html/cours/html-utilisation-de-l'attribut-alt-pour-les-images.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/Accueil - HTML.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1181,
+      "exportedPath": "tutoriels/html/accueil-html.html",
+      "dependencies": []
+    },
+    "Tutoriels/HTML/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/html/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/PHPStorm/Accueil - PHPStorm.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 694,
+      "exportedPath": "tutoriels/ide/phpstorm/accueil-phpstorm.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/PHPStorm/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/ide/phpstorm/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Exercice sur la base.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3039,
+      "exportedPath": "tutoriels/ide/phpstorm/phpstorm-exercice-sur-la-base.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Installation Mac.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2354,
+      "exportedPath": "tutoriels/ide/phpstorm/phpstorm-installation-mac.html",
+      "dependencies": [
+        "lib/media/phpstorm-license.png"
+      ]
+    },
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Installation Windows.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3972,
+      "exportedPath": "tutoriels/ide/phpstorm/phpstorm-installation-windows.html",
+      "dependencies": [
+        "lib/media/php-storm-install.png",
+        "lib/media/phpstorm-license.png"
+      ]
+    },
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Les bases.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5357,
+      "exportedPath": "tutoriels/ide/phpstorm/phpstorm-les-bases.html",
+      "dependencies": [
+        "lib/media/créer-un-nouveau-fichier.png",
+        "lib/media/créer-un-nouveau-projet.png",
+        "lib/media/accéder-aux-extensions.png"
+      ]
+    },
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Les raccourcis.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3242,
+      "exportedPath": "tutoriels/ide/phpstorm/phpstorm-les-raccourcis.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/PHPStorm/PHPStorm - Théorie.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4378,
+      "exportedPath": "tutoriels/ide/phpstorm/phpstorm-théorie.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/Théorie/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/ide/théorie/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/Théorie/IDE - La suite JetBrains.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3574,
+      "exportedPath": "tutoriels/ide/théorie/ide-la-suite-jetbrains.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/Théorie/IDE - Qu'est-ce que c'est.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4344,
+      "exportedPath": "tutoriels/ide/théorie/ide-qu'est-ce-que-c'est.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/VSCode/Accueil - VSCode.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 672,
+      "exportedPath": "tutoriels/ide/vscode/accueil-vscode.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/VSCode/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/ide/vscode/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/VSCode/VSCode - Théorie.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5069,
+      "exportedPath": "tutoriels/ide/vscode/vscode-théorie.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/Accueil - IDE.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1121,
+      "exportedPath": "tutoriels/ide/accueil-ide.html",
+      "dependencies": []
+    },
+    "Tutoriels/IDE/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/ide/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Accueil - Informatique.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1847,
+      "exportedPath": "tutoriels/informatique/accueil-informatique.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/informatique/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Algèbre de Bool.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 8226,
+      "exportedPath": "tutoriels/informatique/informatique-algèbre-de-bool.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Explication de l'Internet of Things (IoT).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3999,
+      "exportedPath": "tutoriels/informatique/informatique-explication-de-l'internet-of-things-(iot).html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Intro à l'Intelligence Artificielle.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4419,
+      "exportedPath": "tutoriels/informatique/informatique-intro-à-l'intelligence-artificielle.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction à Bootstrap.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4208,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-à-bootstrap.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction à Java.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3806,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-à-java.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction à Javascript.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3986,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-à-javascript.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction à Laravel.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3565,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-à-laravel.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction à Python.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4198,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-à-python.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction à R.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4152,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-à-r.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction au langage C.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3811,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-au-langage-c.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction au langage C#.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3249,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-au-langage-c#.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Introduction au SQL.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3524,
+      "exportedPath": "tutoriels/informatique/informatique-introduction-au-sql.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - L'Open Source.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3231,
+      "exportedPath": "tutoriels/informatique/informatique-l'open-source.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - La conception d'application et ses métiers.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6340,
+      "exportedPath": "tutoriels/informatique/informatique-la-conception-d'application-et-ses-métiers.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - La Ligne de Commande.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3383,
+      "exportedPath": "tutoriels/informatique/informatique-la-ligne-de-commande.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Le concept d'API.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3771,
+      "exportedPath": "tutoriels/informatique/informatique-le-concept-d'api.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Le DOM.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3639,
+      "exportedPath": "tutoriels/informatique/informatique-le-dom.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Le Modèle-Vue-Contrôleur (MVC).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3176,
+      "exportedPath": "tutoriels/informatique/informatique-le-modèle-vue-contrôleur-(mvc).html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Le Modulo.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3779,
+      "exportedPath": "tutoriels/informatique/informatique-le-modulo.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Le référencement d'un site web.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4132,
+      "exportedPath": "tutoriels/informatique/informatique-le-référencement-d'un-site-web.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Les Bases de Données.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3984,
+      "exportedPath": "tutoriels/informatique/informatique-les-bases-de-données.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Les deux familles de Programmation.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4624,
+      "exportedPath": "tutoriels/informatique/informatique-les-deux-familles-de-programmation.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Qu'est-ce qu'un Framework.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3508,
+      "exportedPath": "tutoriels/informatique/informatique-qu'est-ce-qu'un-framework.html",
+      "dependencies": []
+    },
+    "Tutoriels/Informatique/Informatique - Qu'est-ce qu'un langage de programmation.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6293,
+      "exportedPath": "tutoriels/informatique/informatique-qu'est-ce-qu'un-langage-de-programmation.html",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Core/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/obsidian/core/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Core/Le Programme Obsidian.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3627,
+      "exportedPath": "tutoriels/obsidian/core/le-programme-obsidian.html",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Core/Markdown.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2239,
+      "exportedPath": "tutoriels/obsidian/core/markdown.html",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Plugins/DataView.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2580,
+      "exportedPath": "tutoriels/obsidian/plugins/dataview.html",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Plugins/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/obsidian/plugins/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Plugins/Natural Languages Date.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1049,
+      "exportedPath": "tutoriels/obsidian/plugins/natural-languages-date.html",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/Plugins/ObsidianHTML.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5005,
+      "exportedPath": "tutoriels/obsidian/plugins/obsidianhtml.html",
+      "dependencies": [
+        "lib/media/resultobsidianhtml.png"
+      ]
+    },
+    "Tutoriels/Obsidian/Accueil - Obsidian.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 998,
+      "exportedPath": "tutoriels/obsidian/accueil-obsidian.html",
+      "dependencies": []
+    },
+    "Tutoriels/Obsidian/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/obsidian/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/1 - Introduction à la Programmation Procédurale/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/1-introduction-à-la-programmation-procédurale/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/1 - Introduction à la Programmation Procédurale/PHP - Présentation en tant que langage de programmation procédurale.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3820,
+      "exportedPath": "tutoriels/php/a-procédural-php/1-introduction-à-la-programmation-procédurale/php-présentation-en-tant-que-langage-de-programmation-procédurale.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Exercices Bonus Conditions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4069,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-exercices-bonus-conditions.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Installation et configuration de l'environnement.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3991,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-installation-et-configuration-de-l'environnement.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Les Boucles.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 9987,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-les-boucles.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Opérateurs et expressions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5427,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-opérateurs-et-expressions.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Structure de contrôle conditionnelle.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 9472,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-structure-de-contrôle-conditionnelle.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Structure générale d'un Script.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2939,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-structure-générale-d'un-script.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/PHP - Variables et types de données.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 9362,
+      "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/php-variables-et-types-de-données.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Définition et utilisation de fonctions en PHP.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3616,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-définition-et-utilisation-de-fonctions-en-php.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Les Strict Types.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2911,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-les-strict-types.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Passage de paramètres de fonction.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3267,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-passage-de-paramètres-de-fonction.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Portée des variables.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5944,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-portée-des-variables.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Retour de valeurs de fonction.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2310,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-retour-de-valeurs-de-fonction.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Retour de valeurs de fonction avec Typage.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5070,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-retour-de-valeurs-de-fonction-avec-typage.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/PHP - Typage de paramètre.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5067,
+      "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/php-typage-de-paramètre.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Challenge sur les tableaux.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5884,
+      "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/php-challenge-sur-les-tableaux.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Fonctions de tableau utiles.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3810,
+      "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/php-fonctions-de-tableau-utiles.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Manipulation de tableaux (tableaux indexés et associatifs).md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5738,
+      "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/php-manipulation-de-tableaux-(tableaux-indexés-et-associatifs).html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Opérations de base sur les chaînes de caractères.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3088,
+      "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/php-opérations-de-base-sur-les-chaînes-de-caractères.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/PHP - Tableau à deux dimensions.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3659,
+      "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/php-tableau-à-deux-dimensions.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Conventions de nommage.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5792,
+      "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/php-conventions-de-nommage.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Envoi de données de formulaire.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6075,
+      "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/php-envoi-de-données-de-formulaire.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Fichier multiples et Includes.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 6154,
+      "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/php-fichier-multiples-et-includes.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Rappel des formulaires HTML.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4042,
+      "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/php-rappel-des-formulaires-html.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Traitement des données de formulaire.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 7608,
+      "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/php-traitement-des-données-de-formulaire.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/6 - Travailler avec les fichiers en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/6-travailler-avec-les-fichiers-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/7 - Introduction aux bases de données en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/7-introduction-aux-bases-de-données-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/8 - Introduction à la sécurité en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/8-introduction-à-la-sécurité-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/A - Procédural PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/a-procédural-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/B - POO PHP/1 - Introduction à la programmation Orientée Objet en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/b-poo-php/1-introduction-à-la-programmation-orientée-objet-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/B - POO PHP/2 - Classes et Objets en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/b-poo-php/2-classes-et-objets-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/B - POO PHP/3 - Constructeurs et Destructeurs en PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/b-poo-php/3-constructeurs-et-destructeurs-en-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/B - POO PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/b-poo-php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/Accueil - PHP.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3813,
+      "exportedPath": "tutoriels/php/accueil-php.html",
+      "dependencies": []
+    },
+    "Tutoriels/PHP/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/php/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Ecriture de fichier CSV.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4082,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/python-ecriture-de-fichier-csv.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Ecriture de fichier texte.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2481,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/python-ecriture-de-fichier-texte.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture de fichier CSV.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3217,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/python-lecture-de-fichier-csv.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture de fichier texte.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 4358,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/python-lecture-de-fichier-texte.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture et écriture de fichier CSV.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 3292,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/python-lecture-et-écriture-de-fichier-csv.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Lecture et Ecriture de fichier/Python - Lecture et écriture de fichier texte.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2787,
+      "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/python-lecture-et-écriture-de-fichier-texte.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/Accueil - Python.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 788,
+      "exportedPath": "tutoriels/python/accueil-python.html",
+      "dependencies": []
+    },
+    "Tutoriels/Python/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/python/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/conception.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1208,
+      "exportedPath": "tutoriels/uxdesign/conception.html",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/decouvrir.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 925,
+      "exportedPath": "tutoriels/uxdesign/decouvrir.html",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/uxdesign/desktop.ini",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/mesurer.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 192,
+      "exportedPath": "tutoriels/uxdesign/mesurer.html",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/Notes ux design.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 680,
+      "exportedPath": "tutoriels/uxdesign/notes-ux-design.html",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/Persona.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 269,
+      "exportedPath": "tutoriels/uxdesign/persona.html",
+      "dependencies": []
+    },
+    "Tutoriels/UXDesign/test.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 235,
+      "exportedPath": "tutoriels/uxdesign/test.html",
+      "dependencies": []
+    },
+    "Tutoriels/Accueil - Tutoriels.md": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1384,
+      "exportedPath": "tutoriels/accueil-tutoriels.html",
+      "dependencies": []
+    },
+    "Tutoriels/desktop.ini": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 244,
+      "exportedPath": "tutoriels/desktop.ini",
+      "dependencies": []
+    },
+    "lib/media/phpstorm-license.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 65858,
+      "exportedPath": "lib/media/phpstorm-license.png",
+      "dependencies": []
+    },
+    "lib/media/php-storm-install.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 16766,
+      "exportedPath": "lib/media/php-storm-install.png",
+      "dependencies": []
+    },
+    "lib/media/créer-un-nouveau-fichier.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 97793,
+      "exportedPath": "lib/media/créer-un-nouveau-fichier.png",
+      "dependencies": []
+    },
+    "lib/media/créer-un-nouveau-projet.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 77597,
+      "exportedPath": "lib/media/créer-un-nouveau-projet.png",
+      "dependencies": []
+    },
+    "lib/media/accéder-aux-extensions.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 26430,
+      "exportedPath": "lib/media/accéder-aux-extensions.png",
+      "dependencies": []
+    },
+    "lib/media/resultobsidianhtml.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 67869,
+      "exportedPath": "lib/media/resultobsidianhtml.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 151158,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 31373,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 157356,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/other-plugins.css": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 31521,
+      "exportedPath": "lib/styles/other-plugins.css",
+      "dependencies": []
+    },
+    "lib/styles/theme.css": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 832539,
+      "exportedPath": "lib/styles/theme.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 487,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/supported-plugins.css": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 2836,
+      "exportedPath": "lib/styles/supported-plugins.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1710315730361,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    }
+  }
+}
