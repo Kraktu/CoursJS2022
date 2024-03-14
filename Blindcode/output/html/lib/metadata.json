@@ -1,6 +1,6 @@
 {
   "vaultName": "Philip Dupont",
-  "lastExport": 1710408993688,
+  "lastExport": 1710411334597,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title outliner-plugin-dnd",
   "useCustomHeadContent": false,
@@ -240,7 +240,6 @@
     "Tutoriels/UXDesign/test.md",
     "Tutoriels/Accueil - Tutoriels.md",
     "Tutoriels/desktop.ini",
-    "lib/media/retrouver-testmailservertool-sur-le-bureau.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -272,11 +271,13 @@
     "lib/styles/global-variable-styles.css",
     "lib/styles/supported-plugins.css",
     "lib/styles/main-styles.css",
+    "lib/styles/snippets.css",
     "lib/media/phpstorm-license.png",
     "lib/media/php-storm-install.png",
     "lib/media/créer-un-nouveau-fichier.png",
     "lib/media/créer-un-nouveau-projet.png",
     "lib/media/accéder-aux-extensions.png",
+    "lib/media/retrouver-testmailservertool-sur-le-bureau.png",
     "lib/media/resultobsidianhtml.png"
   ],
   "mainDependencies": [
@@ -310,7 +311,8 @@
     "lib/styles/theme.css",
     "lib/styles/global-variable-styles.css",
     "lib/styles/supported-plugins.css",
-    "lib/styles/main-styles.css"
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
   ],
   "fileInfo": {
     "Tutoriels/Accessibilité/Théorie/Accessibilité - Pourquoi c'est important.md": {
@@ -332,7 +334,7 @@
       "dependencies": []
     },
     "Tutoriels/Accessibilité/Théorie/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/accessibilité/théorie/desktop.ini",
       "dependencies": []
@@ -344,7 +346,7 @@
       "dependencies": []
     },
     "Tutoriels/Accessibilité/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/accessibilité/desktop.ini",
       "dependencies": []
@@ -356,7 +358,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/0 - Le plus important/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/0-le-plus-important/desktop.ini",
       "dependencies": []
@@ -386,7 +388,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/1 - Les Bases du Pseudo-Code/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/1-les-bases-du-pseudo-code/desktop.ini",
       "dependencies": []
@@ -422,7 +424,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/2 - Structure de Contrôle/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/2-structure-de-contrôle/desktop.ini",
       "dependencies": []
@@ -452,7 +454,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/3 - Structure de Données/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/3-structure-de-données/desktop.ini",
       "dependencies": []
@@ -482,7 +484,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/4 - Sous-Programmes/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/4-sous-programmes/desktop.ini",
       "dependencies": []
@@ -500,7 +502,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/5 - Gestion d'Erreurs et Exceptions/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/5-gestion-d'erreurs-et-exceptions/desktop.ini",
       "dependencies": []
@@ -524,7 +526,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/6 - Récursivité/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/6-récursivité/desktop.ini",
       "dependencies": []
@@ -548,7 +550,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/7 - Complexité Algorithmique/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/7-complexité-algorithmique/desktop.ini",
       "dependencies": []
@@ -584,7 +586,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/8 - Algorithme de Tri/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/8-algorithme-de-tri/desktop.ini",
       "dependencies": []
@@ -620,7 +622,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/Autres Ressources/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/autres-ressources/desktop.ini",
       "dependencies": []
@@ -632,7 +634,7 @@
       "dependencies": []
     },
     "Tutoriels/Algorithmie/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/algorithmie/desktop.ini",
       "dependencies": []
@@ -674,7 +676,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/1 - Introduction à CSS et Accessibilité/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/1-introduction-à-css-et-accessibilité/desktop.ini",
       "dependencies": []
@@ -716,7 +718,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/2 - Styling du Texte et des Liens/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/2-styling-du-texte-et-des-liens/desktop.ini",
       "dependencies": []
@@ -770,7 +772,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/3 - Mise en Page et Flexbox/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/3-mise-en-page-et-flexbox/desktop.ini",
       "dependencies": []
@@ -812,7 +814,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/4 - Responsive Design et Médias/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/4-responsive-design-et-médias/desktop.ini",
       "dependencies": []
@@ -842,7 +844,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/5 - Projets et Évaluation/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/5-projets-et-évaluation/desktop.ini",
       "dependencies": []
@@ -866,7 +868,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/6 - Chapitres Bonus/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/6-chapitres-bonus/desktop.ini",
       "dependencies": []
@@ -908,7 +910,7 @@
       "dependencies": []
     },
     "Tutoriels/CSS/Autres Ressources/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/autres-ressources/desktop.ini",
       "dependencies": []
@@ -920,13 +922,13 @@
       "dependencies": []
     },
     "Tutoriels/CSS/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/css/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/GIT/GITHUB/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/git/github/desktop.ini",
       "dependencies": []
@@ -950,7 +952,7 @@
       "dependencies": []
     },
     "Tutoriels/GIT/Principal/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/git/principal/desktop.ini",
       "dependencies": []
@@ -968,13 +970,13 @@
       "dependencies": []
     },
     "Tutoriels/GIT/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/git/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/HTML/Autres Ressources/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/html/autres-ressources/desktop.ini",
       "dependencies": []
@@ -998,7 +1000,7 @@
       "dependencies": []
     },
     "Tutoriels/HTML/Cours/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/html/cours/desktop.ini",
       "dependencies": []
@@ -1046,7 +1048,7 @@
       "dependencies": []
     },
     "Tutoriels/HTML/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/html/desktop.ini",
       "dependencies": []
@@ -1058,7 +1060,7 @@
       "dependencies": []
     },
     "Tutoriels/IDE/PHPStorm/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/ide/phpstorm/desktop.ini",
       "dependencies": []
@@ -1109,7 +1111,7 @@
       "dependencies": []
     },
     "Tutoriels/IDE/Théorie/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/ide/théorie/desktop.ini",
       "dependencies": []
@@ -1133,7 +1135,7 @@
       "dependencies": []
     },
     "Tutoriels/IDE/VSCode/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/ide/vscode/desktop.ini",
       "dependencies": []
@@ -1151,7 +1153,7 @@
       "dependencies": []
     },
     "Tutoriels/IDE/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/ide/desktop.ini",
       "dependencies": []
@@ -1163,7 +1165,7 @@
       "dependencies": []
     },
     "Tutoriels/Informatique/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/informatique/desktop.ini",
       "dependencies": []
@@ -1313,7 +1315,7 @@
       "dependencies": []
     },
     "Tutoriels/Obsidian/Core/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/obsidian/core/desktop.ini",
       "dependencies": []
@@ -1337,7 +1339,7 @@
       "dependencies": []
     },
     "Tutoriels/Obsidian/Plugins/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/obsidian/plugins/desktop.ini",
       "dependencies": []
@@ -1363,13 +1365,13 @@
       "dependencies": []
     },
     "Tutoriels/Obsidian/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/obsidian/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/1 - Introduction à la Programmation Procédurale/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/1-introduction-à-la-programmation-procédurale/desktop.ini",
       "dependencies": []
@@ -1381,7 +1383,7 @@
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/2 - Les fondamentaux en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/2-les-fondamentaux-en-php/desktop.ini",
       "dependencies": []
@@ -1429,7 +1431,7 @@
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/3 - Les fonctions en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/3-les-fonctions-en-php/desktop.ini",
       "dependencies": []
@@ -1477,7 +1479,7 @@
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/4 - Manipulation des chaînes de caractères et des tableaux en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php/desktop.ini",
       "dependencies": []
@@ -1513,7 +1515,7 @@
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/5-gestion-des-formulaires-en-php/desktop.ini",
       "dependencies": []
@@ -1549,49 +1551,49 @@
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/6 - Travailler avec les fichiers en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/6-travailler-avec-les-fichiers-en-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/7 - Introduction aux bases de données en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/7-introduction-aux-bases-de-données-en-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/8 - Introduction à la sécurité en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/8-introduction-à-la-sécurité-en-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/A - Procédural PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/a-procédural-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/B - POO PHP/1 - Introduction à la programmation Orientée Objet en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/b-poo-php/1-introduction-à-la-programmation-orientée-objet-en-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/B - POO PHP/2 - Classes et Objets en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/b-poo-php/2-classes-et-objets-en-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/B - POO PHP/3 - Constructeurs et Destructeurs en PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/b-poo-php/3-constructeurs-et-destructeurs-en-php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/PHP/B - POO PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/b-poo-php/desktop.ini",
       "dependencies": []
@@ -1603,13 +1605,13 @@
       "dependencies": []
     },
     "Tutoriels/PHP/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/php/desktop.ini",
       "dependencies": []
     },
     "Tutoriels/Python/Lecture et Ecriture de fichier/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/python/lecture-et-ecriture-de-fichier/desktop.ini",
       "dependencies": []
@@ -1657,7 +1659,7 @@
       "dependencies": []
     },
     "Tutoriels/Python/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/python/desktop.ini",
       "dependencies": []
@@ -1675,7 +1677,7 @@
       "dependencies": []
     },
     "Tutoriels/UXDesign/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/uxdesign/desktop.ini",
       "dependencies": []
@@ -1711,7 +1713,7 @@
       "dependencies": []
     },
     "Tutoriels/desktop.ini": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 244,
       "exportedPath": "tutoriels/desktop.ini",
       "dependencies": []
@@ -1753,187 +1755,187 @@
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 152051,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 31793,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 157356,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 31521,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 832539,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 487,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 2836,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1710408993688,
+      "modifiedTime": 1710411334597,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
@@ -1956,6 +1958,12 @@
       "modifiedTime": 1710408993688,
       "sourceSize": 40206,
       "exportedPath": "lib/media/retrouver-testmailservertool-sur-le-bureau.png",
+      "dependencies": []
+    },
+    "lib/styles/snippets.css": {
+      "modifiedTime": 1710411334597,
+      "sourceSize": 58,
+      "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     }
   }
