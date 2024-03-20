@@ -1,4 +1,469 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Philip Dupont]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Philip Dupont</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 Mar 2024 10:15:35 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 Mar 2024 10:15:34 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Liste des cours d'informatique]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:informatique" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#informatique</a> <a class="tag" href="?query=tag:TableDesMatières" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#TableDesMatières</a> 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Philip Dupont]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Philip Dupont</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 20 Mar 2024 13:18:47 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 20 Mar 2024 13:18:44 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Sujet]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> 
+ <br><br><br>Maintenant que nous avons vu beaucoup de notions, qui sont difficilement divisible plus que ce que j'ai fait, il est temps d'appliquer vos savoirs fraîchement acquis pour fusionner le tout et utiliser le formulaire créé au cours de HTML.<br><br><br><br>
+<br>Reprenez le formulaire que vous avez fait, et <a data-tooltip-position="top" aria-label="PHP - Fichier multiples et Includes" data-href="PHP - Fichier multiples et Includes" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-fichier-multiples-et-includes.html" class="internal-link" target="_self" rel="noopener">normalement divisé sous forme de projet</a>.
+<br>Créez un script PHP (ValidateReservationForm.php) pour traiter les données envoyées par le formulaire :
+
+<br>Récupérez les données saisies par l'utilisateur.
+<br>Validez les données :
+
+<br>Assurez-vous que tous les champs sont remplis.
+<br>Vérifiez si l'adresse e-mail est valide.
+<br>Veillez à la sécurité !
+
+
+<br>Si les données sont valides :
+
+<br>Envoyez un e-mail (veillez bien à lire à documentation pour utiliser <a data-tooltip-position="top" aria-label="Informatique - Envoyer des mail sans SMTP avec TestMailServerTool" data-href="Informatique - Envoyer des mail sans SMTP avec TestMailServerTool" href="\tutoriels\informatique\informatique-envoyer-des-mail-sans-smtp-avec-testmailservertool.html" class="internal-link" target="_self" rel="noopener">TestMailServerTool</a> si vous n'avez pas de serveur SMTP ou d'hébergeur !) de confirmation à l'utilisateur avec les détails saisis. (La fonction mail doit ressembler à ceci : mail($userEmail,$mailSubject, $mailBody,"From: name@adress.domain");)
+<br>Affichez un message de confirmation lambda à l'utilisateur (Ce message est contenu dans FormAccepted.php, incluez ce fichier !). A la suite, mettez un message customisé qui reprend ses informations, en gros, l'équivalent de l'e-mail, mais sur la page HTML
+
+
+<br>Si les données ne sont pas valides :
+
+<br>Affichez un message d'erreur lambda (Ce message est contenu dans FormRefused.php, incluez ce fichier !) et indiquez-lui les champs incorrects.
+
+
+
+
+<br><br>
+<br>Personnalisez le message de confirmation envoyé par e-mail pour inclure les détails saisis par l'utilisateur, le remercier de sa commande, etc.
+<br>Travaillez le style de tout ça (Formulaire, messages d'erreur, validation, etc) en CSS !
+<br>Stockez les messages envoyés dans une base de données pour référence ultérieure. 
+<br>Ajoutez une fonctionnalité de validation côté client en utilisant JavaScript pour améliorer l'expérience utilisateur.
+<br>(Ca, c'est vraiment si vous avez le temps, pour explorer, car c'est le prochain chapitre).
+<br><br>
+<br>Utilisez les fonctions de validation PHP telles que filter_var() et empty() pour valider les données.
+<br>Utilisez la fonction mail() pour envoyer des e-mails en PHP.
+<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Traitement des données de formulaire" data-href="PHP - Traitement des données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Ouverture, lecture et écriture de fichiers" data-href="PHP - Ouverture, lecture et écriture de fichiers" href="\tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-ouverture,-lecture-et-écriture-de-fichiers.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-14 à 09:02]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Exercice récapitulatif sur les formulaires.md</guid><pubDate>Wed, 20 Mar 2024 09:49:42 GMT</pubDate></item><item><title><![CDATA[Traitement des Données de Formulaire en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> 
+ <br><br><br>Une fois qu'un utilisateur soumet un formulaire <a data-tooltip-position="top" aria-label="Accueil - HTML" data-href="Accueil - HTML" href="\tutoriels\html\accueil-html.html" class="internal-link" target="_self" rel="noopener">HTML</a>, les données saisies sont envoyées au serveur où elles doivent être traitées. En <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a>, vous récupérez ces données à l'aide de <a data-tooltip-position="top" aria-label="PHP - Envoi de données de formulaire > Méthode POST vs Méthode GET" data-href="PHP - Envoi de données de formulaire#Méthode POST vs Méthode GET" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html#Méthode_POST_vs_Méthode_GET" class="internal-link" target="_self" rel="noopener">|la superglobale `$_POST` ou `$_GET`</a>, en fonction de la méthode d'envoi du formulaire, puis vous les traitez selon les besoins de votre application.<br><br><br><br><br>Pour récupérer les données envoyées via la méthode POST, vous pouvez accéder aux valeurs à partir de la superglobale $_POST. Cette superglobale est un tableau associatif où les clés sont les noms des champs de formulaire et les valeurs sont les données saisies par l'utilisateur.<br>// Récupération des données POST
+$nom = $_POST['nom'];
+$email = $_POST['email'];
+Copy<br><br>De même, pour récupérer les données envoyées via la méthode GET, vous utilisez la superglobale $_GET.<br>// Récupération des données GET
+$nom = $_GET['nom'];
+$email = $_GET['email'];
+Copy<br><br>Avant de traiter les données, il est crucial de les valider pour garantir qu'elles sont conformes aux attentes et qu'elles ne contiennent pas de valeurs malveillantes. Vous pouvez utiliser des fonctions de validation prédéfinies en PHP ou créer vos propres règles de validation.<br>// Validation des données
+if (empty($nom) || empty($email)) {
+    echo "Veuillez remplir tous les champs.";
+} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Adresse e-mail invalide.";
+} else {
+    // Traitement des données
+    // Envoi des données à la base de données, etc.
+}
+Copy<br><br>Une fois que les données sont validées, vous pouvez les traiter selon les besoins de votre application. Cela peut inclure l'envoi des données à une base de données, l'envoi d'un e-mail, la génération d'un rapport, etc.<br>// Traitement des données
+// Par exemple, envoi d'un e-mail
+$destinataire = "destinataire@example.com";
+$sujet = "Nouveau message de $nom";
+$message = "Adresse e-mail : $email";
+$headers = "From: $email";
+mail($destinataire, $sujet, $message, $headers);
+Copy<br><br>Après le traitement des données, il est important de fournir un feedback à l'utilisateur pour lui indiquer si l'opération s'est déroulée avec succès ou s'il y a eu des erreurs.<br>// Feedback à l'utilisateur
+if (/* opération réussie */) {
+    echo "Votre message a été envoyé avec succès.";
+} else {
+    echo "Une erreur s'est produite lors de l'envoi du message.";
+}
+Copy<br><br>La validation des données est une étape cruciale dans le processus de développement web. En plus de garantir que les données sont conformes aux attentes de l'application, il est également essentiel de sécuriser votre application contre les attaques telles que les injections SQL et les attaques XSS (cross-site scripting). En PHP, il existe plusieurs techniques pour valider et sécuriser les données.<br><br><br>Avant d'utiliser les données fournies par les utilisateurs, il est recommandé de les filtrer et de les nettoyer pour supprimer les caractères indésirables et réduire les risques d'injections de code.<br>// Exemple de nettoyage d'une chaîne de caractères
+$nom = htmlspecialchars($_POST['nom']);
+$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+Copy<br>Un petit coup d'oeil à la doc officielle <a data-tooltip-position="top" aria-label="https://www.php.net/manual/fr/function.filter-var.php" rel="noopener" class="external-link" href="https://www.php.net/manual/fr/function.filter-var.php" target="_blank">sur la fonction filter_var</a> ainsi que <a data-tooltip-position="top" aria-label="https://www.php.net/manual/fr/filter.filters.php" rel="noopener" class="external-link" href="https://www.php.net/manual/fr/filter.filters.php" target="_blank">celle sur les filtres</a> vous sera utile si vous voulez en savoir plus !<br><br>En plus du nettoyage, il est important de valider les données pour s'assurer qu'elles correspondent au format attendu. PHP fournit des fonctions de validation telles que filter_var() pour valider différents types de données, comme les adresses e-mail, les URL, etc.<br>// Validation d'une adresse e-mail
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    // Adresse e-mail valide
+} else {
+    // Adresse e-mail invalide
+}
+Copy<br><br>Il existe plein de méthode pour vérifier une date, voici un exemple qui peut vous être utile :<br>if(empty($_POST['dateNaissance'])){  
+	echo "la date de naissance est vide !"
+    $_POST['dateNaissance'] = null;  
+}  
+else {  
+    $_POST['dateNaissance'] = DateTime::createFromFormat('d/m/Y', $_POST['dateNaissance']);  
+    if($_POST['dateNaissance'] === false) {  
+       echo "la date de naissance n'est pas valide."
+       break;
+    }  
+    $bornDate = $_POST['dateNaissance']; // date valide
+}
+Copy<br><br><br>Pour se prémunir contre les injections SQL, il est fortement recommandé d'utiliser des requêtes préparées avec des instructions paramétrées ou des requêtes préparées avec PDO ou MySQLi. Ces méthodes empêchent les attaquants d'injecter du code SQL malveillant dans vos requêtes.<br>// Exemple de requête préparée avec PDO
+$requete = $pdo-&gt;prepare("SELECT * FROM utilisateurs WHERE nom = ?");
+$requete-&gt;execute([$nom]);
+Copy<br><br>Pour éviter les attaques XSS, assurez-vous d'échapper correctement les données affichées dans vos pages HTML en utilisant des fonctions comme htmlspecialchars(). Cela convertit les caractères spéciaux en entités HTML, rendant les balises HTML inoffensives.<br>// Échapper les données avant de les afficher dans une page HTML
+echo htmlspecialchars($nom);
+Copy<br><br>Le traitement des données de formulaire en PHP est une étape essentielle dans le développement web. En récupérant, validant et traitant les données de manière appropriée, vous garantissez la sécurité et la fiabilité de votre application. Assurez-vous de toujours valider les données avant de les utiliser et de fournir un feedback clair à l'utilisateur.<br>En résumé pour la sécurité :<br>
+<br>Au moment de la réception : Filtrer
+<br>Au moment d'accéder à la BDD : Requête préparée
+<br>Au moment de l'affichage : Enlever les htmlspecialchars
+<br>Avec cette triptyque, vous devriez pouvoir contrôler efficacement les données transmises par l'utilisateur. Cela dit, il y a toujours moyen d'aller plus loin, mais c'est une bonne première pratique.<br><br>Par groupe de 2 :<br>
+<br>Créez une nouvelle page sur vos site, calculator.php qui sera reprise dans votre navbar
+<br>Incluez les différentes parties de votre site dans cette page
+<br>Dedans, créez un formulaire qui appellera calculatorResult.php. Contiendra 2 input et une liste déroulante.
+<br>Les input accueillerons uniquement des chiffres, et la liste déroulante sera un choix d'opération (addition, multiplication, soustraction, division,...)
+<br>Du côté back, créez une fonction par opération mathématique dans votre calculatorResult.php, et affichez le résultat de l'opération demandée par l'utilisateur. (la page reprendre bien sûr aussi les différents includes !)
+<br>N'oubliez pas d'informer l'utilisateur si il n'a pas rentré des données du bon type !
+<br>Peaufinez le tout pour être content de votre calculatrice (visuel, fonctionnalité, sécurité,...) !<br>
+C'est un test, profitez-en pour être imaginatif, l'exercice est volontairement simple et évasif, profitez-en pour ajouter votre patte, répartir vos tâches de manières logique et comprendre les concepts que nous venons de voir.
+<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Envoi de données de formulaire" data-href="PHP - Envoi de données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Exercice récapitulatif sur les formulaires" data-href="PHP - Exercice récapitulatif sur les formulaires" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-12 à 14:14]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Traitement des données de formulaire.md</guid><pubDate>Wed, 20 Mar 2024 09:12:44 GMT</pubDate></item><item><title><![CDATA[Gestion des erreurs de fichiers]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fichier" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fichier</a> 
+ <br><br><br>Lorsque vous travaillez avec des fichiers en <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a>, il est important de gérer les erreurs qui peuvent survenir lors de l'ouverture, de la lecture ou de l'écriture de fichiers. Voici comment vous pouvez gérer ces erreurs efficacement.<br><br><br>Avant d'effectuer des opérations sur un fichier, il est recommandé de vérifier d'abord si le fichier existe en utilisant la fonction file_exists().<br>$chemin_fichier = "chemin/vers/le/fichier.txt";
+
+if (file_exists($chemin_fichier)) {
+    echo "Le fichier existe";
+} else {
+    echo "Le fichier n'existe pas";
+}
+Copy<br><br>Lorsque vous ouvrez un fichier avec la fonction fopen(), assurez-vous de vérifier si l'opération a réussi. En cas d'erreur, utilisez la fonction error_get_last() pour obtenir des informations sur l'erreur.<br>$chemin_fichier = "chemin/vers/le/fichier.txt";
+$mode_ouverture = "r"; // Mode lecture
+
+$handle = fopen($chemin_fichier, $mode_ouverture);
+
+if ($handle === false) {
+    $erreur = error_get_last();
+    echo "Erreur d'ouverture de fichier : " . $erreur['message'];
+} else {
+    echo "Fichier ouvert avec succès";
+}
+Copy<br><br>Lorsque vous écrivez dans un fichier avec la fonction fwrite(), assurez-vous également de vérifier si l'opération a réussi. En cas d'erreur, utilisez la fonction error_get_last() pour obtenir des informations sur l'erreur.<br>$chemin_fichier = "chemin/vers/le/fichier.txt";
+$mode_ouverture = "w"; // Mode écriture
+
+$handle = fopen($chemin_fichier, $mode_ouverture);
+
+if ($handle) {
+    $texte = "Contenu à écrire dans le fichier";
+    $resultat = fwrite($handle, $texte);
+    
+    if ($resultat === false) {
+        $erreur = error_get_last();
+        echo "Erreur d'écriture dans le fichier : " . $erreur['message'];
+    } else {
+        echo "Écriture dans le fichier réussie";
+    }
+} else {
+    echo "Impossible d'écrire dans le fichier";
+}
+Copy<br><br>Enfin, assurez-vous également de gérer les erreurs lors de la fermeture d'un fichier avec la fonction fclose(). Vérifiez si la fermeture s'est bien passée et gérez les éventuelles erreurs.<br>$chemin_fichier = "chemin/vers/le/fichier.txt";
+$mode_ouverture = "r"; // Mode lecture
+
+$handle = fopen($chemin_fichier, $mode_ouverture);
+
+if ($handle) {
+    // Opérations sur le fichier
+    
+    $resultat = fclose($handle);
+    
+    if ($resultat === false) {
+        $erreur = error_get_last();
+        echo "Erreur de fermeture du fichier : " . $erreur['message'];
+    } else {
+        echo "Fichier fermé avec succès";
+    }
+} else {
+    echo "Impossible d'ouvrir le fichier";
+}
+Copy<br><br>En gérant correctement les erreurs lors de l'ouverture, de la lecture et de l'écriture de fichiers en PHP, vous pouvez garantir un fonctionnement stable de votre application et éviter les problèmes potentiels liés aux opérations sur les fichiers.<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Ouverture, lecture et écriture de fichiers" data-href="PHP - Ouverture, lecture et écriture de fichiers" href="\tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-ouverture,-lecture-et-écriture-de-fichiers.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Connexion à une base de données" data-href="PHP - Connexion à une base de données" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-connexion-à-une-base-de-données.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fichier" class="tag" target="_blank" rel="noopener">#fichier</a><br>créé le 2024-03-20 à 10:48]]></description><link>tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-gestion-des-erreurs-de-fichiers.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/6 - Travailler avec les fichiers en PHP/PHP - Gestion des erreurs de fichiers.md</guid><pubDate>Wed, 20 Mar 2024 13:10:13 GMT</pubDate></item><item><title><![CDATA[Ouverture, Lecture et Écriture de Fichiers en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fichier" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fichier</a> 
+ <br><br><br>En <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a>, vous pouvez facilement travailler avec des fichiers pour effectuer des opérations telles que l'ouverture, la lecture et l'écriture. Voici comment procéder.<br><br><br>Pour ouvrir un fichier en PHP, vous pouvez utiliser la fonction fopen(). Cette fonction prend deux paramètres : le chemin du fichier à ouvrir et le mode d'ouverture (lecture, écriture, etc.).<br>$chemin_fichier = "chemin/vers/le/fichier.txt";
+$mode_ouverture = "r"; // Mode lecture
+
+$handle = fopen($chemin_fichier, $mode_ouverture);
+
+if ($handle) {
+    echo "Fichier ouvert avec succès";
+} else {
+    echo "Impossible d'ouvrir le fichier";
+}
+Copy<br><br>Une fois que vous avez ouvert un fichier, vous pouvez le lire ligne par ligne à l'aide de la fonction fgets() ou lire tout le contenu en une seule fois à l'aide de la fonction file_get_contents().<br>// Lecture ligne par ligne avec fgets()
+while (($ligne = fgets($handle)) !== false) {
+    echo $ligne;
+}
+
+// Lecture de tout le contenu avec file_get_contents()
+$contenu = file_get_contents($chemin_fichier);
+echo $contenu;
+Copy<br><br>Pour écrire dans un fichier en PHP, vous pouvez utiliser la fonction fwrite(). Cette fonction prend deux paramètres : le gestionnaire de fichier ouvert et la chaîne de caractères à écrire.<br>$chemin_fichier = "chemin/vers/le/fichier.txt";
+$mode_ouverture = "w"; // Mode écriture
+
+$handle = fopen($chemin_fichier, $mode_ouverture);
+
+if ($handle) {
+    $texte = "Contenu à écrire dans le fichier";
+    fwrite($handle, $texte);
+    echo "Écriture dans le fichier réussie";
+} else {
+    echo "Impossible d'écrire dans le fichier";
+}
+Copy<br><br>Après avoir terminé les opérations de lecture ou d'écriture sur un fichier, assurez-vous de le fermer en utilisant la fonction fclose().<br>fclose($handle);
+Copy<br><br>En PHP, l'ouverture, la lecture et l'écriture de fichiers sont des opérations courantes et simples à réaliser. Assurez-vous de manipuler les fichiers de manière sécurisée et de fermer les fichiers après avoir terminé les opérations pour éviter les fuites de ressources.<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Exercice récapitulatif sur les formulaires" data-href="PHP - Exercice récapitulatif sur les formulaires" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Gestion des erreurs de fichiers" data-href="PHP - Gestion des erreurs de fichiers" href="\tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-gestion-des-erreurs-de-fichiers.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fichier" class="tag" target="_blank" rel="noopener">#fichier</a> <br>créé le 2024-03-20 à 10:48]]></description><link>tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-ouverture,-lecture-et-écriture-de-fichiers.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/6 - Travailler avec les fichiers en PHP/PHP - Ouverture, lecture et écriture de fichiers.md</guid><pubDate>Wed, 20 Mar 2024 12:53:31 GMT</pubDate></item><item><title><![CDATA[Connexion à une base de données]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> 
+ <br><br><br>La connexion à une <a data-tooltip-position="top" aria-label="Informatique - Les Bases de Données" data-href="Informatique - Les Bases de Données" href="\tutoriels\informatique\informatique-les-bases-de-données.html" class="internal-link" target="_self" rel="noopener">base de données</a> en <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a> est une opération courante dans le développement web, permettant d'interagir avec une base de données pour stocker et récupérer des données. En PHP, vous pouvez utiliser les extensions PDO (PHP Data Objects) ou MySQLi (MySQL Improved) pour établir une connexion à une base de données.<br><br><br><br>Dans tous les cas, nous allons souvent vouloir mettre notre connexion à la base de donnée dans un fichier à part, qui sera utilisé en require_once() en debut de page. On va donc très souvent créer un fichier DBConnexion.php, et dans le fichier qui a besoin de se connecter à la base de donnée, nous aurons donc require_once(DBConnexion.php). Cela nous évitera de retaper tout le code de connexion à chaque fois que l'on veut accéder à la base de donnée.<br><br>PDO est une interface d'accès aux bases de données PHP qui offre une abstraction de haut niveau, permettant d'interagir avec différentes bases de données en utilisant une syntaxe uniforme. <br><br>Voici comment établir une connexion à une base de données MySQL en utilisant PDO :<br>$dbName = "nom_base_de_donnees";
+$dbUser = "utilisateur";
+$dbPassword = "mot_de_passe";
+$dbHost = "hostname";// dans votre cas : localhost
+try {
+    $bdd = new PDO("mysql:host=" . $dbHost . ";dbname=" . $dbName, $dbUser , $dbPassword);
+    $bdd-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connexion réussie";
+} catch (PDOException $e) {
+    exit("Erreur de connexion : " . $e-&gt;getMessage())
+}
+Copy<br>Dans cet exemple :<br>
+<br>hostname est l'adresse du serveur MySQL.
+<br>nom_base_de_donnees est le nom de la base de données à laquelle vous souhaitez vous connecter.
+<br>utilisateur est le nom d'utilisateur MySQL.
+<br>mot_de_passe est le mot de passe associé à l'utilisateur MySQL.
+<br><br>$bdd = null;
+Copy<br><br>MySQLi est une interface améliorée pour accéder à MySQL en PHP, offrant des fonctionnalités supplémentaires par rapport à l'ancienne extension MySQL. <br><br>Voici comment établir une connexion à une base de données MySQL en utilisant MySQLi :<br>$bdd = new mysqli('hostname', 'utilisateur', 'mot_de_passe', 'nom_base_de_donnees');
+
+if ($bdd-&gt;connect_error) {
+    die("Erreur de connexion : " . $bdd-&gt;connect_error);
+} else {
+    echo "Connexion réussie";
+}
+Copy<br>Dans cet exemple :<br>
+<br>hostname est l'adresse du serveur MySQL.
+<br>utilisateur est le nom d'utilisateur MySQL.
+<br>mot_de_passe est le mot de passe associé à l'utilisateur MySQL.
+<br>nom_base_de_donnees est le nom de la base de données à laquelle vous souhaitez vous connecter.
+<br>La fonction die() est comme la fonction exit(), elles permettent d'afficher un message avant d'arrêter le script en cours, une sort de echo + un exit en quelque sorte.<br><br>$conn-&gt;close();
+Copy<br><br>La connexion à une base de données en PHP est une étape essentielle dans le développement d'applications web dynamiques. Que vous utilisiez PDO ou MySQLi, assurez-vous de fournir des informations de connexion correctes et de gérer les erreurs de manière appropriée pour assurer une expérience utilisateur fluide et sécurisée.<br>De notre côté, nous utiliserons PDO exclusivement pour le pas multiplier les manières de faire et car c'est sans doute la plus utilisée. Je voulais simplement vous présenter ici 2 manières de faire, pour que vous sachiez aussi que ce n'est pas très différent, et que vous pourrez très facilement vous adapter à une autre manière de faire le temps venu.<br><br>Il est bizarre de parler des prérequis maintenant, mais je voulais d'abord que vous soyez confronté au message d'erreur de votre console. Si vous avez le message Connexion réussie lorsque vous le testez avec votre base de donnée, tout va bien dans le meilleur des mondes, sinon, il y a beaucoup d'erreur possible. je vais couvrir quelques petites choses à vérifier avant de vous énerver et chercher une solution plus spécifique à votre problème :<br>
+<br>Vérifier dans PHPStorm que le PHP.ini utilisé est bien spécifié (et correspond à celui de votre version de php), sinon, le modifier
+<br>Dans votre php.ini, décommenter les lignes extension_dir='ext' et extension = pdo_mysql
+<br>changer dans extension_dir ='ext' le ext en le chemin direct vers votre chemin d'extension. Logiquement, cela devrait ressembler à : C:/cheminVersVotrePHP/ext 
+<br>Une fois cela fait, redémarrez bien votre PHPStorm, si tout est ok, vous devriez maintenant faire fonctionner la connexion, si pas, il faudra approfondir les recherches, mais il est difficile pour moi de savoir les résoudre à l'avance sans les voir... Appelez moi !<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Gestion des erreurs de fichiers" data-href="PHP - Gestion des erreurs de fichiers" href="\tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-gestion-des-erreurs-de-fichiers.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Exécution de requêtes SQL en PHP" data-href="PHP - Exécution de requêtes SQL en PHP" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-exécution-de-requêtes-sql-en-php.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-19 à 17:42]]></description><link>tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-connexion-à-une-base-de-données.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/7 - Introduction aux bases de données en PHP/PHP - Connexion à une base de données.md</guid><pubDate>Wed, 20 Mar 2024 09:50:39 GMT</pubDate></item><item><title><![CDATA[Exécution de requêtes SQL en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> 
+ <br><br><br>Une fois que vous avez établi une <a data-tooltip-position="top" aria-label="PHP - Connexion à une base de données" data-href="PHP - Connexion à une base de données" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-connexion-à-une-base-de-données.html" class="internal-link" target="_self" rel="noopener">connexion</a> à votre <a data-tooltip-position="top" aria-label="Informatique - Les Bases de Données" data-href="Informatique - Les Bases de Données" href="\tutoriels\informatique\informatique-les-bases-de-données.html" class="internal-link" target="_self" rel="noopener">base de données</a> en utilisant PDO, vous pouvez exécuter des <a data-tooltip-position="top" aria-label="Informatique - Introduction au SQL" data-href="Informatique - Introduction au SQL" href="\tutoriels\informatique\informatique-introduction-au-sql.html" class="internal-link" target="_self" rel="noopener">requêtes SQL</a> pour interagir avec la base de données. PDO offre une interface <a data-tooltip-position="top" aria-label="Informatique - Les deux familles de Programmation > La Programmation Orientée Objet (POO)" data-href="Informatique - Les deux familles de Programmation#La Programmation Orientée Objet (POO)" href="\tutoriels\informatique\informatique-les-deux-familles-de-programmation.html#La_Programmation_Orientée_Objet_(POO)" class="internal-link" target="_self" rel="noopener">orientée objet</a> pour travailler avec différents types de bases de données tout en offrant une protection contre les <a data-tooltip-position="top" aria-label="PHP - Traitement des données de formulaire > Injection SQL" data-href="PHP - Traitement des données de formulaire#Injection SQL" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html#Injection_SQL" class="internal-link" target="_self" rel="noopener">injections SQL</a>.<br><br><br><br>Pour exécuter une requête SELECT avec PDO, suivez ces étapes :<br>
+<br>
+Préparez la requête en utilisant la méthode prepare().
+
+<br>
+Exécutez la requête en appelant la méthode execute().
+
+<br>
+Récupérez les résultats à l'aide de la méthode fetchAll() ou fetch().
+
+<br>Voici un exemple :<br>try {
+    // Connexion à la base de données
+    $bdd = new PDO('mysql:host=hostname;dbname=nom_base_de_donnees', 'utilisateur', 'mot_de_passe');
+    $bdd-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Préparation de la requête
+    $requete = $bdd-&gt;prepare("SELECT * FROM utilisateurs WHERE id = :id");
+
+    // Liaison des valeurs aux paramètres de la requête
+    $requete-&gt;bindParam(':id', $id, PDO::PARAM_INT);
+
+    // Exécution de la requête
+    $requete-&gt;execute();
+
+    // Récupération des résultats
+    $resultats = $requete-&gt;fetchAll(PDO::FETCH_ASSOC);
+
+    // Affichage des résultats
+    foreach ($resultats as $resultat) {
+        echo $resultat['nom'];
+    }
+} catch (PDOException $e) {
+    echo "Erreur : " . $e-&gt;getMessage();
+}
+Copy<br>Dans cet exemple :<br>
+<br>:id est un paramètre de la requête, utilisé pour éviter les injections SQL.
+<br>$id est la valeur associée au paramètre :id.
+<br><br>Pour exécuter des requêtes INSERT, UPDATE et DELETE, utilisez les mêmes étapes que pour une requête SELECT, mais sans récupérer de résultats avec fetchAll() ou fetch().<br>Voici un exemple d'insertion de données :<br>try {
+    // Connexion à la base de données
+    $bdd = new PDO('mysql:host=hostname;dbname=nom_base_de_donnees', 'utilisateur', 'mot_de_passe');
+    $bdd-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Préparation de la requête d'insertion
+    $requete = $bdd-&gt;prepare("INSERT INTO utilisateurs (nom, email) VALUES (:nom, :email)");
+
+    // Liaison des valeurs aux paramètres de la requête
+    $requete-&gt;bindParam(':nom', $nom);
+    $requete-&gt;bindParam(':email', $email);
+
+    // Assignation des valeurs aux variables
+    $nom = "John Doe";
+    $email = "john@example.com";
+
+    // Exécution de la requête
+    $requete-&gt;execute();
+
+    echo "Données insérées avec succès";
+} catch (PDOException $e) {
+    echo "Erreur : " . $e-&gt;getMessage();
+}
+Copy<br><br>PDO offre une manière sécurisée et flexible d'exécuter des requêtes SQL en PHP. Assurez-vous de toujours utiliser les requêtes préparées avec des paramètres liés pour éviter les injections SQL et de gérer les erreurs de manière appropriée pour assurer un fonctionnement stable de votre application.<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Connexion à une base de données" data-href="PHP - Connexion à une base de données" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-connexion-à-une-base-de-données.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Récupération et affichage de données en PHP" data-href="PHP - Récupération et affichage de données en PHP" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-récupération-et-affichage-de-données-en-php.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-19 à 17:43]]></description><link>tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-exécution-de-requêtes-sql-en-php.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/7 - Introduction aux bases de données en PHP/PHP - Exécution de requêtes SQL en PHP.md</guid><pubDate>Wed, 20 Mar 2024 08:54:12 GMT</pubDate></item><item><title><![CDATA[Récupération et affichage de données en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> 
+ <br><br><br>Une fois que vous avez exécuté une requête <a data-tooltip-position="top" aria-label="Informatique - Introduction au SQL" data-href="Informatique - Introduction au SQL" href="\tutoriels\informatique\informatique-introduction-au-sql.html" class="internal-link" target="_self" rel="noopener">SQL</a> avec PDO et récupéré les résultats, vous pouvez les afficher dans votre application web. Voici comment procéder.<br><br><br><br>Après avoir exécuté une requête SQL avec PDO, vous pouvez récupérer les résultats à l'aide de la méthode fetchAll() ou fetch(). Ces méthodes vous permettent de récupérer les données sous forme de tableau associatif ou numérique.<br><br>La méthode fetchAll() récupère toutes les lignes de résultats de la requête dans un tableau multidimensionnel.<br>try {
+    // Connexion à la base de données
+    $bdd = new PDO('mysql:host=hostname;dbname=nom_base_de_donnees', 'utilisateur', 'mot_de_passe');
+    $bdd-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Préparation de la requête
+    $requete = $bdd-&gt;prepare("SELECT * FROM utilisateurs");
+
+    // Exécution de la requête
+    $requete-&gt;execute();
+
+    // Récupération des résultats sous forme de tableau associatif
+    $resultats = $requete-&gt;fetchAll(PDO::FETCH_ASSOC);
+
+    // Affichage des résultats
+    foreach ($resultats as $resultat) {
+        echo $resultat['nom'] . "&lt;br&gt;";
+    }
+} catch (PDOException $e) {
+    echo "Erreur : " . $e-&gt;getMessage();
+}
+Copy<br><br>La méthode fetch() récupère une seule ligne de résultat à la fois.<br>try {
+    // Connexion à la base de données
+    $bdd = new PDO('mysql:host=hostname;dbname=nom_base_de_donnees', 'utilisateur', 'mot_de_passe');
+    $bdd-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // Préparation de la requête
+    $requete = $bdd-&gt;prepare("SELECT * FROM utilisateurs");
+
+    // Exécution de la requête
+    $requete-&gt;execute();
+
+    // Récupération des résultats ligne par ligne
+    while ($resultat = $requete-&gt;fetch(PDO::FETCH_ASSOC)) {
+        echo $resultat['nom'] . "&lt;br&gt;";
+    }
+} catch (PDOException $e) {
+    echo "Erreur : " . $e-&gt;getMessage();
+}
+Copy<br><br>Une fois les données récupérées, vous pouvez les afficher dans votre application web en utilisant les balises HTML appropriées.<br>foreach ($resultats as $resultat) {
+    echo "&lt;p&gt;Nom : " . $resultat['nom'] . "&lt;/p&gt;";
+    echo "&lt;p&gt;Email : " . $resultat['email'] . "&lt;/p&gt;";
+}
+Copy<br><br>La récupération et l'affichage de données en PHP avec PDO vous permettent de créer des applications web dynamiques et interactives. En utilisant les méthodes fetchAll() ou fetch(), vous pouvez récupérer les résultats de vos requêtes SQL et les afficher dans votre application de manière efficace et sécurisée.<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Exécution de requêtes SQL en PHP" data-href="PHP - Exécution de requêtes SQL en PHP" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-exécution-de-requêtes-sql-en-php.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)" data-href="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-gestion-des-attaques-courantes-(injection-sql,-xss,-csrf).html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-19 à 17:43]]></description><link>tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-récupération-et-affichage-de-données-en-php.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/7 - Introduction aux bases de données en PHP/PHP - Récupération et affichage de données en PHP.md</guid><pubDate>Wed, 20 Mar 2024 09:35:10 GMT</pubDate></item><item><title><![CDATA[Sujet]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> <a class="tag" href="?query=tag:securite" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#securite</a> 
+ <br><br><br>Dans le développement web, il est crucial de protéger votre application contre les attaques courantes telles que l'injection SQL, XSS (Cross-Site Scripting) et CSRF (Cross-Site Request Forgery). Voici comment vous pouvez prévenir ces attaques en PHP :<br><br><br><br>Maintenant que vous connaissez un peu mieux la communication avec la base de données, nous allons revoir ce point en vitesse :<br>Les attaques par injection <a data-tooltip-position="top" aria-label="Informatique - Introduction au SQL" data-href="Informatique - Introduction au SQL" href="\tutoriels\informatique\informatique-introduction-au-sql.html" class="internal-link" target="_self" rel="noopener">SQL</a> surviennent lorsque des données non filtrées sont intégrées directement dans des requêtes SQL, permettant aux attaquants d'exécuter des commandes SQL malveillantes. Pour prévenir les injections SQL :<br>
+<br>Utilisez les requêtes préparées avec des paramètres liés pour passer des données dans les requêtes SQL.
+<br>Évitez de concaténer des variables directement dans les requêtes SQL.
+<br>Utilisez les fonctions de filtrage et d'échappement des données fournies par PDO ou MySQLi.
+<br>$requete = $bdd-&gt;prepare("SELECT * FROM utilisateurs WHERE id = :id");
+$requete-&gt;bindParam(':id', $id, PDO::PARAM_INT);
+$requete-&gt;execute();
+Copy<br><br>Les attaques XSS surviennent lorsque des données non filtrées sont intégrées dans des pages web et exécutent du code <a data-tooltip-position="top" aria-label="Informatique - Introduction à Javascript" data-href="Informatique - Introduction à Javascript" href="\tutoriels\informatique\informatique-introduction-à-javascript.html" class="internal-link" target="_self" rel="noopener">JavaScript</a> malveillant côté client. Pour prévenir les attaques XSS :<br>
+<br>Échappez les données affichées dans les pages HTML en utilisant les fonctions htmlspecialchars() ou htmlentities().
+<br>Limitez l'utilisation des cookies en utilisant l'attribut HttpOnly pour les cookies sensibles.
+<br>echo htmlspecialchars($donnees['nom'], ENT_QUOTES, 'UTF-8');
+Copy<br><br>Les attaques CSRF surviennent lorsque des actions non autorisées sont effectuées à partir d'un site web auquel l'utilisateur est connecté. Pour prévenir les attaques CSRF :<br>
+<br>Utilisez des jetons CSRF pour chaque action sensible et vérifiez-les lors de la soumission de formulaires.
+<br>Implémentez des en-têtes HTTP de vérification de l'origine pour vérifier que les requêtes proviennent du même domaine.
+<br>// Génération d'un jeton CSRF
+$jeton_csrf = bin2hex(random_bytes(32));
+$_SESSION['jeton_csrf'] = $jeton_csrf;
+
+// Ajout du jeton CSRF au formulaire
+&lt;input type="hidden" name="jeton_csrf" value="&lt;?php echo $jeton_csrf; ?&gt;"&gt;
+
+// Vérification du jeton CSRF lors de la soumission du formulaire
+if ($_POST['jeton_csrf'] !== $_SESSION['jeton_csrf']) {
+    // Jeton CSRF invalide, rejeter la requête
+    exit('Jeton CSRF invalide');
+}
+Copy<br><br>En suivant les bonnes pratiques de sécurité en PHP et en mettant en œuvre des mesures de prévention des attaques courantes telles que l'injection SQL, XSS et CSRF, vous pouvez garantir la sécurité de votre application web et protéger les données de vos utilisateurs contre les accès non autorisés et les manipulations malveillantes.<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Récupération et affichage de données en PHP" data-href="PHP - Récupération et affichage de données en PHP" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-récupération-et-affichage-de-données-en-php.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Pratiques de sécurité recommandées" data-href="PHP - Pratiques de sécurité recommandées" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-pratiques-de-sécurité-recommandées.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a> <a href=".?query=tag:securite" class="tag" target="_blank" rel="noopener">#securite</a><br>créé le 2024-03-20 à 10:33]]></description><link>tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-gestion-des-attaques-courantes-(injection-sql,-xss,-csrf).html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/8 - Introduction à la sécurité en PHP/PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF).md</guid><pubDate>Wed, 20 Mar 2024 09:39:43 GMT</pubDate></item><item><title><![CDATA[Sujet]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> <a class="tag" href="?query=tag:securite" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#securite</a> 
+ <br><br><br>Pour assurer la sécurité de vos applications <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a>, il est essentiel de suivre certaines pratiques recommandées. Voici quelques conseils pour renforcer la sécurité de votre code.<br><br><br><br>Assurez-vous d'utiliser la dernière version de PHP et de toutes les bibliothèques tierces que vous utilisez. Les nouvelles versions corrigent souvent des vulnérabilités de sécurité et des bugs.<br><br>Utilisez des comptes de <a data-tooltip-position="top" aria-label="Informatique - Les Bases de Données" data-href="Informatique - Les Bases de Données" href="\tutoriels\informatique\informatique-les-bases-de-données.html" class="internal-link" target="_self" rel="noopener">base de données</a> avec des privilèges limités pour vos applications PHP. Évitez d'utiliser le compte root pour accéder à la base de données, car cela peut entraîner des failles de sécurité.<br><br>Échappez correctement toutes les données utilisateur avant de les utiliser dans des requêtes <a data-tooltip-position="top" aria-label="Informatique - Introduction au SQL" data-href="Informatique - Introduction au SQL" href="\tutoriels\informatique\informatique-introduction-au-sql.html" class="internal-link" target="_self" rel="noopener">SQL</a> ou des sorties <a data-tooltip-position="top" aria-label="Accueil - HTML" data-href="Accueil - HTML" href="\tutoriels\html\accueil-html.html" class="internal-link" target="_self" rel="noopener">HTML</a> pour éviter les injections SQL et XSS. Utilisez les fonctions htmlspecialchars() ou htmlentities() pour <a data-tooltip-position="top" aria-label="PHP - Traitement des données de formulaire > Validation des Données" data-href="PHP - Traitement des données de formulaire#Validation des Données" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html#Validation_des_Données" class="internal-link" target="_self" rel="noopener">échapper les données HTML</a>, et les <a data-tooltip-position="top" aria-label="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF) > Injection SQL" data-href="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)#Injection SQL" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-gestion-des-attaques-courantes-(injection-sql,-xss,-csrf).html#Injection_SQL" class="internal-link" target="_self" rel="noopener">requêtes préparées</a> avec PDO ou MySQLi pour échapper les données SQL.<br><br>Pour prévenir les <a data-tooltip-position="top" aria-label="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF) > Cross-Site Request Forgery (CSRF)" data-href="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)#Cross-Site Request Forgery (CSRF)" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-gestion-des-attaques-courantes-(injection-sql,-xss,-csrf).html#Cross-Site_Request_Forgery_(CSRF)" class="internal-link" target="_self" rel="noopener">attaques CSRF</a>, utilisez des jetons CSRF pour chaque action sensible et vérifiez-les lors de la soumission de formulaires. Générez un jeton CSRF unique pour chaque utilisateur et chaque session, et assurez-vous qu'il est valide avant de traiter la demande.<br><br>Toujours valider et filtrer les données utilisateur avant de les utiliser dans votre application. Utilisez des expressions régulières, <a data-tooltip-position="top" aria-label="PHP - Traitement des données de formulaire > Filtrage et Nettoyage des Données" data-href="PHP - Traitement des données de formulaire#Filtrage et Nettoyage des Données" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html#Filtrage_et_Nettoyage_des_Données" class="internal-link" target="_self" rel="noopener">des filtres de validation</a> PHP intégrés ou des bibliothèques de validation pour valider les entrées utilisateur et rejeter les données non valides.<br><br>Utilisez des cookies sécurisés pour stocker les informations de session et configurez correctement les paramètres de session PHP pour renforcer la sécurité. Assurez-vous que les cookies de session sont envoyés uniquement via HTTPS pour éviter les attaques de type session fixation et session hijacking.<br><br>Toujours utiliser HTTPS pour sécuriser les communications entre le navigateur de l'utilisateur et votre serveur web. HTTPS chiffre les données transitant entre le client et le serveur, ce qui protège contre les attaques de type interception et man-in-the-middle.<br><br>Mettez en place des journaux d'audit et de surveillance pour enregistrer les activités de votre application et détecter les comportements suspects. Surveillez régulièrement les journaux pour identifier les tentatives d'intrusion et les anomalies de sécurité.<br><br>Assurez-vous que votre équipe de développement est bien formée aux bonnes pratiques de sécurité en PHP et sensibilisée aux risques de sécurité. Organisez des sessions de formation régulières et encouragez une culture de la sécurité au sein de votre organisation.<br><br>En suivant ces pratiques de sécurité recommandées en PHP, vous pouvez renforcer la sécurité de vos applications web et protéger les données de vos utilisateurs contre les attaques malveillantes. La sécurité doit être une préoccupation constante tout au long du cycle de vie de développement de votre application.<br><br><br>
+<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
+<br><a data-tooltip-position="top" aria-label="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)" data-href="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-gestion-des-attaques-courantes-(injection-sql,-xss,-csrf).html" class="internal-link" target="_self" rel="noopener">Précédent</a>
+<br><a data-href="|Suivant" href="\|Suivant" class="internal-link" target="_self" rel="noopener">|Suivant</a>
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a> <a href=".?query=tag:securite" class="tag" target="_blank" rel="noopener">#securite</a><br>créé le 2024-03-20 à 10:35]]></description><link>tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-pratiques-de-sécurité-recommandées.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/8 - Introduction à la sécurité en PHP/PHP - Pratiques de sécurité recommandées.md</guid><pubDate>Wed, 20 Mar 2024 09:46:37 GMT</pubDate></item><item><title><![CDATA[Liste des cours PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:TableDesMatières" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#TableDesMatières</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:programmation" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#programmation</a> 
+ <br><br><br>Bienvenue sur le portail du cours de PHP pour blindcode, vous trouverez ici tous liens important pour vous rendre aux différentes sections du cours.<br><br><br><br><br><br><br>
+<br><a data-href="PHP - Présentation en tant que langage de programmation procédurale" href="\tutoriels\php\a-procédural-php\1-introduction-à-la-programmation-procédurale\php-présentation-en-tant-que-langage-de-programmation-procédurale.html" class="internal-link" target="_self" rel="noopener">PHP - Présentation en tant que langage de programmation procédurale</a>
+<br><br>
+<br><a data-href="PHP - Installation et configuration de l'environnement" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-installation-et-configuration-de-l'environnement.html" class="internal-link" target="_self" rel="noopener">PHP - Installation et configuration de l'environnement</a>
+<br><a data-href="PHP - Structure générale d'un Script" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-structure-générale-d'un-script.html" class="internal-link" target="_self" rel="noopener">PHP - Structure générale d'un Script</a>
+<br><a data-href="PHP - Variables et types de données" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-variables-et-types-de-données.html" class="internal-link" target="_self" rel="noopener">PHP - Variables et types de données</a>
+<br><a data-href="PHP - Opérateurs et expressions" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-opérateurs-et-expressions.html" class="internal-link" target="_self" rel="noopener">PHP - Opérateurs et expressions</a>
+<br><a data-href="PHP - Structure de contrôle conditionnelle" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-structure-de-contrôle-conditionnelle.html" class="internal-link" target="_self" rel="noopener">PHP - Structure de contrôle conditionnelle</a>
+<br><a data-href="PHP - Exercices Bonus Conditions" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-exercices-bonus-conditions.html" class="internal-link" target="_self" rel="noopener">PHP - Exercices Bonus Conditions</a>
+<br><a data-href="PHP - Les Boucles" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-les-boucles.html" class="internal-link" target="_self" rel="noopener">PHP - Les Boucles</a>
+<br><br>
+<br><a data-href="PHP - Définition et utilisation de fonctions en PHP" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-définition-et-utilisation-de-fonctions-en-php.html" class="internal-link" target="_self" rel="noopener">PHP - Définition et utilisation de fonctions en PHP</a>
+<br><a data-href="PHP - Passage de paramètres de fonction" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-passage-de-paramètres-de-fonction.html" class="internal-link" target="_self" rel="noopener">PHP - Passage de paramètres de fonction</a>
+<br><a data-href="PHP - Typage de paramètre" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-typage-de-paramètre.html" class="internal-link" target="_self" rel="noopener">PHP - Typage de paramètre</a>
+<br><a data-href="PHP - Retour de valeurs de fonction" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-retour-de-valeurs-de-fonction.html" class="internal-link" target="_self" rel="noopener">PHP - Retour de valeurs de fonction</a>
+<br><a data-href="PHP - Retour de valeurs de fonction avec Typage" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-retour-de-valeurs-de-fonction-avec-typage.html" class="internal-link" target="_self" rel="noopener">PHP - Retour de valeurs de fonction avec Typage</a>
+<br><a data-href="PHP - Portée des variables" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-portée-des-variables.html" class="internal-link" target="_self" rel="noopener">PHP - Portée des variables</a>
+<br><a data-href="PHP - Les Strict Types" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-les-strict-types.html" class="internal-link" target="_self" rel="noopener">PHP - Les Strict Types</a>
+<br><br>
+<br><a data-href="PHP - Opérations de base sur les chaînes de caractères" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-opérations-de-base-sur-les-chaînes-de-caractères.html" class="internal-link" target="_self" rel="noopener">PHP - Opérations de base sur les chaînes de caractères</a>
+<br><a data-href="PHP - Manipulation de tableaux (tableaux indexés et associatifs)" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-manipulation-de-tableaux-(tableaux-indexés-et-associatifs).html" class="internal-link" target="_self" rel="noopener">PHP - Manipulation de tableaux (tableaux indexés et associatifs)</a>
+<br><a data-href="PHP - Fonctions de tableau utiles" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-fonctions-de-tableau-utiles.html" class="internal-link" target="_self" rel="noopener">PHP - Fonctions de tableau utiles</a>
+<br><a data-href="PHP - Tableau à deux dimensions" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-tableau-à-deux-dimensions.html" class="internal-link" target="_self" rel="noopener">PHP - Tableau à deux dimensions</a>
+<br><a data-href="PHP - Challenge sur les tableaux" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-challenge-sur-les-tableaux.html" class="internal-link" target="_self" rel="noopener">PHP - Challenge sur les tableaux</a>
+<br><br>
+<br><a data-href="PHP - Rappel des formulaires HTML" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-rappel-des-formulaires-html.html" class="internal-link" target="_self" rel="noopener">PHP - Rappel des formulaires HTML</a>
+<br><a data-href="PHP - Fichier multiples et Includes" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-fichier-multiples-et-includes.html" class="internal-link" target="_self" rel="noopener">PHP - Fichier multiples et Includes</a>
+<br><a data-href="PHP - Conventions de nommage" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-conventions-de-nommage.html" class="internal-link" target="_self" rel="noopener">PHP - Conventions de nommage</a>
+<br><a data-href="PHP - Envoi de données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">PHP - Envoi de données de formulaire</a>
+<br><a data-href="PHP - Traitement des données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">PHP - Traitement des données de formulaire</a>
+<br><a data-href="PHP - Exercice récapitulatif sur les formulaires" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html" class="internal-link" target="_self" rel="noopener">PHP - Exercice récapitulatif sur les formulaires</a>
+<br><br>
+<br><a data-href="PHP - Ouverture, lecture et écriture de fichiers" href="\tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-ouverture,-lecture-et-écriture-de-fichiers.html" class="internal-link" target="_self" rel="noopener">PHP - Ouverture, lecture et écriture de fichiers</a>
+<br><a data-href="PHP - Gestion des erreurs de fichiers" href="\tutoriels\php\a-procédural-php\6-travailler-avec-les-fichiers-en-php\php-gestion-des-erreurs-de-fichiers.html" class="internal-link" target="_self" rel="noopener">PHP - Gestion des erreurs de fichiers</a>
+<br><br>
+<br><a data-href="PHP - Connexion à une base de données" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-connexion-à-une-base-de-données.html" class="internal-link" target="_self" rel="noopener">PHP - Connexion à une base de données</a>
+<br><a data-href="PHP - Exécution de requêtes SQL en PHP" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-exécution-de-requêtes-sql-en-php.html" class="internal-link" target="_self" rel="noopener">PHP - Exécution de requêtes SQL en PHP</a>
+<br><a data-href="PHP - Récupération et affichage de données en PHP" href="\tutoriels\php\a-procédural-php\7-introduction-aux-bases-de-données-en-php\php-récupération-et-affichage-de-données-en-php.html" class="internal-link" target="_self" rel="noopener">PHP - Récupération et affichage de données en PHP</a>
+<br><br>
+<br><a data-href="PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-gestion-des-attaques-courantes-(injection-sql,-xss,-csrf).html" class="internal-link" target="_self" rel="noopener">PHP - Gestion des attaques courantes (injection SQL, XSS, CSRF)</a>
+<br><a data-href="PHP - Pratiques de sécurité recommandées" href="\tutoriels\php\a-procédural-php\8-introduction-à-la-sécurité-en-php\php-pratiques-de-sécurité-recommandées.html" class="internal-link" target="_self" rel="noopener">PHP - Pratiques de sécurité recommandées</a>
+<br><br><br>
+<br><a data-href="Concepts de base de la POO" href="\Concepts de base de la POO" class="internal-link" target="_self" rel="noopener">Concepts de base de la POO</a>
+<br><a data-href="Avantages de la POO." href="\Avantages de la POO." class="internal-link" target="_self" rel="noopener">Avantages de la POO.</a>
+<br><br>
+<br><a data-href="Définition de classes et d'objets en PHP" href="\Définition de classes et d'objets en PHP" class="internal-link" target="_self" rel="noopener">Définition de classes et d'objets en PHP</a>
+<br><a data-href="Propriétés et méthodes de classe en PHP" href="\Propriétés et méthodes de classe en PHP" class="internal-link" target="_self" rel="noopener">Propriétés et méthodes de classe en PHP</a>
+<br><a data-href="Encapsulation, héritage, et polymorphisme en PHP" href="\Encapsulation, héritage, et polymorphisme en PHP" class="internal-link" target="_self" rel="noopener">Encapsulation, héritage, et polymorphisme en PHP</a>
+<br><br>
+<br><a data-href="Le constructeurs en PHP" href="\Le constructeurs en PHP" class="internal-link" target="_self" rel="noopener">Le constructeurs en PHP</a>
+<br><a data-href="Destructeurs et libération de ressources en PHP" href="\Destructeurs et libération de ressources en PHP" class="internal-link" target="_self" rel="noopener">Destructeurs et libération de ressources en PHP</a>
+<br><br>
+<br><a data-href="Création de hiérarchies de classes en PHP" href="\Création de hiérarchies de classes en PHP" class="internal-link" target="_self" rel="noopener">Création de hiérarchies de classes en PHP</a>
+<br><a data-href="Surcharge de méthodes en PHP" href="\Surcharge de méthodes en PHP" class="internal-link" target="_self" rel="noopener">Surcharge de méthodes en PHP</a>
+<br><a data-href="Utilisation de l'opérateur parent en PHP" href="\Utilisation de l'opérateur parent en PHP" class="internal-link" target="_self" rel="noopener">Utilisation de l'opérateur parent en PHP</a>
+<br><br>
+<br><a data-href="Définition d'interfaces en PHP" href="\Définition d'interfaces en PHP" class="internal-link" target="_self" rel="noopener">Définition d'interfaces en PHP</a>
+<br><a data-href="les Traits en PHP" href="\les Traits en PHP" class="internal-link" target="_self" rel="noopener">les Traits en PHP</a>
+<br><br>
+<br><a data-href="Les exceptions en PHP" href="\Les exceptions en PHP" class="internal-link" target="_self" rel="noopener">Les exceptions en PHP</a>
+<br><a data-href="Les classes d'exception en PHP" href="\Les classes d'exception en PHP" class="internal-link" target="_self" rel="noopener">Les classes d'exception en PHP</a>
+<br><br>
+<br><a data-href="Les autoloaders en PHP" href="\Les autoloaders en PHP" class="internal-link" target="_self" rel="noopener">Les autoloaders en PHP</a>
+<br><a data-href="Les namespaces en PHP" href="\Les namespaces en PHP" class="internal-link" target="_self" rel="noopener">Les namespaces en PHP</a>
+<br><br>
+<br><a data-href="Utilisation de PDO pour la manipulation de bases de données en POO PHP" href="\Utilisation de PDO pour la manipulation de bases de données en POO PHP" class="internal-link" target="_self" rel="noopener">Utilisation de PDO pour la manipulation de bases de données en POO PHP</a>
+<br><br>-<a data-href="Introduction aux design patterns couramment utilisés en PHP" href="\Introduction aux design patterns couramment utilisés en PHP" class="internal-link" target="_self" rel="noopener">Introduction aux design patterns couramment utilisés en PHP</a><br><br>
+<br><a data-href="Pratiques de codage propre en POO PHP" href="\Pratiques de codage propre en POO PHP" class="internal-link" target="_self" rel="noopener">Pratiques de codage propre en POO PHP</a>
+<br><a data-href="Tests unitaires et TDD en POO PHP" href="\Tests unitaires et TDD en POO PHP" class="internal-link" target="_self" rel="noopener">Tests unitaires et TDD en POO PHP</a>
+<br><br><br><br><a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:TableDesMatières" class="tag" target="_blank" rel="noopener">#TableDesMatières</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:programmation" class="tag" target="_blank" rel="noopener">#programmation</a><br>créé le 2023-08-28 à 09:56]]></description><link>tutoriels\php\accueil-php.html</link><guid isPermaLink="false">Tutoriels/PHP/Accueil - PHP.md</guid><pubDate>Wed, 20 Mar 2024 09:48:20 GMT</pubDate></item><item><title><![CDATA[Liste des cours d'informatique]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:informatique" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#informatique</a> <a class="tag" href="?query=tag:TableDesMatières" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#TableDesMatières</a> 
  <br><br><br>Ce cours n'est pas voué a être structuré, mais plutôt à centraliser, classer et rendre accessible pleins de petites notions d'informatiques plus générales, utiles à la compréhension des autres cours, mais inclassable dans ceux-ci.<br><br><br><br><br>
 <br><a data-href="Informatique - Introduction à Javascript" href="\tutoriels\informatique\informatique-introduction-à-javascript.html" class="internal-link" target="_self" rel="noopener">Informatique - Introduction à Javascript</a>
 <br><a data-href="Informatique - Introduction au langage C" href="\tutoriels\informatique\informatique-introduction-au-langage-c.html" class="internal-link" target="_self" rel="noopener">Informatique - Introduction au langage C</a>
@@ -81,46 +546,7 @@ De mon côté, comme vous avez pu le voir, j'utilise une convention de nommage p
 <br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
 <br><a data-tooltip-position="top" aria-label="PHP - Fichier multiples et Includes" data-href="PHP - Fichier multiples et Includes" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-fichier-multiples-et-includes.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
 <br><a data-tooltip-position="top" aria-label="PHP - Envoi de données de formulaire" data-href="PHP - Envoi de données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
-<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a> <a href=".?query=tag:bonnes" class="tag" target="_blank" rel="noopener">#bonnes</a> <a href=".?query=tag:pratiques" class="tag" target="_blank" rel="noopener">#pratiques</a><br>créé le 2024-03-13 à 08:04]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-conventions-de-nommage.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Conventions de nommage.md</guid><pubDate>Wed, 13 Mar 2024 12:55:29 GMT</pubDate></item><item><title><![CDATA[Sujet]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:untagged" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#untagged</a> <a class="tag" href="?query=tag:todo" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#todo</a> 
- <br><br><br>Maintenant que nous avons vu beaucoup de notions, qui sont difficilement divisible plus que ce que j'ai fait, il est temps d'appliquer vos savoirs fraîchement acquis pour fusionner le tout et utiliser le formulaire créé au cours de HTML.<br><br><br><br>
-<br>Reprenez le formulaire que vous avez fait, et <a data-tooltip-position="top" aria-label="PHP - Fichier multiples et Includes" data-href="PHP - Fichier multiples et Includes" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-fichier-multiples-et-includes.html" class="internal-link" target="_self" rel="noopener">normalement divisé sous forme de projet</a>.
-<br>Créez un script PHP (ValidateReservationForm.php) pour traiter les données envoyées par le formulaire :
-
-<br>Récupérez les données saisies par l'utilisateur.
-<br>Validez les données :
-
-<br>Assurez-vous que tous les champs sont remplis.
-<br>Vérifiez si l'adresse e-mail est valide.
-<br>Veillez à la sécurité !
-
-
-<br>Si les données sont valides :
-
-<br>Envoyez un e-mail (veillez bien à lire à documentation pour utiliser <a data-tooltip-position="top" aria-label="Informatique - Envoyer des mail sans SMTP avec TestMailServerTool" data-href="Informatique - Envoyer des mail sans SMTP avec TestMailServerTool" href="\tutoriels\informatique\informatique-envoyer-des-mail-sans-smtp-avec-testmailservertool.html" class="internal-link" target="_self" rel="noopener">TestMailServerTool</a> si vous n'avez pas de serveur SMTP ou d'hébergeur !) de confirmation à l'utilisateur avec les détails saisis. (La fonction mail doit ressembler à ceci : mail($userEmail,$mailSubject, $mailBody,"From: name@adress.domain");)
-<br>Affichez un message de confirmation lambda à l'utilisateur (Ce message est contenu dans FormAccepted.php, incluez ce fichier !). A la suite, mettez un message customisé qui reprend ses informations, en gros, l'équivalent de l'e-mail, mais sur la page HTML
-
-
-<br>Si les données ne sont pas valides :
-
-<br>Affichez un message d'erreur lambda (Ce message est contenu dans FormRefused.php, incluez ce fichier !) et indiquez-lui les champs incorrects.
-
-
-
-
-<br><br>
-<br>Personnalisez le message de confirmation envoyé par e-mail pour inclure les détails saisis par l'utilisateur, le remercier de sa commande, etc.
-<br>Travaillez le style de tout ça (Formulaire, messages d'erreur, validation, etc) en CSS !
-<br>Stockez les messages envoyés dans une base de données pour référence ultérieure. 
-<br>Ajoutez une fonctionnalité de validation côté client en utilisant JavaScript pour améliorer l'expérience utilisateur.
-<br>(Ca, c'est vraiment si vous avez le temps, pour explorer, car c'est le prochain chapitre).
-<br><br>
-<br>Utilisez les fonctions de validation PHP telles que filter_var() et empty() pour valider les données.
-<br>Utilisez la fonction mail() pour envoyer des e-mails en PHP.
-<br><br><br>
-<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
-<br><a data-tooltip-position="top" aria-label="PHP - Traitement des données de formulaire" data-href="PHP - Traitement des données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
-<br><a data-href="|Suivant" href="\|Suivant" class="internal-link" target="_self" rel="noopener">|Suivant</a>
-<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:untagged" class="tag" target="_blank" rel="noopener">#untagged</a> <a href=".?query=tag:todo" class="tag" target="_blank" rel="noopener">#todo</a><br>créé le 2024-03-14 à 09:02]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Exercice récapitulatif sur les formulaires.md</guid><pubDate>Thu, 14 Mar 2024 09:33:40 GMT</pubDate></item><item><title><![CDATA[Projet à Fichiers Multiples et Includes en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> <a class="tag" href="?query=tag:bonnes" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#bonnes</a> <a class="tag" href="?query=tag:pratiques" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#pratiques</a> 
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a> <a href=".?query=tag:bonnes" class="tag" target="_blank" rel="noopener">#bonnes</a> <a href=".?query=tag:pratiques" class="tag" target="_blank" rel="noopener">#pratiques</a><br>créé le 2024-03-13 à 08:04]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-conventions-de-nommage.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Conventions de nommage.md</guid><pubDate>Wed, 13 Mar 2024 12:55:29 GMT</pubDate></item><item><title><![CDATA[Projet à Fichiers Multiples et Includes en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> <a class="tag" href="?query=tag:bonnes" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#bonnes</a> <a class="tag" href="?query=tag:pratiques" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#pratiques</a> 
  <br><br><br>Lorsque vous travaillez sur des projets web de taille significative, il est souvent judicieux d'organiser votre code en plusieurs fichiers pour une gestion plus facile et une meilleure maintenance. <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a> offre des fonctionnalités telles que les directives include et require qui permettent de découper le code en morceaux réutilisables et de les inclure dans d'autres fichiers.<br><br><br>Un projet à fichiers multiples implique de diviser le code en plusieurs fichiers en fonction de leur rôle et de leur responsabilité. Une structure commune pourrait ressembler à ceci :<br>projet/
 |-- includes/
 |   |-- header.php
@@ -260,137 +686,7 @@ Copy<br><br><br>L'attribut action spécifie l'URL du script qui traitera les don
 <br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
 <br><a data-tooltip-position="top" aria-label="PHP - Challenge sur les tableaux" data-href="PHP - Challenge sur les tableaux" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-challenge-sur-les-tableaux.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
 <br><a data-tooltip-position="top" aria-label="PHP - Fichier multiples et Includes" data-href="PHP - Fichier multiples et Includes" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-fichier-multiples-et-includes.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
-<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-12 à 14:12]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-rappel-des-formulaires-html.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Rappel des formulaires HTML.md</guid><pubDate>Wed, 13 Mar 2024 08:43:35 GMT</pubDate></item><item><title><![CDATA[Traitement des Données de Formulaire en PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:backend" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#backend</a> <a class="tag" href="?query=tag:fullstack" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fullstack</a> <a class="tag" href="?query=tag:formulaire" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#formulaire</a> 
- <br><br><br>Une fois qu'un utilisateur soumet un formulaire <a data-tooltip-position="top" aria-label="Accueil - HTML" data-href="Accueil - HTML" href="\tutoriels\html\accueil-html.html" class="internal-link" target="_self" rel="noopener">HTML</a>, les données saisies sont envoyées au serveur où elles doivent être traitées. En <a data-tooltip-position="top" aria-label="Accueil - PHP" data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">PHP</a>, vous récupérez ces données à l'aide de <a data-tooltip-position="top" aria-label="PHP - Envoi de données de formulaire > Méthode POST vs Méthode GET" data-href="PHP - Envoi de données de formulaire#Méthode POST vs Méthode GET" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html#Méthode_POST_vs_Méthode_GET" class="internal-link" target="_self" rel="noopener">|la superglobale `$_POST` ou `$_GET`</a>, en fonction de la méthode d'envoi du formulaire, puis vous les traitez selon les besoins de votre application.<br><br><br><br><br>Pour récupérer les données envoyées via la méthode POST, vous pouvez accéder aux valeurs à partir de la superglobale $_POST. Cette superglobale est un tableau associatif où les clés sont les noms des champs de formulaire et les valeurs sont les données saisies par l'utilisateur.<br>// Récupération des données POST
-$nom = $_POST['nom'];
-$email = $_POST['email'];
-Copy<br><br>De même, pour récupérer les données envoyées via la méthode GET, vous utilisez la superglobale $_GET.<br>// Récupération des données GET
-$nom = $_GET['nom'];
-$email = $_GET['email'];
-Copy<br><br>Avant de traiter les données, il est crucial de les valider pour garantir qu'elles sont conformes aux attentes et qu'elles ne contiennent pas de valeurs malveillantes. Vous pouvez utiliser des fonctions de validation prédéfinies en PHP ou créer vos propres règles de validation.<br>// Validation des données
-if (empty($nom) || empty($email)) {
-    echo "Veuillez remplir tous les champs.";
-} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "Adresse e-mail invalide.";
-} else {
-    // Traitement des données
-    // Envoi des données à la base de données, etc.
-}
-Copy<br><br>Une fois que les données sont validées, vous pouvez les traiter selon les besoins de votre application. Cela peut inclure l'envoi des données à une base de données, l'envoi d'un e-mail, la génération d'un rapport, etc.<br>// Traitement des données
-// Par exemple, envoi d'un e-mail
-$destinataire = "destinataire@example.com";
-$sujet = "Nouveau message de $nom";
-$message = "Adresse e-mail : $email";
-$headers = "From: $email";
-mail($destinataire, $sujet, $message, $headers);
-Copy<br><br>Après le traitement des données, il est important de fournir un feedback à l'utilisateur pour lui indiquer si l'opération s'est déroulée avec succès ou s'il y a eu des erreurs.<br>// Feedback à l'utilisateur
-if (/* opération réussie */) {
-    echo "Votre message a été envoyé avec succès.";
-} else {
-    echo "Une erreur s'est produite lors de l'envoi du message.";
-}
-Copy<br><br>La validation des données est une étape cruciale dans le processus de développement web. En plus de garantir que les données sont conformes aux attentes de l'application, il est également essentiel de sécuriser votre application contre les attaques telles que les injections SQL et les attaques XSS (cross-site scripting). En PHP, il existe plusieurs techniques pour valider et sécuriser les données.<br><br><br>Avant d'utiliser les données fournies par les utilisateurs, il est recommandé de les filtrer et de les nettoyer pour supprimer les caractères indésirables et réduire les risques d'injections de code.<br>// Exemple de nettoyage d'une chaîne de caractères
-$nom = filter_var($_POST['nom'], FILTER_SANITIZE_STRING);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-Copy<br>Un petit coup d'oeil à la doc officielle <a data-tooltip-position="top" aria-label="https://www.php.net/manual/fr/function.filter-var.php" rel="noopener" class="external-link" href="https://www.php.net/manual/fr/function.filter-var.php" target="_blank">sur la fonction filter_var</a> ainsi que <a data-tooltip-position="top" aria-label="https://www.php.net/manual/fr/filter.filters.php" rel="noopener" class="external-link" href="https://www.php.net/manual/fr/filter.filters.php" target="_blank">celle sur les filtres</a> vous sera utile si vous voulez en savoir plus !<br><br>En plus du nettoyage, il est important de valider les données pour s'assurer qu'elles correspondent au format attendu. PHP fournit des fonctions de validation telles que filter_var() pour valider différents types de données, comme les adresses e-mail, les URL, etc.<br>// Validation d'une adresse e-mail
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    // Adresse e-mail valide
-} else {
-    // Adresse e-mail invalide
-}
-Copy<br><br><br>Pour se prémunir contre les injections SQL, il est fortement recommandé d'utiliser des requêtes préparées avec des instructions paramétrées ou des requêtes préparées avec PDO ou MySQLi. Ces méthodes empêchent les attaquants d'injecter du code SQL malveillant dans vos requêtes.<br>// Exemple de requête préparée avec PDO
-$requete = $pdo-&gt;prepare("SELECT * FROM utilisateurs WHERE nom = ?");
-$requete-&gt;execute([$nom]);
-Copy<br><br>Pour éviter les attaques XSS, assurez-vous d'échapper correctement les données affichées dans vos pages HTML en utilisant des fonctions comme htmlspecialchars(). Cela convertit les caractères spéciaux en entités HTML, rendant les balises HTML inoffensives.<br>// Échapper les données avant de les afficher dans une page HTML
-echo htmlspecialchars($nom);
-Copy<br><br>Le traitement des données de formulaire en PHP est une étape essentielle dans le développement web. En récupérant, validant et traitant les données de manière appropriée, vous garantissez la sécurité et la fiabilité de votre application. Assurez-vous de toujours valider les données avant de les utiliser et de fournir un feedback clair à l'utilisateur.<br>En résumé pour la sécurité :<br>
-<br>Au moment de la réception : Filtrer
-<br>Au moment d'accéder à la BDD : Requête préparée
-<br>Au moment de l'affichage : Enlever les htmlspecialchars
-<br>Avec cette triptyque, vous devriez pouvoir contrôler efficacement les données transmises par l'utilisateur. Cela dit, il y a toujours moyen d'aller plus loin, mais c'est une bonne première pratique.<br><br>Par groupe de 2 :<br>
-<br>Créez une nouvelle page sur vos site, calculator.php qui sera reprise dans votre navbar
-<br>Incluez les différentes parties de votre site dans cette page
-<br>Dedans, créez un formulaire qui appellera calculatorResult.php. Contiendra 2 input et une liste déroulante.
-<br>Les input accueillerons uniquement des chiffres, et la liste déroulante sera un choix d'opération (addition, multiplication, soustraction, division,...)
-<br>Du côté back, créez une fonction par opération mathématique dans votre calculatorResult.php, et affichez le résultat de l'opération demandée par l'utilisateur. (la page reprendre bien sûr aussi les différents includes !)
-<br>N'oubliez pas d'informer l'utilisateur si il n'a pas rentré des données du bon type !
-<br>Peaufinez le tout pour être content de votre calculatrice (visuel, fonctionnalité, sécurité,...) !<br>
-C'est un test, profitez-en pour être imaginatif, l'exercice est volontairement simple et évasif, profitez-en pour ajouter votre patte, répartir vos tâches de manières logique et comprendre les concepts que nous venons de voir.
-<br><br><br>
-<br><a data-href="Accueil - PHP" href="\tutoriels\php\accueil-php.html" class="internal-link" target="_self" rel="noopener">Accueil - PHP</a>
-<br><a data-tooltip-position="top" aria-label="PHP - Envoi de données de formulaire" data-href="PHP - Envoi de données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
-<br><a data-tooltip-position="top" aria-label="PHP - Exercice récapitulatif sur les formulaires" data-href="PHP - Exercice récapitulatif sur les formulaires" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html" class="internal-link" target="_self" rel="noopener">Suivant</a>
-<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-12 à 14:14]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Traitement des données de formulaire.md</guid><pubDate>Thu, 14 Mar 2024 08:08:50 GMT</pubDate></item><item><title><![CDATA[Liste des cours PHP]]></title><description><![CDATA[<a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:TableDesMatières" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#TableDesMatières</a> <a class="tag" href="?query=tag:php" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#php</a> <a class="tag" href="?query=tag:programmation" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#programmation</a> 
- <br><br><br>Bienvenue sur le portail du cours de PHP pour blindcode, vous trouverez ici tous liens important pour vous rendre aux différentes sections du cours.<br><br><br><br><br><br><br>
-<br><a data-href="PHP - Présentation en tant que langage de programmation procédurale" href="\tutoriels\php\a-procédural-php\1-introduction-à-la-programmation-procédurale\php-présentation-en-tant-que-langage-de-programmation-procédurale.html" class="internal-link" target="_self" rel="noopener">PHP - Présentation en tant que langage de programmation procédurale</a>
-<br><br>
-<br><a data-href="PHP - Installation et configuration de l'environnement" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-installation-et-configuration-de-l'environnement.html" class="internal-link" target="_self" rel="noopener">PHP - Installation et configuration de l'environnement</a>
-<br><a data-href="PHP - Structure générale d'un Script" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-structure-générale-d'un-script.html" class="internal-link" target="_self" rel="noopener">PHP - Structure générale d'un Script</a>
-<br><a data-href="PHP - Variables et types de données" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-variables-et-types-de-données.html" class="internal-link" target="_self" rel="noopener">PHP - Variables et types de données</a>
-<br><a data-href="PHP - Opérateurs et expressions" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-opérateurs-et-expressions.html" class="internal-link" target="_self" rel="noopener">PHP - Opérateurs et expressions</a>
-<br><a data-href="PHP - Structure de contrôle conditionnelle" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-structure-de-contrôle-conditionnelle.html" class="internal-link" target="_self" rel="noopener">PHP - Structure de contrôle conditionnelle</a>
-<br><a data-href="PHP - Exercices Bonus Conditions" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-exercices-bonus-conditions.html" class="internal-link" target="_self" rel="noopener">PHP - Exercices Bonus Conditions</a>
-<br><a data-href="PHP - Les Boucles" href="\tutoriels\php\a-procédural-php\2-les-fondamentaux-en-php\php-les-boucles.html" class="internal-link" target="_self" rel="noopener">PHP - Les Boucles</a>
-<br><br>
-<br><a data-href="PHP - Définition et utilisation de fonctions en PHP" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-définition-et-utilisation-de-fonctions-en-php.html" class="internal-link" target="_self" rel="noopener">PHP - Définition et utilisation de fonctions en PHP</a>
-<br><a data-href="PHP - Passage de paramètres de fonction" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-passage-de-paramètres-de-fonction.html" class="internal-link" target="_self" rel="noopener">PHP - Passage de paramètres de fonction</a>
-<br><a data-href="PHP - Typage de paramètre" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-typage-de-paramètre.html" class="internal-link" target="_self" rel="noopener">PHP - Typage de paramètre</a>
-<br><a data-href="PHP - Retour de valeurs de fonction" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-retour-de-valeurs-de-fonction.html" class="internal-link" target="_self" rel="noopener">PHP - Retour de valeurs de fonction</a>
-<br><a data-href="PHP - Retour de valeurs de fonction avec Typage" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-retour-de-valeurs-de-fonction-avec-typage.html" class="internal-link" target="_self" rel="noopener">PHP - Retour de valeurs de fonction avec Typage</a>
-<br><a data-href="PHP - Portée des variables" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-portée-des-variables.html" class="internal-link" target="_self" rel="noopener">PHP - Portée des variables</a>
-<br><a data-href="PHP - Les Strict Types" href="\tutoriels\php\a-procédural-php\3-les-fonctions-en-php\php-les-strict-types.html" class="internal-link" target="_self" rel="noopener">PHP - Les Strict Types</a>
-<br><br>
-<br><a data-href="PHP - Opérations de base sur les chaînes de caractères" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-opérations-de-base-sur-les-chaînes-de-caractères.html" class="internal-link" target="_self" rel="noopener">PHP - Opérations de base sur les chaînes de caractères</a>
-<br><a data-href="PHP - Manipulation de tableaux (tableaux indexés et associatifs)" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-manipulation-de-tableaux-(tableaux-indexés-et-associatifs).html" class="internal-link" target="_self" rel="noopener">PHP - Manipulation de tableaux (tableaux indexés et associatifs)</a>
-<br><a data-href="PHP - Fonctions de tableau utiles" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-fonctions-de-tableau-utiles.html" class="internal-link" target="_self" rel="noopener">PHP - Fonctions de tableau utiles</a>
-<br><a data-href="PHP - Tableau à deux dimensions" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-tableau-à-deux-dimensions.html" class="internal-link" target="_self" rel="noopener">PHP - Tableau à deux dimensions</a>
-<br><a data-href="PHP - Challenge sur les tableaux" href="\tutoriels\php\a-procédural-php\4-manipulation-des-chaînes-de-caractères-et-des-tableaux-en-php\php-challenge-sur-les-tableaux.html" class="internal-link" target="_self" rel="noopener">PHP - Challenge sur les tableaux</a>
-<br><br>
-<br><a data-href="PHP - Rappel des formulaires HTML" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-rappel-des-formulaires-html.html" class="internal-link" target="_self" rel="noopener">PHP - Rappel des formulaires HTML</a>
-<br><a data-href="PHP - Fichier multiples et Includes" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-fichier-multiples-et-includes.html" class="internal-link" target="_self" rel="noopener">PHP - Fichier multiples et Includes</a>
-<br><a data-href="PHP - Conventions de nommage" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-conventions-de-nommage.html" class="internal-link" target="_self" rel="noopener">PHP - Conventions de nommage</a>
-<br><a data-href="PHP - Envoi de données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-envoi-de-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">PHP - Envoi de données de formulaire</a>
-<br><a data-href="PHP - Traitement des données de formulaire" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-traitement-des-données-de-formulaire.html" class="internal-link" target="_self" rel="noopener">PHP - Traitement des données de formulaire</a>
-<br><a data-href="PHP - Exercice récapitulatif sur les formulaires" href="\tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-exercice-récapitulatif-sur-les-formulaires.html" class="internal-link" target="_self" rel="noopener">PHP - Exercice récapitulatif sur les formulaires</a>
-<br><br>
-<br><a data-href="Ouverture, lecture et écriture de fichiers en PHP" href="\Ouverture, lecture et écriture de fichiers en PHP" class="internal-link" target="_self" rel="noopener">Ouverture, lecture et écriture de fichiers en PHP</a>
-<br><a data-href="Gestion des erreurs de fichiers en PHP" href="\Gestion des erreurs de fichiers en PHP" class="internal-link" target="_self" rel="noopener">Gestion des erreurs de fichiers en PHP</a>
-<br><br>
-<br><a data-href="Connexion à une base de données en PHP" href="\Connexion à une base de données en PHP" class="internal-link" target="_self" rel="noopener">Connexion à une base de données en PHP</a>
-<br><a data-href="Exécution de requêtes SQL en PHP" href="\Exécution de requêtes SQL en PHP" class="internal-link" target="_self" rel="noopener">Exécution de requêtes SQL en PHP</a>
-<br><a data-href="Récupération et affichage de données en PHP" href="\Récupération et affichage de données en PHP" class="internal-link" target="_self" rel="noopener">Récupération et affichage de données en PHP</a>
-<br><br>
-<br><a data-href="Gestion des attaques courantes (injection SQL, XSS, CSRF)." href="\Gestion des attaques courantes (injection SQL, XSS, CSRF)." class="internal-link" target="_self" rel="noopener">Gestion des attaques courantes (injection SQL, XSS, CSRF).</a>
-<br><a data-href="Pratiques de sécurité recommandées en PHP" href="\Pratiques de sécurité recommandées en PHP" class="internal-link" target="_self" rel="noopener">Pratiques de sécurité recommandées en PHP</a>
-<br><br><br>
-<br><a data-href="Concepts de base de la POO" href="\Concepts de base de la POO" class="internal-link" target="_self" rel="noopener">Concepts de base de la POO</a>
-<br><a data-href="Avantages de la POO." href="\Avantages de la POO." class="internal-link" target="_self" rel="noopener">Avantages de la POO.</a>
-<br><br>
-<br><a data-href="Définition de classes et d'objets en PHP" href="\Définition de classes et d'objets en PHP" class="internal-link" target="_self" rel="noopener">Définition de classes et d'objets en PHP</a>
-<br><a data-href="Propriétés et méthodes de classe en PHP" href="\Propriétés et méthodes de classe en PHP" class="internal-link" target="_self" rel="noopener">Propriétés et méthodes de classe en PHP</a>
-<br><a data-href="Encapsulation, héritage, et polymorphisme en PHP" href="\Encapsulation, héritage, et polymorphisme en PHP" class="internal-link" target="_self" rel="noopener">Encapsulation, héritage, et polymorphisme en PHP</a>
-<br><br>
-<br><a data-href="Le constructeurs en PHP" href="\Le constructeurs en PHP" class="internal-link" target="_self" rel="noopener">Le constructeurs en PHP</a>
-<br><a data-href="Destructeurs et libération de ressources en PHP" href="\Destructeurs et libération de ressources en PHP" class="internal-link" target="_self" rel="noopener">Destructeurs et libération de ressources en PHP</a>
-<br><br>
-<br><a data-href="Création de hiérarchies de classes en PHP" href="\Création de hiérarchies de classes en PHP" class="internal-link" target="_self" rel="noopener">Création de hiérarchies de classes en PHP</a>
-<br><a data-href="Surcharge de méthodes en PHP" href="\Surcharge de méthodes en PHP" class="internal-link" target="_self" rel="noopener">Surcharge de méthodes en PHP</a>
-<br><a data-href="Utilisation de l'opérateur parent en PHP" href="\Utilisation de l'opérateur parent en PHP" class="internal-link" target="_self" rel="noopener">Utilisation de l'opérateur parent en PHP</a>
-<br><br>
-<br><a data-href="Définition d'interfaces en PHP" href="\Définition d'interfaces en PHP" class="internal-link" target="_self" rel="noopener">Définition d'interfaces en PHP</a>
-<br><a data-href="les Traits en PHP" href="\les Traits en PHP" class="internal-link" target="_self" rel="noopener">les Traits en PHP</a>
-<br><br>
-<br><a data-href="Les exceptions en PHP" href="\Les exceptions en PHP" class="internal-link" target="_self" rel="noopener">Les exceptions en PHP</a>
-<br><a data-href="Les classes d'exception en PHP" href="\Les classes d'exception en PHP" class="internal-link" target="_self" rel="noopener">Les classes d'exception en PHP</a>
-<br><br>
-<br><a data-href="Les autoloaders en PHP" href="\Les autoloaders en PHP" class="internal-link" target="_self" rel="noopener">Les autoloaders en PHP</a>
-<br><a data-href="Les namespaces en PHP" href="\Les namespaces en PHP" class="internal-link" target="_self" rel="noopener">Les namespaces en PHP</a>
-<br><br>
-<br><a data-href="Utilisation de PDO pour la manipulation de bases de données en POO PHP" href="\Utilisation de PDO pour la manipulation de bases de données en POO PHP" class="internal-link" target="_self" rel="noopener">Utilisation de PDO pour la manipulation de bases de données en POO PHP</a>
-<br><br>-<a data-href="Introduction aux design patterns couramment utilisés en PHP" href="\Introduction aux design patterns couramment utilisés en PHP" class="internal-link" target="_self" rel="noopener">Introduction aux design patterns couramment utilisés en PHP</a><br><br>
-<br><a data-href="Pratiques de codage propre en POO PHP" href="\Pratiques de codage propre en POO PHP" class="internal-link" target="_self" rel="noopener">Pratiques de codage propre en POO PHP</a>
-<br><a data-href="Tests unitaires et TDD en POO PHP" href="\Tests unitaires et TDD en POO PHP" class="internal-link" target="_self" rel="noopener">Tests unitaires et TDD en POO PHP</a>
-<br><br><br><br><a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:TableDesMatières" class="tag" target="_blank" rel="noopener">#TableDesMatières</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:programmation" class="tag" target="_blank" rel="noopener">#programmation</a><br>créé le 2023-08-28 à 09:56]]></description><link>tutoriels\php\accueil-php.html</link><guid isPermaLink="false">Tutoriels/PHP/Accueil - PHP.md</guid><pubDate>Thu, 14 Mar 2024 08:02:20 GMT</pubDate></item><item><title><![CDATA[Accessibilité : Introduction]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:accessibilité" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#accessibilité</a> <a class="tag" href="?query=tag:css" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#css</a> 
+<br><br><a href=".?query=tag:cours" class="tag" target="_blank" rel="noopener">#cours</a> <a href=".?query=tag:blindcode" class="tag" target="_blank" rel="noopener">#blindcode</a> <a href=".?query=tag:php" class="tag" target="_blank" rel="noopener">#php</a> <a href=".?query=tag:backend" class="tag" target="_blank" rel="noopener">#backend</a> <a href=".?query=tag:fullstack" class="tag" target="_blank" rel="noopener">#fullstack</a> <a href=".?query=tag:formulaire" class="tag" target="_blank" rel="noopener">#formulaire</a><br>créé le 2024-03-12 à 14:12]]></description><link>tutoriels\php\a-procédural-php\5-gestion-des-formulaires-en-php\php-rappel-des-formulaires-html.html</link><guid isPermaLink="false">Tutoriels/PHP/A - Procédural PHP/5 - Gestion des formulaires en PHP/PHP - Rappel des formulaires HTML.md</guid><pubDate>Wed, 13 Mar 2024 08:43:35 GMT</pubDate></item><item><title><![CDATA[Accessibilité : Introduction]]></title><description><![CDATA[<a class="tag" href="?query=tag:cours" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#cours</a> <a class="tag" href="?query=tag:blindcode" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#blindcode</a> <a class="tag" href="?query=tag:accessibilité" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#accessibilité</a> <a class="tag" href="?query=tag:css" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#css</a> 
  <br><br><br>Cette courte introduction à l'accessibilité vous permettra de voir un peu mieux en quoi la façon de développer vos site influe directement sur la société et sur ses visiteurs.<br><br><br><br>L'accessibilité web consiste à concevoir et à développer des sites web de manière à ce qu'ils soient utilisables par un large éventail d'utilisateurs, y compris ceux ayant des capacités différentes. Bien que cela puisse sembler se concentrer sur les utilisateurs malvoyants, l'accessibilité web est une considération cruciale pour tous les utilisateurs, quel que soit leur niveau de capacité. Voici pourquoi :<br><br>L'Internet est utilisé par des personnes de tous âges, de tous horizons et de toutes capacités. L'accessibilité web garantit que votre site est ouvert à tous, ce qui favorise l'inclusion numérique et permet à un public diversifié de bénéficier de vos informations et de vos services. Et donc, si votre site propose des services, même si ce n'est pas focus sur ce public là, ça vous permet d'atteindre un pourcentage non négligeable de personne en plus. Ce que je veux dire, c'est que c'est n'est pas que par altruisme, même si c'est une belle chose déjà ! Cette constatation a un double avantage, c'est que non seulement vous proposez à un plus grand public, et donc vous vous ouvrez à un marché plus grand, mais en plus, et surtout, ce public est souvent délaissé et donc ils ne peuvent potentiellement pas, seul, profiter des services de vos éventuels concurrents, ce qui peut donc vous fidéliser une clientèle qui n'as pas d'autres choix. De plus, comme on le sait, c'est de faire son trou, et d'avoir ses premiers clients qui est le plus dur, donc si vous réussissez à avoir ce public, c'est peut-être lui qui va après rayonner vers le public valide. <br><br>L'accessibilité web vise à rendre les sites web utilisables pour les utilisateurs malvoyants entre autre, qui peuvent utiliser des lecteurs d'écran pour accéder au contenu. En structurant correctement votre <a data-tooltip-position="top" aria-label="HTML - Présentation et Utilité" data-href="HTML - Présentation et Utilité" href="\tutoriels\html\cours\html-présentation-et-utilité.html" class="internal-link" target="_self" rel="noopener">HTML</a> et en utilisant des attributs appropriés, vous rendez votre site web compréhensible et navigable pour ces utilisateurs.<br><br>Certains utilisateurs peuvent avoir des limitations de mobilité et dépendent de dispositifs de navigation spéciaux. Une conception web accessible prend en compte ces besoins et offre une expérience de navigation sans obstacles. Par exemple la reconnaissance vocale ou les joystick.<br><br>L'accessibilité web prend en compte les utilisateurs sourds ou malentendants en fournissant des transcriptions pour les contenus audio et des sous-titres pour les vidéos. Cela garantit que l'information est accessible par le texte, l'image et l'audio.<br><br>Les utilisateurs plus âgés peuvent avoir des difficultés de vision ou de navigation. Une conception accessible avec des polices lisibles et des contrôles de navigation intuitifs bénéficie également à ce groupe d'utilisateurs.<br><br>L'accessibilité web est souvent une exigence légale ou réglementaire dans de nombreuses juridictions. Les sites web doivent se conformer aux normes d'accessibilité telles que les directives WCAG (Web Content Accessibility Guidelines) pour éviter d'éventuelles sanctions.<br><br>Une conception accessible améliore l'expérience utilisateur pour tout le monde. Des pages web bien structurées, une navigation cohérente et une présentation claire du contenu facilitent la compréhension et la consommation d'informations.<br><br>L'accessibilité web peut également avoir un impact positif sur le référencement (SEO). Les moteurs de recherche apprécient les sites bien conçus, ce qui peut se traduire par une meilleure visibilité dans les résultats de recherche.<br><br>Un site web accessible est souvent plus léger en termes de ressources, ce qui signifie qu'il nécessite moins de bande passante pour être chargé. Les sites web excessivement lourds avec de nombreuses images non optimisées ou du code superflu peuvent contribuer à une consommation d'énergie accrue des serveurs et des dispositifs utilisateurs.<br>En réduisant la complexité et en optimisant les ressources, un site web accessible peut contribuer à une réduction de la consommation d'énergie, ce qui est un facteur positif pour l'écologie.<br><br>Un site web conçu avec des principes d'accessibilité est plus susceptible de maintenir sa pertinence à long terme. En rendant votre site accessible, vous investissez dans sa durabilité numérique, ce qui signifie qu'il peut être utilisé efficacement pendant de nombreuses années sans nécessiter de refonte majeure.<br>Cela évite la création de nouveaux sites web, ce qui peut avoir un impact positif sur l'écologie en réduisant la quantité de ressources informatiques et énergétiques nécessaires pour concevoir, développer et héberger de nouveaux sites web.<br><br>Il faudra peser toujours le pour et le contre de ce que vous faites dans vos futurs métiers, il est important de, en permanence d'anticiper le temps que quelque chose vous prendra à faire par rapport à son apport. Il va de soi que si vous n'êtes vous même pas en situation de handicap qui requiert des besoin spécifique, et que vous faites un <a data-tooltip-position="top" aria-label="https://fr.wikipedia.org/wiki/Preuve_de_concept" rel="noopener" class="external-link" href="https://fr.wikipedia.org/wiki/Preuve_de_concept" target="_blank">POC</a> d'un site pour dégager des subsides, il sera plus intéressant, selon moi, de rusher un code non-accessible un peu dégueu pour avoir une démo rapide, mais lorsque vous faites un projet plus sérieux où vous allez de toute façon dépenser des milliers d'heures de travail, rajouter 100 heures pour rendre le tout accessible à une partie trop souvent oubliée, est avant tout, pour moi, philosophiquement intéressant pour coller au combat qu'internet représente pour moi, c'est à dire l'échange d'information à TOUS de manière équitable. Mais si vous êtes insensible à cet argument, vous pouvez alors relire ces 10 derniers points pour voir que ça a un intérêt objectif.<br><br><br>
 <br><a data-href="Accueil - CSS" href="\tutoriels\css\accueil-css.html" class="internal-link" target="_self" rel="noopener">Accueil - CSS</a>
 <br><a data-tooltip-position="top" aria-label="CSS - Exercices - Les bases du CSS" data-href="CSS - Exercices - Les bases du CSS" href="\tutoriels\css\1-introduction-à-css-et-accessibilité\css-exercices-les-bases-du-css.html" class="internal-link" target="_self" rel="noopener">Précédent</a>
